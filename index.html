@@ -2,7 +2,7 @@
 <html lang="en" class="h-full" data-app-short="Action Plan" data-app-domain="actionplan.mcbflow.com">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self' 'sha256-XVNEYjC0qaGXWHSKs0WMk9rJ87uQ/KmwYbFNnT28+qY=' 'sha256-Ad6EIdEcM1JR85IVVhPs7B4ytbX6GZHfx67DTS4qJKw=' 'sha256-7+Hj6lc7nqQZCnR+2RH3nv+J7YXfinZUyU7zoiOYMfw=' 'sha256-WDA5Z0zolebYHGdCiyvZdQVMXIz33yBEgaQ4W38RUDg=' 'sha256-dGM6nexGuu8J/MtDG3p4bct8GVbuPoc6WVSOIsaDlQo='; style-src 'unsafe-inline'; img-src 'self' data: blob:; font-src 'none'; connect-src https://rxvcjdwmvxhwbdwncfhj.supabase.co; media-src 'none'; object-src 'none'; frame-src 'none'; worker-src 'self'; manifest-src 'self'; base-uri 'none'; form-action 'none'">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self' 'sha256-XVNEYjC0qaGXWHSKs0WMk9rJ87uQ/KmwYbFNnT28+qY=' 'sha256-f4quobXVkWgqQx0X/+gknD1D4ruzFf4mduNqC1ln4dY=' 'sha256-pKZeZeXiSUv/DiHJfbAZWd3XA1dU/wUQsrvKowE9JRI=' 'sha256-7+Hj6lc7nqQZCnR+2RH3nv+J7YXfinZUyU7zoiOYMfw=' 'sha256-WDA5Z0zolebYHGdCiyvZdQVMXIz33yBEgaQ4W38RUDg=' 'sha256-XbLIi45RPKBG9FTEOV402AAYH3ddG2CLZJx4DC8usKs=' 'sha256-jL/vMuZ0urDNJKCsGg0cRmgrjoTrMnv/OlcIAOoBjRo=' 'sha256-7qD3fG4B8LxSaowikQb5Efga+uMGZw5yIw5itYve9bY=' 'sha256-MiBqFQ73/Qv7Cc/jpZ5vfU6N3lFJyAkYRN6p55hW710=' 'sha256-ql6aRkj1jQa+JqH55EyT/Dky9V2K6b2vOL3G2Y5OsL4='; style-src 'unsafe-inline'; img-src 'self' data: blob:; font-src 'none'; connect-src https://rxvcjdwmvxhwbdwncfhj.supabase.co; media-src 'none'; object-src 'none'; frame-src 'none'; worker-src 'self'; manifest-src 'self'; base-uri 'none'; form-action 'none'">
     <meta name="referrer" content="no-referrer">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 <meta name="theme-color" content="#4F46A5">
@@ -43,7 +43,7 @@
             document.documentElement.setAttribute('data-theme', dark ? 'dark' : 'light');
         })();
     </script>
-    <title>Action Plan | Today</title>
+    <title>Action Plan | Home</title>
 
     <!--
         Self-contained build: React, React DOM, the icons used, and Tailwind's generated CSS are
@@ -288,21 +288,9 @@
         .bk-chip{align-items:center; gap:6px; min-height:var(--ctl-sm); padding:0 10px; border-radius:var(--r-sm); font-size:12.5px; font-weight:550; color:var(--ink-2); background:var(--surface-2); border:1px solid var(--border); white-space:nowrap; cursor:pointer; transition:border-color var(--ease), color var(--ease)}
         .bk-chip:hover{border-color:var(--border-strong); color:var(--ink)}
         .bk-chip.warn{color:var(--warn-ink); background:color-mix(in srgb,var(--warn) 14%,var(--surface)); border-color:color-mix(in srgb,var(--warn) 50%,var(--border))}
-        .warn-dot{position:absolute; top:3px; right:3px; width:8px; height:8px; border-radius:2px; background:var(--warn); box-shadow:0 0 0 2px var(--surface); display:none}
         .bk-chip-menu{display:none!important}
         /* phones: the chip becomes a warn dot on the Data button (and a full-width row in the tools menu) */
-        @media (max-width:520px){ .bk-chip{display:none!important} .warn-dot{display:block} .bk-chip-menu{display:flex!important} }
-        .dmenu{position:absolute; right:0; top:calc(100% + 6px); width:310px; max-width:calc(100vw - 24px); background:var(--surface); border:1px solid var(--border); border-radius:var(--r); box-shadow:var(--shadow-pop); padding:4px; z-index:60}
-        .dm-item{display:flex; align-items:flex-start; gap:10px; width:100%; text-align:left; min-height:48px; padding:8px 12px; border-radius:var(--r-sm); color:var(--ink); transition:background-color var(--ease)}
-        .dm-item:hover{background:var(--surface-2)}
-        .dm-item .ic{margin-top:1px; color:var(--ink-2)}
-        .dm-item .t{display:flex; align-items:center; justify-content:space-between; gap:8px; font-size:13.5px; font-weight:600}
-        .dm-item .s{display:block; font-size:12px; color:var(--muted); margin-top:1px}
-        .dm-item.primary .ic{color:var(--accent)}
-        .dm-item.danger, .dm-item.danger .ic{color:var(--crit)}
-        .dm-item.danger:hover{background:color-mix(in srgb,var(--crit) 8%,var(--surface))}
-        .dm-sep{height:1px; background:var(--border); margin:4px 6px}
-        .dm-foot{padding:8px 10px 6px; font-size:12px; color:var(--muted); border-top:1px solid var(--border); margin-top:4px}
+        @media (max-width:520px){ .bk-chip{display:none!important} .bk-chip-menu{display:flex!important} }
         kbd{font-family:var(--font); font-size:11px; font-weight:600; color:var(--muted); border:1px solid var(--border); border-bottom-width:2px; border-radius:3px; padding:0 5px; line-height:16px}
 
         /* ---- complete checkbox: 20px box, 36px hit area (44px on touch) without shifting layout ---- */
@@ -350,26 +338,6 @@
         .fab{position:fixed; right:16px; bottom:calc(72px + env(safe-area-inset-bottom)); z-index:35; width:56px; height:56px; border-radius:var(--r); background:var(--accent); color:var(--accent-ink); display:flex; align-items:center; justify-content:center; box-shadow:var(--shadow-pop); transition:background-color var(--ease)}
         .fab:hover{background:var(--accent-hover)}
 
-        /* ---- onboarding ---- */
-        .onb-steps{display:flex; gap:4px}
-        .onb-steps i{height:4px; flex:1; border-radius:2px; background:var(--surface-3); transition:background-color .2s ease}
-        .onb-steps i.on{background:var(--accent)}
-        .onb-row{display:flex; gap:12px; align-items:flex-start; padding:10px 0; border-top:1px solid var(--border)}
-        .onb-row:first-child{border-top:0}
-        .onb-ic{flex:none; width:32px; height:32px; border-radius:var(--r-sm); background:var(--accent-soft); color:var(--accent); display:flex; align-items:center; justify-content:center}
-        .look{display:flex; flex-direction:column; gap:8px; padding:10px; border:1px solid var(--border-strong); border-radius:var(--r); cursor:pointer; background:var(--surface); transition:border-color var(--ease), background-color var(--ease)}
-        .look:hover{background:var(--surface-2)}
-        .look:has(input:checked){border-color:var(--accent); box-shadow:0 0 0 1px var(--accent)}
-        .look:has(input:focus-visible){outline:2px solid var(--accent); outline-offset:2px}
-        .look .pv{height:78px; border-radius:var(--r-sm); padding:8px; display:flex; flex-direction:column; gap:5px; border:1px solid}
-        .look .pv b{display:block; height:8px; border-radius:2px}
-        .look .pv.l{background:#f3f4f6; border-color:#dfe2e7}
-        .look .pv.l b{background:#dfe2e7}
-        .look .pv.d{background:#16181c; border-color:#30353c}
-        .look .pv.d b{background:#30353c}
-        .look .pv b.a{width:40%}
-        .look .pv.l b.a{background:#4f46e5}
-        .look .pv.d b.a{background:#818cf8}
 
         /* ---- touch & small screens: 44px targets ---- */
         /* toasts: same dark-on-light chip as the rest of the app family */
@@ -382,7 +350,6 @@
             .tabs button{min-height:44px}
             .check{width:44px; height:44px; margin:-12px}
             .chip{min-height:40px; padding:0 12px}
-            .dm-item{min-height:52px}
         }
         /* touch screens have no hover: keep task quick-actions visible */
         @media (hover:none){
@@ -470,7 +437,6 @@
         .td-preview li{display:flex; justify-content:space-between; gap:12px; min-width:0}
         .td-stepedit{display:flex; flex-direction:column; gap:6px}
         .td-stepedit li{display:flex; align-items:center; gap:8px}
-        .dmenu{max-height:calc(100vh - 90px); overflow-y:auto}
 
         /* printable list: hidden on screen, the only thing shown when printing */
         #print-sheet{display:none}
@@ -512,7 +478,7 @@
   --ctl:38px; --ctl-sm:32px;
   --sp-1:4px; --sp-2:8px; --sp-3:12px; --sp-4:16px; --sp-5:20px; --sp-6:24px;
   --ease:120ms ease;
-  /* page width: every app's header and content share one container (mbmoney.online's) */
+  /* page width: every app's header and content share one container (money.mcbflow.com's) */
   --page-max:1280px; --gutter:16px;
   /* neutrals */
   --bg:#f3f4f6; --surface:#ffffff; --surface-2:#f6f7f9; --surface-3:#eceef2;
@@ -560,17 +526,16 @@ input[type=checkbox],input[type=radio],input[type=range],progress{accent-color:v
 .tabular,.num,time{font-variant-numeric:tabular-nums}
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:1ms!important;animation-iteration-count:1!important;transition-duration:1ms!important;scroll-behavior:auto!important}}
 @media(pointer:coarse),(max-width:700px){:root{--ctl:44px;--ctl-sm:44px}}
-.tld{font-style:normal;color:var(--accent)}
 
 /* ---- MB SUITE v1 · actionplan.mcbflow.com adapter ---- */
 /* Tailwind's remapped "sky" scale keeps following --accent (see --acc-* in the theme block).
    v3: the old .app-bar header and its tab row are gone; the sidebar, page bar and bottom bar
    are styled by the mb-suite-sidebar block below. */
 .app-logo-lg{width:52px;height:52px;flex:none;border-radius:var(--r-lg);overflow:hidden;display:block}
-.tld{color:var(--accent)}
 #splash .sp-logo svg{width:52px;height:52px;border-radius:var(--r-lg)}
-#splash .sp-name .tld{color:var(--accent)}
-/* page width: same container as mbmoney.online (1280px, 16px gutters on every screen size) */
+#splash .sp-name .tld{font-style:normal;font-weight:500;color:var(--accent)}
+#splash .sp-name .sep{margin:0 .32em;color:var(--muted);font-weight:400}
+/* page width: same container as money.mcbflow.com (1280px, 16px gutters on every screen size) */
 #root .max-w-7xl{max-width:var(--page-max);padding-left:max(var(--gutter),env(safe-area-inset-left));padding-right:max(var(--gutter),env(safe-area-inset-right))}
 
 </style>
@@ -712,7 +677,7 @@ body{background:none}
    Markup (see v3-updates/demo/index.html for a working page):
    <body class="mb-shell">
      <aside class="mb-side" aria-label="App">
-       <a class="brand" href="./" aria-label="mbname.online: go to Home"> .logo + .bt(b + span) </a>
+       <a class="brand" href="./" aria-label="Money (money.mcbflow.com): go to Home"> .logo + .bt(b + span) </a>
        <nav class="side-nav" aria-label="Sections"> <button aria-current="page"><svg class="uic"/><span>Home</span></button> … </nav>
        <nav class="side-nav side-end" aria-label="More"> Settings / Help items (optional) </nav>
      </aside>
@@ -810,7 +775,6 @@ a.brand:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
   body.mb-shell{padding-bottom:calc(56px + env(safe-area-inset-bottom))}
 }
 @media (max-width:420px){.page-bar .phone-brand .bt span{display:none}}
-@media (max-width:600px){.phone-brand .tld{display:none}}
 @media print{.mb-side,.bnav,.page-bar .actions,.mb-shell::before{display:none!important}.mb-main{margin-left:0}}
 </style>
 <style id="mb-suite-v3">
@@ -872,20 +836,12 @@ dialog.mb-share::backdrop{background:var(--scrim)}
 /* toasts sit beside the sidebar instead of over it */
 @media (min-width:1024px){#root .toast{left:calc(var(--side-w) + 24px)!important}}
 /* More view */
-.more-grid{display:grid;grid-template-columns:minmax(0,1fr);gap:16px;align-items:start}
-@media (min-width:900px){.more-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
-.more-body{padding:14px;display:flex;flex-direction:column;gap:12px}
-.more-row{display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:44px}
-.more-row>div{min-width:0}
-.more-row b{display:block;font-size:14px;font-weight:600;color:var(--ink)}
-.more-row p{margin:2px 0 0;font-size:12.5px;color:var(--muted)}
 .more-links{display:flex;flex-direction:column}
 .more-links button{display:flex;align-items:center;gap:10px;width:100%;min-height:44px;padding:0 4px;border-top:1px solid var(--border);font-size:14px;color:var(--ink);text-align:left;transition:color var(--ease)}
 .more-links button:first-child{border-top:0}
 .more-links button:hover{color:var(--accent)}
 .more-links button .lucide{color:var(--ink-2)}
 .more-links button>span:last-child{margin-left:auto;color:var(--muted)}
-.more-ver{font-size:12px;color:var(--muted)}
 /* install card: the app's Icon component wraps its svg in a span */
 .mb-install>span .lucide{width:22px;height:22px;color:var(--accent)}
 .mb-install.is-done>span .lucide{color:var(--good-ink)}
@@ -901,8 +857,6 @@ dialog.mb-share::backdrop{background:var(--scrim)}
   font:inherit;color:var(--accent);text-decoration:underline;text-underline-offset:2px;cursor:pointer}
 .mb-about .mb-about-links a:hover,.mb-about .mb-about-links button:hover{color:var(--accent-hover)}
 .mb-about .mb-about-copy{margin-top:4px;color:var(--muted,var(--ink-2))}
-.more-end{grid-column:1/-1}
-.more-end>.hint{margin:0}
 /* splash fallback text when JavaScript is off */
 #splash .sp-ns-h{margin:0;font-size:17px;font-weight:650;text-align:center}
 #splash .sp-ns{max-width:420px;margin:6px auto 0;padding:0 16px;text-align:center;color:var(--ink-2)}
@@ -930,21 +884,67 @@ dialog.mb-share::backdrop{background:var(--scrim)}
 #root .ap-tbar .ap-tbar-btn{flex:none;height:var(--tb-h);min-height:var(--tb-h);padding:0 12px;gap:6px;white-space:nowrap}
 .ap-tbar-btn .lucide{width:16px;height:16px}
 .ap-tbar-prog .segs,.ap-tbar-prog .meter{margin:0}
+/* ---- v1.7 · MB Suite v3.3 ---- */
+/* Data menu: drops down under its button on desktop (phones: the shared CSS turns it into a bottom sheet) */
+.ap-dm-wrap>.mb-dm{position:absolute;right:0;top:calc(100% + 6px)}
+.mb-dm .ap-dm-loc b{font-weight:600;color:var(--ink-2)}
+.ap-set-data{padding:8px 16px}
+.ap-set-links{margin:0 -4px;border-top:1px solid var(--border)}
+.ap-set-links button{min-height:48px}
+/* welcome: theme cards put icon + label on one line; the legal pages open above the welcome screen */
+.mbw-look .ap-look-l{display:flex;align-items:center;gap:8px}
+.mbw ~ .overlay{z-index:1001}
+.mbw-alt .uic,.mbw-foot .uic{width:16px;height:16px}
+/* sidebar wordmark: "Action Plan ∙ mcbflow.com" fits the 240px sidebar without clipping */
+@media (min-width:1024px){.mb-side > a.brand .bt b{font-size:13.5px;letter-spacing:-.01em}}
+/* phones: Settings is the sixth bottom-bar tab */
+@media (max-width:767px){.bnav button span{font-size:10.5px;white-space:nowrap}}
+@media (max-width:400px){.page-bar .actions .tb.ap-phone-only{display:none}}   /* narrow phones: search moves into the ≡ menu so "Action Plan" is never cut off */
+@media (min-width:401px){.ap-tools .ap-menu-search{display:none}}
+/* progress bars and the timer ring: hover / tap / focus labels */
+.ap-tip{position:fixed;z-index:1200;pointer-events:none;max-width:240px;padding:7px 10px;border-radius:var(--r-sm);background:var(--ink);color:var(--bg);font:12.5px/1.35 var(--font);box-shadow:var(--shadow-pop)}
+.ap-tip[hidden]{display:none}
+.ap-tip b{display:block;font-size:13.5px;font-weight:650}
+.ap-tip span{display:block}
+.ap-tip span.c{opacity:.8}
+[data-tip-v]{cursor:default}
+[data-tip-v]:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.segs>i{transition:opacity .12s ease,background-color .2s ease}
+.segs.has-read>i:not(.is-read){opacity:.35}
+.ap-hint{color:var(--muted);text-align:center}
 </style>
-<style id="mb-suite-topbar">/* =====================================================================
-   MB SUITE v3.2.1 · STANDARD TOP BAR  (2026-10-14)  · mb-suite-topbar v3.2.1
-   Load LAST, after every other stylesheet / <style> block in the app.
-   One look for the page bar in every app, on every screen size.
+<style id="mb-suite-topbar">
+/* =====================================================================
+   mb-suite-topbar.css v3.3.0  ·  2026-10-16  ·  SHARED FILE: copy into every app UNCHANGED, load LAST
+   (after every other stylesheet / <style> block). Apps whose CSP has no style-src 'self' inline it as the
+   last <style> block, byte-for-byte. If you edit it, raise the version on this line and in
+   "SHARED FILES/SHARED-FILES-VERSIONS.md", then copy it into every app.
+
+   v3.3.0 (2026-10-16) adds, on top of the v3.2.2 top bar:
+     · every bar control is one height: the theme switch fills the bar height (36px desktop, 42px phones;
+       it was a 28px pill next to 36/42px buttons), the account button is a normal .tb
+     · .tb-acct     account button (mb-sync.js 1.1 sync.button) — "Sign in" or avatar + sync dot
+     · wordmark     <b>Money<i class="tld"><span class="sep" aria-hidden="true">∙</span>mcbflow.com</i></b>
+                    desktop "Money ∙ mcbflow.com", phones "Money"
+     · .mbw-*       welcome / first-run screen (one look in every app)
+     · .mb-dm-*     Data menu items with a one-line description, section labels, status, Clear all data
+     · .mb-set-*    Settings page (Appearance → Account & sync → app settings → Backup & data → Install → About)
+     · .mb-foot     one-line page footer
+     · .mb-greet    "Good morning, Matthew" line on the start view (text from mb-sync.js sync.greet)
+     · universal    textarea grows vertically only · .mb-info read-only chips (never look like buttons) · .mb-pair 50/50 action pairs
+     Standard nav icons (Home, Settings gear, Help, More): "SHARED FILES/suite-nav-icons.html"
+   Reference markup for all of it: "SHARED FILES/suite-shell-demo.html".
 
    Order inside .page-bar .actions (leave out what the app doesn't have):
-     [search] · [extra icon tools, e.g. Undo] · [backup chip, desktop only] · Data · theme switch · [primary] · [More ≡]
+     [search] · [extra icon tools, e.g. Undo] · [backup chip, desktop only] · Data · theme switch · account · [primary] · [More ≡]
 
    Classes (add to the app's EXISTING elements; keep their ids, data-* and handlers):
-     .tb            every button in the bar (search, Data, tools, More)
+     .tb            every button in the bar (search, Data, tools, account, More)
      .tb-lbl        the text inside a .tb  → hidden on phones (icon only)
      .tb-chev       Data's chevron           → hidden on phones
      .tb-dot        the "no recent backup" dot inside Data (app JS still toggles [hidden])
      .tb-primary    the view's main action (accent fill). Must contain an icon + .tb-lbl and an aria-label.
+     .tb-acct       account button: <button class="tb tb-acct" type="button" id="acctBtn"></button>, then sync.button(el)
      .tb-opt        optional tool that may drop out on very narrow phones (≤380px)
      .themesw       theme switch, standard markup only:
        <button class="themesw" role="switch" aria-checked="false" aria-label="Dark mode">
@@ -993,18 +993,30 @@ dialog.mb-share::backdrop{background:var(--scrim)}
 .page-bar .actions .tb.tb-primary{background:var(--accent);border-color:var(--accent);color:var(--accent-ink,#fff);font-weight:600}
 .page-bar .actions .tb.tb-primary:hover{background:var(--accent-hover,var(--accent));border-color:var(--accent-hover,var(--accent));color:var(--accent-ink,#fff)}
 
-/* ---- standard theme switch ---- */
+/* ---- standard theme switch: same height as every other bar control ----
+   A segmented switch (sun | moon) exactly as tall as the buttons beside it: 36px desktop/tablet, 42px phones.
+   The accent block sits on the active side. Phones ≤380px: a 42px square showing the current mode. */
 .page-bar .themesw{box-sizing:border-box;display:inline-flex;align-items:center;justify-content:center;flex:none;
-  height:var(--tb-h);min-height:var(--tb-h);width:auto;min-width:0;padding:0 2px;margin:0;border:0;border-radius:var(--r-sm,6px);background:none;box-shadow:none;cursor:pointer}
-.page-bar .themesw .tk{position:relative;display:inline-flex;align-items:center;justify-content:space-between;box-sizing:border-box;
-  width:52px;height:28px;padding:0 6px;border-radius:var(--r-sm,6px);background:var(--surface-2,#eef0f3);border:1px solid var(--border-strong,#cfd4db);color:var(--muted,#6b7280)}
-.page-bar .themesw .tk svg{position:relative;z-index:1;width:14px;height:14px;flex:none;display:block}
-.page-bar .themesw .th{position:absolute;top:2px;left:2px;width:22px;height:22px;border-radius:4px;background:var(--accent);box-shadow:none;transform:none;transition:transform .12s ease}
-.page-bar .themesw[aria-checked="true"] .th{transform:translateX(24px)}
+  height:var(--tb-h);min-height:var(--tb-h);width:auto;min-width:0;padding:0;margin:0;border:0;border-radius:var(--r-sm,6px);background:none;box-shadow:none;cursor:pointer}
+.page-bar .themesw .tk{position:relative;display:inline-flex;align-items:center;justify-content:space-around;box-sizing:border-box;
+  width:64px;height:var(--tb-h);padding:0 3px;border-radius:var(--r-sm,6px);background:var(--surface,#fff);border:1px solid var(--border-strong,#cfd4db);color:var(--muted,#6b7280);
+  transition:border-color .12s ease,background-color .12s ease}
+.page-bar .themesw .tk svg{position:relative;z-index:1;width:16px;height:16px;flex:none;display:block;transition:color .12s ease}
+.page-bar .themesw .th{position:absolute;top:3px;left:3px;width:calc((100% - 6px) / 2);height:calc(100% - 6px);border-radius:calc(var(--r-sm,6px) - 2px);background:var(--accent);box-shadow:none;transform:none;transition:transform .12s ease}
+.page-bar .themesw[aria-checked="true"] .th{transform:translateX(100%)}
 .page-bar .themesw[aria-checked="false"] .i-sun,.page-bar .themesw[aria-checked="true"] .i-moon{color:var(--accent-ink,#fff)}
-.page-bar .themesw:hover .tk{border-color:var(--accent-line,var(--accent))}
+.page-bar .themesw:hover .tk{border-color:var(--accent-line,var(--accent));background:var(--surface-2,#f3f4f6)}
 .page-bar .themesw:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
 .page-bar .themesw > :not(.tk){display:none}   /* no text labels beside the switch */
+@media (max-width:767px){ .page-bar .themesw .tk{width:62px} }
+/* very narrow phones (≤380px): the switch folds to a square showing the current mode, so five controls still fit */
+@media (max-width:380px){
+  .page-bar .themesw .tk{width:var(--tb-h);padding:0;justify-content:center}
+  .page-bar .themesw .th{display:none}
+  .page-bar .themesw .tk svg{width:18px;height:18px}
+  .page-bar .themesw[aria-checked="false"] .i-moon,.page-bar .themesw[aria-checked="true"] .i-sun{display:none}
+  .page-bar .themesw[aria-checked="false"] .i-sun,.page-bar .themesw[aria-checked="true"] .i-moon{color:var(--ink-2,#3a414a)}
+}
 
 /* backup chip: desktop only, same height as the buttons */
 .page-bar .actions .tb-chip{min-height:var(--tb-h);box-sizing:border-box}
@@ -1024,10 +1036,10 @@ dialog.mb-share::backdrop{background:var(--scrim)}
   .page-bar .phone-brand{flex:0 1 auto;min-width:0}
   .page-bar .actions .tb-lbl,.page-bar .actions .tb-chev,.page-bar .actions .tb kbd{display:none}
   .page-bar .actions .tb{width:var(--tb-h);padding:0}
-  .page-bar .themesw .tk{width:50px}
-  .page-bar .themesw[aria-checked="true"] .th{transform:translateX(22px)}
 }
 @media (max-width:380px){
+  :root{--tb-gap:3px}
+  .page-bar{padding-left:10px;padding-right:10px}
   .page-bar .actions .tb-opt{display:none}
   .page-bar .brand b{font-size:14px}
 }
@@ -1062,7 +1074,7 @@ dialog.mb-share::backdrop{background:var(--scrim)}
 @media (max-width:1023px){ .page-bar .actions .tb.tb-search:has(input){width:180px;padding:0 6px 0 10px;justify-content:flex-start;cursor:text} }
 
 /* ---- Backup chip: neutral with a status square; amber when a backup is due ----
-   App JS toggles .warn on the chip (never backed up / backup overdue). mbauto's legacy .stale works too. */
+   App JS toggles .warn on the chip (never backed up / backup overdue). the legacy .stale class works too. */
 .page-bar .actions .tb-chip{display:inline-flex;align-items:center;gap:7px;height:var(--tb-h);min-height:var(--tb-h);padding:0 10px;margin:0;
   border:1px solid var(--border,#dfe2e7);border-radius:var(--r-sm,6px);background:var(--surface,#fff);color:var(--muted,#6b7280);
   font:500 12.5px/1 var(--font,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif);white-space:nowrap;box-shadow:none;cursor:pointer}
@@ -1079,18 +1091,269 @@ dialog.mb-share::backdrop{background:var(--scrim)}
 a.brand{gap:9px}
 a.brand .logo,a.brand .logo svg{width:28px;height:28px}
 a.brand .bt b{font-size:14.5px;font-weight:650;letter-spacing:-.005em;line-height:1.15}
-/* the longest name in the suite: a touch smaller in the sidebar so it isn't cut off */
-.mb-side a.brand .bt b{font-size:13px;letter-spacing:-.01em}
 a.brand .bt > span{font-size:11px;font-weight:400;line-height:1.15;color:var(--muted,#6b7280)}
 @media (min-width:1024px){ .mb-side > a.brand{margin:0 8px 12px;padding:6px 8px} }
 .page-bar .page-title{font-size:18px;font-weight:650;letter-spacing:-.01em;line-height:1.2;margin:0}
+
+/* ---- Wordmark (v3.3): "Money ∙ mcbflow.com" on desktop, just "Money" on phones ----
+   <b>Money<i class="tld"><span class="sep" aria-hidden="true">∙</span>mcbflow.com</i></b>   (short name in Title Case) */
+a.brand .bt b{white-space:nowrap}
+a.brand .tld{font-style:normal;font-weight:400;font-size:1em;color:var(--accent);letter-spacing:0}
+a.brand .tld .sep{display:inline-block;margin:0 .28em;color:var(--accent);font-weight:700}
+@media (max-width:600px){ .phone-brand .tld{display:none} }
+@media (min-width:1024px){ .mb-side > a.brand .bt{min-width:0} .mb-side > a.brand .bt b{overflow:hidden;text-overflow:clip} }
+
+
+/* =====================================================================
+   v3.3 · WELCOME / FIRST-RUN SCREEN  (.mbw)  — one look in every app
+   Desktop: a 540px card over the dimmed app. Phones (≤600px): full screen, primary button full width at the bottom.
+   <div class="mbw" role="dialog" aria-modal="true" aria-labelledby="mbwTitle">
+     <div class="mbw-card">
+       <header class="mbw-head">
+         <span class="mbw-step">Step 1 of 3</span>
+         <span class="mbw-head-a"><button class="mbw-link" type="button">Sign in</button><button class="mbw-link" type="button">Skip</button></span>
+         <div class="mbw-prog" aria-hidden="true"><i class="on"></i><i></i><i></i></div>
+       </header>
+       <div class="mbw-body"> …step content… </div>
+       <footer class="mbw-foot"><button class="mbw-btn">Back</button><button class="mbw-btn pri">Next</button></footer>
+     </div>
+   </div>
+   ===================================================================== */
+.mbw{position:fixed;inset:0;z-index:1000;display:flex;align-items:center;justify-content:center;padding:24px 16px;
+  background:rgba(10,12,16,.48);font-family:var(--font,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif);color:var(--ink,#1b1f24)}
+.mbw[hidden]{display:none}
+.mbw-card{box-sizing:border-box;display:flex;flex-direction:column;width:min(540px,100%);max-height:min(760px,calc(100vh - 48px));max-height:min(760px,calc(100dvh - 48px));
+  background:var(--surface,#fff);border:1px solid var(--border,#dfe2e7);border-radius:var(--r-lg,8px);box-shadow:0 24px 60px rgba(10,12,16,.28);overflow:hidden}
+.mbw-head{flex:none;display:grid;grid-template-columns:1fr auto;align-items:center;gap:8px 12px;padding:14px 20px 12px;border-bottom:1px solid var(--border,#dfe2e7)}
+.mbw-step{font-size:12px;font-weight:600;color:var(--muted,#6b7280);font-variant-numeric:tabular-nums}
+.mbw-head-a{display:flex;align-items:center;gap:2px;margin-right:-8px}
+.mbw-link{display:inline-flex;align-items:center;gap:6px;min-height:32px;padding:0 8px;border:0;border-radius:var(--r-sm,6px);background:none;color:var(--ink-2,#3a414a);
+  font-family:inherit;font-size:13px;font-weight:500;line-height:1;cursor:pointer}
+.mbw-link:hover{background:var(--surface-2,#f3f4f6);color:var(--ink,#1b1f24)}
+.mbw-link:focus-visible{outline:2px solid var(--accent);outline-offset:1px}
+.mbw-link.acc{color:var(--accent);font-weight:600}
+.mbw-signed{display:inline-flex;align-items:center;gap:6px;min-height:32px;padding:0 8px;font-size:12.5px;color:var(--muted,#6b7280)}
+.mbw-signed::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--good,#16a34a)}
+.mbw-prog{grid-column:1/-1;display:flex;gap:4px}
+.mbw-prog i{flex:1;height:4px;border-radius:2px;background:var(--surface-3,var(--border,#e5e7eb));transition:background-color .2s ease}
+.mbw-prog i.on{background:var(--accent)}
+.mbw-body{flex:1;min-height:0;overflow-y:auto;padding:22px 20px 20px;font-size:14px;line-height:1.5}
+.mbw-body.center{display:flex;flex-direction:column;justify-content:center}
+.mbw-body h2{margin:0;font-size:20px;font-weight:700;letter-spacing:-.01em;line-height:1.25;color:var(--ink,#1b1f24)}
+.mbw-body h2 + p,.mbw-lead{margin:6px 0 0;color:var(--ink-2,#3a414a);font-size:14.5px}
+.mbw-body p{margin:8px 0 0}
+.mbw-sub{color:var(--muted,#6b7280);font-size:13px}
+/* step 1: badge + title */
+.mbw-hero{display:flex;align-items:center;gap:14px;margin-bottom:16px}
+.mbw-logo{flex:none;width:52px;height:52px;display:block}
+.mbw-logo svg,.mbw-logo img{width:100%;height:100%;display:block}
+/* feature rows */
+.mbw-feats{list-style:none;margin:0;padding:0}
+.mbw-feats li{display:flex;gap:12px;align-items:flex-start;padding:10px 0;border-top:1px solid var(--border,#dfe2e7)}
+.mbw-feats li:first-child{border-top:0;padding-top:4px}
+.mbw-ic{flex:none;width:32px;height:32px;display:inline-flex;align-items:center;justify-content:center;border-radius:var(--r-sm,6px);background:var(--accent-soft,var(--surface-2,#f3f4f6));color:var(--accent)}
+.mbw-ic svg{width:17px;height:17px}
+.mbw-feats b{display:block;font-size:14px;font-weight:600;color:var(--ink,#1b1f24)}
+.mbw-feats span:not(.mbw-ic){display:block;font-size:13px;color:var(--ink-2,#3a414a)}
+.mbw-privacy{display:flex;gap:8px;align-items:flex-start;margin:14px 0 0!important;padding:10px 12px;border-radius:var(--r-sm,6px);background:var(--surface-2,#f3f4f6);font-size:12.5px;color:var(--ink-2,#3a414a)}
+.mbw-privacy svg{flex:none;width:16px;height:16px;margin-top:1px;color:var(--accent)}
+.mbw-privacy a,.mbw-privacy button{color:var(--accent);font:inherit;background:none;border:0;padding:0;text-decoration:underline;cursor:pointer}
+/* a big picture / live demo for one step (Fishing's "tap a species") */
+.mbw-demo{display:flex;align-items:center;justify-content:center;min-height:150px;margin:0 0 18px;padding:16px;border-radius:var(--r,6px);background:var(--accent-soft,var(--surface-2,#f3f4f6))}
+/* theme picker */
+.mbw-looks{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:16px}
+.mbw-look{display:flex;flex-direction:column;gap:8px;padding:10px;border:1px solid var(--border-strong,#cfd4db);border-radius:var(--r,6px);background:var(--surface,#fff);cursor:pointer;font-size:14px;font-weight:600;color:var(--ink,#1b1f24);text-align:left;font-family:inherit}
+.mbw-look:hover{background:var(--surface-2,#f3f4f6)}
+.mbw-look[aria-pressed="true"],.mbw-look:has(input:checked){border-color:var(--accent);box-shadow:0 0 0 1px var(--accent)}
+.mbw-look:focus-visible,.mbw-look:has(input:focus-visible){outline:2px solid var(--accent);outline-offset:2px}
+.mbw-look input{position:absolute;opacity:0;pointer-events:none}
+.mbw-look .pv{height:72px;border-radius:var(--r-sm,6px);padding:8px;display:flex;flex-direction:column;gap:5px;border:1px solid}
+.mbw-look .pv b{display:block;height:8px;border-radius:2px}
+.mbw-look .pv.l{background:#f3f4f6;border-color:#dfe2e7}.mbw-look .pv.l b{background:#dfe2e7}
+.mbw-look .pv.d{background:#16181c;border-color:#30353c}.mbw-look .pv.d b{background:#30353c}
+.mbw-look .pv b.a{width:40%;background:var(--accent)!important}
+.mbw-look .pv b:last-child{width:70%}
+/* selectable option cards (goals, units, "what do you want to do") */
+.mbw-choices{display:grid;gap:8px;margin-top:14px}
+.mbw-choice{display:flex;gap:12px;align-items:flex-start;width:100%;box-sizing:border-box;padding:12px;border:1px solid var(--border-strong,#cfd4db);border-radius:var(--r,6px);
+  background:var(--surface,#fff);color:var(--ink,#1b1f24);text-align:left;font:inherit;cursor:pointer}
+.mbw-choice:hover{background:var(--surface-2,#f3f4f6)}
+.mbw-choice[aria-pressed="true"],.mbw-choice[aria-checked="true"],.mbw-choice:has(input:checked){border-color:var(--accent);box-shadow:0 0 0 1px var(--accent);background:var(--accent-soft,var(--surface,#fff))}
+.mbw-choice b{display:block;font-size:14px}.mbw-choice small{display:block;font-size:12.5px;color:var(--muted,#6b7280);margin-top:2px}
+/* form fields */
+.mbw-field{display:block;margin-top:14px}
+.mbw-field > span{display:block;margin-bottom:5px;font-size:13px;font-weight:600;color:var(--ink-2,#3a414a)}
+.mbw-field input,.mbw-field select{box-sizing:border-box;width:100%;min-height:42px;padding:6px 12px;border:1px solid var(--border-strong,#cfd4db);border-radius:var(--r-sm,6px);background:var(--surface,#fff);color:var(--ink,#1b1f24);font:inherit;font-size:15px}
+.mbw-field input:focus,.mbw-field select:focus{outline:none;border-color:var(--accent);box-shadow:0 0 0 3px var(--accent-soft,transparent)}
+/* "Moving from another device?" row: Sign in to sync + Import a backup */
+.mbw-alt{display:flex;flex-wrap:wrap;align-items:center;gap:8px 10px;margin-top:18px;padding-top:14px;border-top:1px solid var(--border,#dfe2e7);font-size:13px;color:var(--muted,#6b7280)}
+.mbw-alt > span{flex:1 1 100%}
+/* footer buttons */
+.mbw-foot{flex:none;display:flex;align-items:center;justify-content:flex-end;gap:8px;padding:12px 20px;border-top:1px solid var(--border,#dfe2e7);background:var(--surface-2,#f6f7f9)}
+.mbw-foot .mbw-note{margin-right:auto;font-size:12.5px;color:var(--muted,#6b7280)}
+.mbw-btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:40px;padding:0 16px;border:1px solid var(--border-strong,#cfd4db);border-radius:var(--r-sm,6px);
+  background:var(--surface,#fff);color:var(--ink,#1b1f24);font-family:inherit;font-size:14px;font-weight:550;line-height:1;cursor:pointer;white-space:nowrap;transition:background-color .12s ease,border-color .12s ease}
+.mbw-btn:hover{background:var(--surface-2,#f3f4f6)}
+.mbw-btn:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.mbw-btn svg{width:16px;height:16px;flex:none}
+.mbw-btn.pri{background:var(--accent);border-color:var(--accent);color:var(--accent-ink,#fff);font-weight:600}
+.mbw-btn.pri:hover{background:var(--accent-hover,var(--accent));border-color:var(--accent-hover,var(--accent))}
+.mbw-btn:disabled{opacity:.5;cursor:not-allowed}
+.mbw-btn[hidden],.mbw-link[hidden],.mbw [hidden]{display:none!important}
+.mbw-btn.sm{min-height:34px;padding:0 12px;font-size:13px}
+@media (max-width:600px){
+  .mbw{padding:0;align-items:stretch;background:var(--surface,#fff)}
+  .mbw-card{width:100%;max-height:none;height:100%;border:0;border-radius:0;box-shadow:none}
+  .mbw-head{padding:12px 16px 10px;padding-top:max(12px,env(safe-area-inset-top))}
+  .mbw-body{padding:20px 16px}
+  .mbw-body h2{font-size:21px}
+  .mbw-foot{padding:12px 16px;padding-bottom:max(12px,env(safe-area-inset-bottom));background:var(--surface,#fff)}
+  .mbw-foot .mbw-btn{min-height:48px}
+  .mbw-foot .mbw-btn.pri{flex:1}
+  .mbw-foot .mbw-note{display:none}
+}
+@media (prefers-reduced-motion:no-preference){ .mbw-card{animation:mbw-in .18s ease-out} @keyframes mbw-in{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}} }
+
+/* =====================================================================
+   v3.3 · DATA MENU  (.mb-dm) — same items, wording, order and look in every app
+   Put .mb-dm on the app's existing popover element (keep its open/close JS). Items:
+   <button class="mb-dm-it" role="menuitem"><svg/><span class="t"><b>Export All (JSON)…</b><small>Complete backup…</small></span></button>
+   Section label: <div class="mb-dm-sec" role="presentation">Export</div>   Separator: <hr class="mb-dm-sep">
+   Status:  <div class="mb-dm-status"><span class="sq"></span><span>Last backup Oct 12 · 4 days ago</span></div>
+   Footer note: <p class="mb-dm-note">…</p>   Danger: <button class="mb-dm-it danger">…</button>
+   Phones (<768px): it opens as a bottom sheet over a dimmed page.
+   ===================================================================== */
+.mb-dm{box-sizing:border-box;width:348px;max-width:calc(100vw - 24px);max-height:calc(100vh - 72px);max-height:calc(100dvh - 72px);overflow-y:auto;padding:6px;
+  background:var(--surface,#fff);color:var(--ink,#1b1f24);border:1px solid var(--border,#dfe2e7);border-radius:var(--r-lg,8px);
+  box-shadow:0 12px 32px rgba(10,12,16,.16),0 2px 6px rgba(10,12,16,.06);font-family:var(--font,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif);text-align:left;z-index:200}
+.mb-dm-it{box-sizing:border-box;display:flex;align-items:flex-start;gap:10px;width:100%;min-height:44px;margin:0;padding:8px 10px;border:0;border-radius:var(--r-sm,6px);
+  background:none;color:var(--ink,#1b1f24);font:inherit;text-align:left;cursor:pointer;text-decoration:none}
+.mb-dm-it:hover,.mb-dm-it:focus-visible{background:var(--surface-2,#f3f4f6);outline:none}
+.mb-dm-it:focus-visible{box-shadow:inset 0 0 0 2px var(--accent)}
+.mb-dm-it > svg,.mb-dm-it > .uic,.mb-dm-it > .ic,.mb-dm-it > .icon{flex:none;width:18px;height:18px;margin-top:1px;color:var(--ink-2,#3a414a)}
+.mb-dm-it .t{flex:1;min-width:0}
+.mb-dm-it .t b{display:block;font-size:13.5px;font-weight:600;line-height:1.3}
+.mb-dm-it .t small{display:block;margin-top:2px;font-size:12px;line-height:1.35;color:var(--muted,#6b7280);font-weight:400}
+.mb-dm-it kbd{flex:none;margin-top:1px;padding:1px 5px;border:1px solid var(--border,#dfe2e7);border-radius:3px;background:var(--surface-2,#f3f4f6);font:500 11px/1.4 var(--font,system-ui);color:var(--muted,#6b7280)}
+.mb-dm-it.is-key{background:var(--accent-soft,var(--surface-2,#f3f4f6))}
+.mb-dm-it.is-key > svg,.mb-dm-it.is-key > .uic,.mb-dm-it.is-key .t b{color:var(--accent)}
+.mb-dm-it.is-key:hover{background:color-mix(in srgb,var(--accent) 14%,var(--surface,#fff))}
+.mb-dm-it.danger .t b,.mb-dm-it.danger > svg,.mb-dm-it.danger > .uic{color:var(--crit,#c9302c)}
+.mb-dm-it[hidden]{display:none}
+.mb-dm-it:disabled,.mb-dm-it[aria-disabled="true"]{opacity:.5;cursor:default;background:none}
+.mb-dm-sec{margin:8px 10px 2px;font-size:11px;font-weight:650;letter-spacing:.06em;text-transform:uppercase;color:var(--muted,#6b7280)}
+.mb-dm-sep{height:1px;margin:6px 4px;border:0;background:var(--border,#dfe2e7)}
+.mb-dm-status{display:flex;align-items:center;gap:8px;margin:6px 4px 0;padding:8px 6px 2px;border-top:1px solid var(--border,#dfe2e7);font-size:12.5px;font-weight:500;color:var(--ink-2,#3a414a)}
+.mb-dm-status .sq{flex:none;width:8px;height:8px;border-radius:2px;background:color-mix(in srgb,var(--muted,#6b7280) 55%,transparent)}
+.mb-dm-status.ok .sq{background:var(--good,#16a34a)}
+.mb-dm-status.warn .sq{background:var(--warn,#e5a100)}
+.mb-dm-note{margin:4px 10px 6px;font-size:12px;line-height:1.4;color:var(--muted,#6b7280)}
+.mb-dm-note a,.mb-dm-note button{color:var(--accent);font:inherit;background:none;border:0;padding:0;text-decoration:underline;cursor:pointer}
+@media (max-width:767px){
+  .mb-dm{position:fixed!important;left:0!important;right:0!important;bottom:0!important;top:auto!important;transform:none!important;
+    width:100%!important;max-width:none!important;max-height:84vh;max-height:84dvh;padding:8px 8px max(10px,env(safe-area-inset-bottom));
+    border-radius:12px 12px 0 0;border-width:1px 0 0;box-shadow:0 0 0 100vmax rgba(10,12,16,.42);z-index:1000}
+  .mb-dm::before{content:"";display:block;width:36px;height:4px;margin:2px auto 8px;border-radius:2px;background:var(--border-strong,#cfd4db)}
+  .mb-dm-it{min-height:52px}
+  /* the sticky bar makes its own stacking layer: lift it above the bottom nav while its menu is open */
+  .page-bar:has([aria-expanded="true"]),.page-bar:has(details[open]){z-index:1001}
+}
+
+/* =====================================================================
+   v3.3 · SETTINGS PAGE  (.mb-set) — every app has one, same order:
+   Appearance → Account & sync → <app> settings (one or more) → Backup & data → Install → About
+   <div class="mb-set">
+     <section class="mb-set-sec" aria-labelledby="setAppearance"><h2 class="mb-set-h" id="setAppearance">Appearance</h2>
+       <div class="mb-set-card"><div class="mb-set-row"><div class="mb-set-l"><b>Theme</b><small>…</small></div><div class="mb-set-c">control</div></div></div>
+     </section> …
+   </div>
+   ===================================================================== */
+.mb-set{display:flex;flex-direction:column;gap:22px;max-width:780px;padding-bottom:8px}
+.mb-set-sec{display:flex;flex-direction:column;gap:8px;scroll-margin-top:72px}
+.mb-set-h{margin:0;padding:0 2px;font-size:11.5px;font-weight:650;letter-spacing:.06em;text-transform:uppercase;color:var(--muted,#6b7280)}
+.mb-set-card{box-sizing:border-box;padding:4px 16px;background:var(--surface,#fff);border:1px solid var(--border,#dfe2e7);border-radius:var(--r,6px)}
+.mb-set-card.pad{padding:16px}
+.mb-set-row{display:flex;align-items:center;gap:16px;min-height:52px;padding:12px 0;border-top:1px solid var(--border,#dfe2e7)}
+.mb-set-row:first-child{border-top:0}
+.mb-set-l{flex:1;min-width:0}
+.mb-set-l b{display:block;font-size:14px;font-weight:600;color:var(--ink,#1b1f24)}
+.mb-set-l small{display:block;margin-top:2px;font-size:12.5px;line-height:1.4;color:var(--muted,#6b7280)}
+.mb-set-c{flex:none;display:flex;align-items:center;gap:8px;flex-wrap:wrap;justify-content:flex-end}
+.mb-set-row.danger .mb-set-l b{color:var(--crit,#c9302c)}
+/* segmented control (Theme: Light | Dark, units, …) */
+.mb-seg{display:inline-flex;padding:3px;gap:3px;border:1px solid var(--border-strong,#cfd4db);border-radius:var(--r-sm,6px);background:var(--surface-2,#f3f4f6)}
+.mb-seg button{display:inline-flex;align-items:center;gap:6px;min-height:32px;padding:0 12px;border:0;border-radius:calc(var(--r-sm,6px) - 2px);background:none;color:var(--ink-2,#3a414a);font:500 13.5px/1 var(--font,system-ui);cursor:pointer}
+.mb-seg button svg{width:16px;height:16px}
+.mb-seg button[aria-pressed="true"],.mb-seg button[aria-checked="true"]{background:var(--accent);color:var(--accent-ink,#fff)}
+.mb-seg button:focus-visible{outline:2px solid var(--accent);outline-offset:1px}
+/* the Data actions on the Settings page reuse the menu items, laid out as a list inside a card */
+.mb-set-card .mb-dm-it{margin:0 -8px;width:calc(100% + 16px)}
+.mb-set-card .mb-dm-sec{margin:12px 2px 2px}
+.mb-set-card .mb-dm-note{margin:8px 2px 10px}
+.mb-set-card .mb-dm-status{margin:8px 0 0;padding:10px 0 4px}
+@media (max-width:767px){
+  .mb-set-row{flex-wrap:wrap;gap:10px}
+  .mb-set-c{flex:1 1 100%;justify-content:flex-start}
+  .mb-seg{width:100%}.mb-seg button{flex:1;justify-content:center;min-height:40px}
+}
+
+/* ---- greeting line on the start view (sync.greet(el) in mb-sync.js 1.1): "Good morning, Matthew" ---- */
+.mb-greet{margin:0 0 4px;font-size:13px;font-weight:600;letter-spacing:.005em;color:var(--accent)}
+.mb-greet:empty{display:none}
+
+/* =====================================================================
+   v3.3 · PAGE FOOTER  (.mb-foot) — last thing in every view's scroll area
+   <footer class="mb-foot">
+     <p class="mb-foot-main"><b>Money</b> v1.7 · Free · No account needed</p>
+     <nav class="mb-foot-links" aria-label="About Money"><a href="#">What's new</a><a href="#">Privacy</a><a href="#">Terms</a><a href="https://mcbflow.com/">More free apps</a></nav>
+     <p class="mb-foot-copy">© 2024–2026 Matthew Broyer</p>
+     <p class="mb-foot-note">Not financial advice.</p>   (only where the app has a disclaimer)
+   </footer>
+   ===================================================================== */
+.mb-foot{display:flex;flex-wrap:wrap;align-items:center;gap:6px 18px;margin:32px 0 0;padding:16px 2px 8px;border-top:1px solid var(--border,#dfe2e7);
+  font-size:12.5px;line-height:1.5;color:var(--muted,#6b7280)}
+.mb-foot p{margin:0}
+.mb-foot-main b{color:var(--ink-2,#3a414a);font-weight:650}
+.mb-foot-links{display:flex;flex-wrap:wrap;gap:4px 14px;margin-right:auto}
+.mb-foot-links a,.mb-foot-links button{color:var(--ink-2,#3a414a);text-decoration:none;font:inherit;background:none;border:0;padding:0;cursor:pointer}
+.mb-foot-links a:hover,.mb-foot-links button:hover{color:var(--accent);text-decoration:underline}
+.mb-foot-links a:focus-visible,.mb-foot-links button:focus-visible{outline:2px solid var(--accent);outline-offset:2px;border-radius:2px}
+.mb-foot-note{flex:1 1 100%;font-size:12px}
+@media (max-width:767px){
+  .mb-foot{flex-direction:column;align-items:center;text-align:center;gap:8px;margin-top:24px}
+  .mb-foot-links{justify-content:center;margin:0}
+  .mb-foot-links a,.mb-foot-links button{min-height:32px;display:inline-flex;align-items:center}
+}
+@media print{ .mb-foot{display:none} }
+
+/* =====================================================================
+   v3.3 · SMALL UNIVERSAL RULES (2026-10-16)
+   ===================================================================== */
+/* Text boxes grow taller only — never wider than their column (notes, quotes, descriptions). */
+textarea{resize:vertical;max-width:100%;box-sizing:border-box}
+textarea.resize,textarea.resize-x{resize:vertical}
+/* Read-only info (temperature, moon phase, counts, status) is never styled like a button:
+   <span class="mb-info"><svg|emoji/> 48°F · Overcast</span> — no border, soft fill, no hover, default cursor.
+   Anything you can tap keeps a solid-outline button look (dashed borders are not used for buttons). */
+.mb-info{display:inline-flex;align-items:center;gap:6px;min-height:28px;padding:3px 10px;border:0;border-radius:var(--r-sm,6px);
+  background:var(--surface-2,#f3f4f6);color:var(--ink-2,#3a414a);font-size:13px;font-weight:500;line-height:1.3;cursor:default;box-shadow:none}
+.mb-info svg{width:15px;height:15px;flex:none;color:var(--muted,#6b7280)}
+/* Two actions side by side on a phone share the row 50/50 (no lopsided pairs). */
+.mb-pair{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:8px}
+.mb-pair > *{width:100%;min-width:0}
+/* Nothing in the welcome screen runs off the edge on narrow phones. */
+.mbw-alt .mbw-btn,.mbw-foot .mbw-btn{max-width:100%}
+.mbw-alt .mbw-btn{white-space:normal;text-align:left;line-height:1.25;min-height:40px}
+@media (max-width:420px){ .mbw-alt .mbw-btn{flex:1 1 100%;justify-content:flex-start} }
+.mbw-body{overflow-wrap:anywhere}
+
 </style>
 </head>
 <body class="h-full antialiased">
     <div id="root" class="h-full">
         <div id="splash" role="status" aria-label="Loading actionplan.mcbflow.com">
             <div class="sp-wreath"><svg class="cu-art inline cu-p-soft" viewBox="0 0 320 320" preserveAspectRatio="xMidYMid meet" aria-hidden="true" focusable="false"><path class="d" transform="translate(272 160) rotate(90)" d="M-28 2.4 C-28 -16.8 15.4 -17.6 28 -1.6 C28.6 15.2 -15.4 17.6 -28 2.4Z"/><path class="m" transform="translate(239.2 239.2) rotate(135)" d="M-24 2.1 C-24 -14.7 13.2 -15.4 24 -1.4 C24.5 13.3 -13.2 15.4 -24 2.1Z"/><path class="m" transform="translate(203.8 263.1) rotate(155) scale(0.4)" d="M0 0 C 20 -34 66 -40 96 -6 C 70 28 22 34 0 0Z"/><path class="s" transform="translate(160 272) rotate(180)" d="M-20 1.8 C-20 -12.6 11 -13.2 20 -1.2 C20.4 11.4 -11 13.2 -20 1.8Z"/><path class="n" transform="translate(80.8 239.2) rotate(225)" d="M-28 2.4 C-28 -16.8 15.4 -17.6 28 -1.6 C28.6 15.2 -15.4 17.6 -28 2.4Z"/><path class="m" transform="translate(56.9 203.8) rotate(245) scale(0.4)" d="M0 0 C 20 -34 66 -40 96 -6 C 70 28 22 34 0 0Z"/><path class="d" transform="translate(48 160) rotate(270)" d="M-24 2.1 C-24 -14.7 13.2 -15.4 24 -1.4 C24.5 13.3 -13.2 15.4 -24 2.1Z"/><path class="m" transform="translate(80.8 80.8) rotate(315)" d="M-20 1.8 C-20 -12.6 11 -13.2 20 -1.2 C20.4 11.4 -11 13.2 -20 1.8Z"/><path class="m" transform="translate(116.2 56.9) rotate(335) scale(0.4)" d="M0 0 C 20 -34 66 -40 96 -6 C 70 28 22 34 0 0Z"/><path class="s" transform="translate(160 48) rotate(360)" d="M-28 2.4 C-28 -16.8 15.4 -17.6 28 -1.6 C28.6 15.2 -15.4 17.6 -28 2.4Z"/><path class="n" transform="translate(239.2 80.8) rotate(405)" d="M-24 2.1 C-24 -14.7 13.2 -15.4 24 -1.4 C24.5 13.3 -13.2 15.4 -24 2.1Z"/><path class="m" transform="translate(263.1 116.2) rotate(425) scale(0.4)" d="M0 0 C 20 -34 66 -40 96 -6 C 70 28 22 34 0 0Z"/><circle class="b" cx="160" cy="34" r="9"/></svg><div class="sp-logo" aria-hidden="true"><svg aria-hidden="true" focusable="false" viewBox="0 0 64 64" width="52" height="52"><defs><linearGradient id="ap-splash-g" gradientUnits="userSpaceOnUse" x1="10" y1="0" x2="54" y2="64"><stop offset="0" stop-color="#6860b2"/><stop offset=".55" stop-color="#4F46A5"/><stop offset="1" stop-color="#3f3884"/></linearGradient><clipPath id="ap-splash-c"><rect width="64" height="64" rx="18"/></clipPath></defs><g clip-path="url(#ap-splash-c)"><rect width="64" height="64" fill="url(#ap-splash-g)"/><rect x="15.5" y="15.5" width="33" height="33" rx="5" stroke="#fff" stroke-opacity=".55" stroke-width="4.5" fill="none"/><path d="m 23,32.000052 6.5,6.5 11.5,-13" stroke="#ffffff" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/></g></svg></div></div>
-            <div class="sp-name">actionplan<span class="tld">.mcbflow.com</span></div>
+            <div class="sp-name">Action Plan<i class="tld"><span class="sep" aria-hidden="true">∙</span>mcbflow.com</i></div>
             <div class="sp-bar" aria-hidden="true"><i></i></div>
             <noscript><h1 class="sp-ns-h">Action Plan: a free, private to-do list and focus timer</h1><p class="sp-ns">Plan your day with Today, a priority matrix, projects, a calendar and a focus timer. No account, and your tasks stay on your device. actionplan.mcbflow.com needs JavaScript to run.</p></noscript>
         </div>
@@ -1111,11 +1374,11 @@ a.brand .bt > span{font-size:11px;font-weight:400;line-height:1.15;color:var(--m
        sub: 'January to October 2026',              // one supporting line (optional)
        stats: [{ label: 'Months tracked', value: '10' }, { label: 'Savings rate', value: '22%' }],   // 0-3 (optional)
        art: document.querySelector('#share-art svg'),   // an NA-/CU- template <svg> already in the page (optional)
-       fileName: 'mbmoney-milestone.png',
+       fileName: 'money-milestone.png',
        options: [ { id: 'amounts', label: 'Show dollar amounts', value: false } ],   // optional privacy toggles
        build: function (opts) { return { headline: …, stats: … } }                  // re-builds the text when a toggle changes
      });
-   Requires on <html>: data-app-short="Money" and data-app-domain="mbmoney.online".
+   Requires on <html>: data-app-short="Money" and data-app-domain="money.mcbflow.com".
    The badge is read from the first ".brand .logo svg" in the page.
    CSP: needs img-src data: blob: (the art is drawn from a data: URL, the preview is a blob: URL). Inline it and recompute hashes if the app uses script hashes.
    ===================================================================== */
@@ -1186,8 +1449,9 @@ a.brand .bt > span{font-size:11px;font-weight:400;line-height:1.15;color:var(--m
       var x = 72, y = 92;
       if (imgs[0]) g.drawImage(imgs[0], x, y - 4, 72, 72);
       g.fillStyle = C.ink; g.font = '650 34px ' + FONT; g.textBaseline = 'middle';
-      var tm = /\.(online|mcbflow\.com)$/.exec(domain), nm = tm ? domain.slice(0, tm.index) : domain; g.fillText(nm, x + 92, y + 32);
-      if (tm) { var nw = g.measureText(nm).width; g.fillStyle = C.accent; g.fillText(tm[0], x + 92 + nw, y + 32); }
+      g.fillText(app, x + 92, y + 32);   // v3.4 wordmark: "Money ∙ mcbflow.com" (short name, muted bullet, accent mcbflow.com)
+      var nw = g.measureText(app).width; g.font = '500 30px ' + FONT; g.fillStyle = C.muted; g.fillText('  ∙  ', x + 92 + nw, y + 32);
+      var bw = g.measureText('  ∙  ').width; g.fillStyle = C.accent; g.fillText('mcbflow.com', x + 92 + nw + bw, y + 32);
       // kicker + headline + sub
       g.textBaseline = 'alphabetic'; y = 300;
       if (d.kicker) { g.fillStyle = C.accent; g.font = '700 30px ' + FONT; g.fillText(String(d.kicker).toUpperCase(), x, y); y += 26; }
@@ -1226,7 +1490,7 @@ a.brand .bt > span{font-size:11px;font-weight:400;line-height:1.15;color:var(--m
       // footer: where it came from (this is what helps the app grow)
       g.fillStyle = C.ink2; g.font = '600 28px ' + FONT;
       g.fillText((d.date ? d.date + '  ·  ' : '') + 'Made with ' + domain, x, W - 64);
-      g.fillStyle = C.muted; g.font = '400 24px ' + FONT; g.fillText('Free · No account · Your data stays on your device', x, W - 30);
+      g.fillStyle = C.muted; g.font = '400 24px ' + FONT; g.fillText('Free · No account needed · No tracking', x, W - 30);   // true with or without the optional sync account
       return c;
     });
   }
@@ -1577,6 +1841,7 @@ var d=null!=c&&c.hydratedSources||null,e=!1,f="",g=aj;null!==c&&void 0!==c&&(!0=
 function(a,b,c){if(!Vd(b))throw Error(m(200));return Wd(null,a,b,!1,c)};Q.unmountComponentAtNode=function(a){if(!Vd(a))throw Error(m(40));return a._reactRootContainer?(yb(function(){Wd(null,null,a,!1,function(){a._reactRootContainer=null;a[Ja]=null})}),!0):!1};Q.unstable_batchedUpdates=Tf;Q.unstable_renderSubtreeIntoContainer=function(a,b,c,d){if(!Vd(c))throw Error(m(200));if(null==a||void 0===a._reactInternals)throw Error(m(38));return Wd(a,b,c,!1,d)};Q.version="18.3.1-next-f1338f8080-20240426"});
 })();</script>
     <script src="mb-sync.js"></script>
+    <script src="mb-files.js"></script>
     <script>
 function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
 const {
@@ -1702,7 +1967,7 @@ window.addEventListener('appinstalled', () => {
 });
 // ---- Install link (MB Suite kit v3.1) ----
 // Opening the app as actionplan.mcbflow.com/?install (the hub's Install buttons do this) shows a small install sheet
-// once, then removes ?install from the address bar. Same rules as the Install card in More: a real Install button
+// once, then removes ?install from the address bar. Same rules as the Install card in Settings: a real Install button
 // only when the browser offers install, iPhone steps on iOS, plain guidance otherwise, nothing inside the installed app.
 (function () {
   var sheet = null, sheetUsed = false, sheetDone = false;
@@ -3146,21 +3411,25 @@ function ProjectModal({
 // Written to describe exactly what this build of the app does: no server, no accounts,
 // no cookies, no analytics, no ads, no network requests after the page loads.
 // If any of that changes, update this text first.
-const LEGAL_UPDATED = 'October 13, 2026';
-const APP_VERSION = '1.6';
+const LEGAL_UPDATED = 'October 16, 2026';
+const APP_VERSION = '1.7';
 // Shown under the name in the brand block, in About & Legal and in the About card ("Official Web App · v1.5").
 // Version numbers restarted at 1.x with the suite label; releases up to October 13, 2026 were numbered 18.x.
-const BRAND_VERSION = '1.6';
-const RELEASE_DATE = 'Oct 15, 2026';
+const BRAND_VERSION = '1.7';
+const RELEASE_DATE = 'Oct 16, 2026';
 // Newest first. Keep this in step with RELEASE_NOTES.md.
 const RELEASE_NOTES = [{
+  v: '1.7',
+  date: 'October 16, 2026',
+  items: ['New Settings page (sidebar, or the bottom bar on phones): theme, account and sync, help, Backup & data, Install and About in one place. It replaces the More page; nothing was removed.', 'Account button in the top bar: "Sign in", or your profile picture with a sync dot once you are signed in. Pick a screen name and one of 20 profile pictures under Edit profile; every mcbflow.com app shows the same one. New "Keep me signed in on this device" option; turn it off on a shared computer.', 'The start page is now called Home (house icon) and greets you: "Good morning", with your screen name when you are signed in. Its content is unchanged. Settings has a proper gear icon, and links ending in #today still open Home.', 'The welcome screen has the same look as the other mcbflow.com apps, with the same three steps: what this is, pick a look, and your first task.', 'Clearer Data menu: every item says what it is for, and the new Export All (ZIP) puts the backup and spreadsheets in one file. Import Backup also takes that ZIP.', 'Quieter backup reminders while you are signed in and syncing: the top bar and Data menu show "Synced" instead of a warning.', 'Even top bar: every button, the light/dark switch and the account button are the same height.', 'New name style: "Action Plan \u2022 mcbflow.com". A new page footer with What\u2019s new, Privacy and Terms. Today\u2019s progress bar and project bars show a label when you hover, tap or tab to them.']
+}, {
   v: '1.6',
   date: 'October 15, 2026',
   items: ['New: optional sync across devices. Data → Sync signs in with a free mcbflow.com account; your tasks, projects and streak then match on every device you sign in on. Theme and focus timer stay per device.', 'Everything still saves on this device first and works offline. Not signed in: nothing changes, and the app contacts no server.', 'Clear all data warns when you are signed in, since it also clears your synced tasks.']
 }, {
   v: '1.5',
   date: 'October 14, 2026',
-  items: ["Moved to actionplan.mcbflow.com. Data saved at mbactionplan.online doesn't carry over: export a backup there and import it here.", 'Storage names simplified.']
+  items: ["Moved to actionplan.mcbflow.com. Data saved at the old address doesn't carry over: export a backup there and import it here.", 'Storage names simplified.']
 }, {
   v: '1.4',
   date: 'October 14, 2026',
@@ -3196,7 +3465,7 @@ const RELEASE_NOTES = [{
 }, {
   v: '14',
   date: 'September 28, 2026',
-  items: ['Action Plan is now mbactionplan.online.', 'New app icon: a checked box with a small yellow dot, shown in the browser tab, header, loading screen, and welcome guide. It follows your chosen accent color.', 'Your tasks, projects, settings, and existing backups are unchanged and still import normally.']
+  items: ['Action Plan got a new name and address.', 'New app icon: a checked box with a small yellow dot, shown in the browser tab, header, loading screen, and welcome guide. It follows your chosen accent color.', 'Your tasks, projects, settings, and existing backups are unchanged and still import normally.']
 }, {
   v: '13',
   date: 'September 26, 2026',
@@ -3333,7 +3602,7 @@ function LegalModal({
     "aria-labelledby": `legal-tab-${activeTab}`,
     tabIndex: 0,
     className: "flex-1 overflow-y-auto p-6 space-y-3 text-sm text-slate-700 dark:text-slate-300 leading-relaxed"
-  }, activeTab === 'privacy' && /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement(H, null, "Privacy Policy"), /*#__PURE__*/React.createElement(Updated, null), /*#__PURE__*/React.createElement("p", null, /*#__PURE__*/React.createElement("strong", null, "In short:"), " actionplan.mcbflow.com runs entirely in your web browser. You don\u2019t need an account, and there are no cookies, analytics, advertising, or tracking. Unless you choose to sign in to sync, the developer cannot see what you enter."), /*#__PURE__*/React.createElement("p", null, /*#__PURE__*/React.createElement("strong", null, "Optional sync."), " If you sign in with a free mcbflow.com account (Data \u2192 Sync), your projects, tasks and daily finished counts are copied to your account so your other devices match. Your theme, focus timer, welcome-guide status and backup details stay on each device. The account database is run by Supabase (servers in the eastern United States); only your account can read your records. While signed in, this site also keeps your sign-in and a sync record (actionplan.sync) in local storage. Signing out stops syncing and keeps the data on this device. Export or delete synced data, or delete your account, on the mcbflow.com account page (mcbflow.com/account.html); the mcbflow.com privacy policy has the details."), /*#__PURE__*/React.createElement("p", null, /*#__PURE__*/React.createElement("strong", null, "What's stored, and where."), " Everything is saved in your browser's storage on this device: your projects and tasks (titles, notes, dates, priority, repeat setting, pin, time estimate, steps, where and energy labels, how many times a task was moved to a later day, focus minutes logged, and when a task was created and completed), plus a count of how many tasks you finished each day (for your streak), plus a few settings: light/dark theme, whether you've seen the welcome guide, and when you last saved a backup, plus the focus timer's state (which task, how much time is left, and when the current block ends) so it stays accurate if your screen locks or the page reloads. If you choose a save location for backups, the browser also remembers which backup file you picked (its name and your permission to write to it, not the folder path) so \"Save backup now\" can update it. Nothing else is stored."), /*#__PURE__*/React.createElement("p", null, /*#__PURE__*/React.createElement("strong", null, "What leaves your device."), " Unless you sign in to sync, your tasks and projects never leave your device unless you export or share a backup yourself. The app's code, styles, and icons are built into this site, so when you're not signed in it makes no further network requests after the page loads. As with any website, the service that hosts this page receives your IP address and basic browser information when your browser downloads it, and may keep standard server logs. The app adds nothing to those requests."), /*#__PURE__*/React.createElement("p", null, /*#__PURE__*/React.createElement("strong", null, "Device features."), " \"Keep screen on\" uses your browser's Screen Wake Lock, and the focus timer plays its sound through your browser's audio. Neither sends any data anywhere."), /*#__PURE__*/React.createElement("p", null, /*#__PURE__*/React.createElement("strong", null, "Installing and offline use."), " In browsers that support it, the app keeps a copy of its own files (this page, its icons and its install details) in your browser's cache so it can open without a connection and be installed on your home screen or desktop. That copy contains none of your tasks or settings. When you are online, your browser checks this site for a newer version each time you open the app. Clearing your browser's site data removes the copy."), /*#__PURE__*/React.createElement("p", null, /*#__PURE__*/React.createElement("strong", null, "Backups, exporting and sharing."), " The Data menu saves a JSON or CSV backup file. In browsers that support it, you choose the folder and file name and the app writes only to that file; elsewhere the file is downloaded or, on phones and tablets, handed to your device's share sheet. The file goes only where you choose. Importing reads a backup inside your browser; it is never uploaded. Share (on Today) draws a progress image on your device from your finished count and streak, plus task names only if you tick Show task names. It is saved or handed to your device's share sheet only when you choose, and the app never sees where it goes."), /*#__PURE__*/React.createElement("p", null, /*#__PURE__*/React.createElement("strong", null, "Deleting your data."), " Data \u2192 Clear all data permanently deletes every task, project, and setting this app saved in this browser, including the remembered backup location. Backup files you saved yourself aren't touched; delete those in your file manager. Clearing your browser's site data also removes the app's data. There is no copy anywhere else, so save a backup first if you want one."), /*#__PURE__*/React.createElement("p", null, /*#__PURE__*/React.createElement("strong", null, "Sensitive information."), " Please don't enter passwords, Social Security numbers, credit card or bank numbers, health information, or other highly sensitive data. Local storage is not encrypted, and anyone using this device and browser profile can read it."), /*#__PURE__*/React.createElement("p", null, /*#__PURE__*/React.createElement("strong", null, "Children."), " actionplan.mcbflow.com is a general-audience tool and isn't directed at children under 13. It doesn't send any personal information to the developer, from anyone of any age."), /*#__PURE__*/React.createElement("p", null, /*#__PURE__*/React.createElement("strong", null, "Changes."), " If this app ever adds accounts, sync, analytics, or any server-side storage, this policy will be updated first to describe the new behavior, with a new date above.")), activeTab === 'terms' && /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement(H, null, "Terms of Use"), /*#__PURE__*/React.createElement(Updated, null), /*#__PURE__*/React.createElement("p", null, "By using actionplan.mcbflow.com, you agree to the following:"), /*#__PURE__*/React.createElement("p", null, /*#__PURE__*/React.createElement("strong", null, "What this is."), " actionplan.mcbflow.com is a free personal productivity tool (task list, priority matrix, calendar, and focus timer) made by an individual developer for ordinary personal or small-business organizing."), /*#__PURE__*/React.createElement("p", null, /*#__PURE__*/React.createElement("strong", null, "Your data, your responsibility."), " What you enter stays in your browser and is yours. You're responsible for its content and for keeping backups with Export. Clearing site data, switching browsers or devices, or a browser problem can erase it, and the developer has no copy to restore."), /*#__PURE__*/React.createElement("p", null, /*#__PURE__*/React.createElement("strong", null, "Acceptable use."), " Don't use the app for anything unlawful, and don't attempt to tamper with the site or use it to harm others."), /*#__PURE__*/React.createElement("p", null, /*#__PURE__*/React.createElement("strong", null, "No warranty."), " The app is provided \"as is\" and \"as available,\" without warranties of any kind, express or implied, including fitness for a particular purpose. It isn't guaranteed to be error-free or always available, and it isn't a substitute for systems you need to rely on for critical deadlines or records."), /*#__PURE__*/React.createElement("p", null, /*#__PURE__*/React.createElement("strong", null, "Limitation of liability."), " To the extent the law allows, the developer isn't liable for any loss or damage arising from use of the app, including lost data, missed deadlines, or lost time. Some places don't allow these limits, so they may not fully apply to you."), /*#__PURE__*/React.createElement("p", null, /*#__PURE__*/React.createElement("strong", null, "Intellectual property."), " The app's own code, design, and name belong to its developer. You're welcome to use the app for your own personal or business tasks. Open-source components it includes are used under their own licenses (see Credits)."), /*#__PURE__*/React.createElement("p", null, /*#__PURE__*/React.createElement("strong", null, "Changes and availability."), " The app may be updated, changed, or taken down at any time without notice. It's free, with no service-level guarantee."), /*#__PURE__*/React.createElement("p", null, /*#__PURE__*/React.createElement("strong", null, "Contact."), " Questions about these terms can be sent to the developer through the site where you found this app.")), activeTab === 'disclaimer' && /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement(H, null, "Disclaimer"), /*#__PURE__*/React.createElement(Updated, null), /*#__PURE__*/React.createElement("p", null, /*#__PURE__*/React.createElement("strong", null, "Not professional advice."), " actionplan.mcbflow.com is a general organizing tool. It doesn't provide medical, legal, financial, tax, or other professional advice."), /*#__PURE__*/React.createElement("p", null, /*#__PURE__*/React.createElement("strong", null, "No reminders or alerts."), " Due dates and times are shown in the app only. actionplan.mcbflow.com doesn't send notifications, emails, or alarms. The timer sound plays only while the page is open. Don't rely on it as your only reminder for anything important."), /*#__PURE__*/React.createElement("p", null, /*#__PURE__*/React.createElement("strong", null, "Not secure storage."), " \"Local-only\" isn't the same as \"backed up\" or \"encrypted.\" Anyone with access to this device and browser profile can see the same data you can."), /*#__PURE__*/React.createElement("p", null, /*#__PURE__*/React.createElement("strong", null, "How the numbers work.")), /*#__PURE__*/React.createElement("ul", {
+  }, activeTab === 'privacy' && /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement(H, null, "Privacy Policy"), /*#__PURE__*/React.createElement(Updated, null), /*#__PURE__*/React.createElement("p", null, /*#__PURE__*/React.createElement("strong", null, "In short:"), " actionplan.mcbflow.com runs entirely in your web browser. You don\u2019t need an account, and there are no cookies, analytics, advertising, or tracking. Unless you choose to sign in to sync, the developer cannot see what you enter."), /*#__PURE__*/React.createElement("p", null, /*#__PURE__*/React.createElement("strong", null, "Optional sync."), " If you sign in with a free mcbflow.com account (Data \u2192 Sync), your projects, tasks and daily finished counts are copied to your account so your other devices match. Your theme, focus timer, welcome-guide status and backup details stay on each device. The account database is run by Supabase (servers in the eastern United States); only your account can read your records. While signed in, this site also keeps your sign-in and a sync record (actionplan.sync) in local storage. Signing out stops syncing and keeps the data on this device. Export or delete synced data, or delete your account, on the mcbflow.com account page (mcbflow.com/account.html); the mcbflow.com privacy policy has the details."), /*#__PURE__*/React.createElement("p", null, /*#__PURE__*/React.createElement("strong", null, "What's stored, and where."), " Everything is saved in your browser's storage on this device: your projects and tasks (titles, notes, dates, priority, repeat setting, pin, time estimate, steps, where and energy labels, how many times a task was moved to a later day, focus minutes logged, and when a task was created and completed), plus a count of how many tasks you finished each day (for your streak), plus a few settings: light/dark theme, whether you've seen the welcome guide, and when you last saved a backup, plus the focus timer's state (which task, how much time is left, and when the current block ends) so it stays accurate if your screen locks or the page reloads. If you choose a save location for backups, the browser also remembers which backup file you picked (its name and your permission to write to it, not the folder path) so \"Save backup now\" can update it. Nothing else is stored."), /*#__PURE__*/React.createElement("p", null, /*#__PURE__*/React.createElement("strong", null, "What leaves your device."), " Unless you sign in to sync, your tasks and projects never leave your device unless you export or share a backup yourself. The app's code, styles, and icons are built into this site, so when you're not signed in it makes no further network requests after the page loads. As with any website, the service that hosts this page receives your IP address and basic browser information when your browser downloads it, and may keep standard server logs. The app adds nothing to those requests."), /*#__PURE__*/React.createElement("p", null, /*#__PURE__*/React.createElement("strong", null, "Device features."), " \"Keep screen on\" uses your browser's Screen Wake Lock, and the focus timer plays its sound through your browser's audio. Neither sends any data anywhere."), /*#__PURE__*/React.createElement("p", null, /*#__PURE__*/React.createElement("strong", null, "Installing and offline use."), " In browsers that support it, the app keeps a copy of its own files (this page, its icons and its install details) in your browser's cache so it can open without a connection and be installed on your home screen or desktop. That copy contains none of your tasks or settings. When you are online, your browser checks this site for a newer version each time you open the app. Clearing your browser's site data removes the copy."), /*#__PURE__*/React.createElement("p", null, /*#__PURE__*/React.createElement("strong", null, "Backups, exporting and sharing."), " The Data menu saves a JSON or CSV backup file. In browsers that support it, you choose the folder and file name and the app writes only to that file; elsewhere the file is downloaded or, on phones and tablets, handed to your device's share sheet. The file goes only where you choose. Importing reads a backup inside your browser; it is never uploaded. Share (on Home) draws a progress image on your device from your finished count and streak, plus task names only if you tick Show task names. It is saved or handed to your device's share sheet only when you choose, and the app never sees where it goes."), /*#__PURE__*/React.createElement("p", null, /*#__PURE__*/React.createElement("strong", null, "Deleting your data."), " Data \u2192 Clear all data permanently deletes every task, project, and setting this app saved in this browser, including the remembered backup location. Backup files you saved yourself aren't touched; delete those in your file manager. Clearing your browser's site data also removes the app's data. There is no copy anywhere else, so save a backup first if you want one."), /*#__PURE__*/React.createElement("p", null, /*#__PURE__*/React.createElement("strong", null, "Sensitive information."), " Please don't enter passwords, Social Security numbers, credit card or bank numbers, health information, or other highly sensitive data. Local storage is not encrypted, and anyone using this device and browser profile can read it."), /*#__PURE__*/React.createElement("p", null, /*#__PURE__*/React.createElement("strong", null, "Children."), " actionplan.mcbflow.com is a general-audience tool and isn't directed at children under 13. It doesn't send any personal information to the developer, from anyone of any age."), /*#__PURE__*/React.createElement("p", null, /*#__PURE__*/React.createElement("strong", null, "Changes."), " If this app ever adds accounts, sync, analytics, or any server-side storage, this policy will be updated first to describe the new behavior, with a new date above.")), activeTab === 'terms' && /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement(H, null, "Terms of Use"), /*#__PURE__*/React.createElement(Updated, null), /*#__PURE__*/React.createElement("p", null, "By using actionplan.mcbflow.com, you agree to the following:"), /*#__PURE__*/React.createElement("p", null, /*#__PURE__*/React.createElement("strong", null, "What this is."), " actionplan.mcbflow.com is a free personal productivity tool (task list, priority matrix, calendar, and focus timer) made by an individual developer for ordinary personal or small-business organizing."), /*#__PURE__*/React.createElement("p", null, /*#__PURE__*/React.createElement("strong", null, "Your data, your responsibility."), " What you enter stays in your browser and is yours. You're responsible for its content and for keeping backups with Export. Clearing site data, switching browsers or devices, or a browser problem can erase it, and the developer has no copy to restore."), /*#__PURE__*/React.createElement("p", null, /*#__PURE__*/React.createElement("strong", null, "Acceptable use."), " Don't use the app for anything unlawful, and don't attempt to tamper with the site or use it to harm others."), /*#__PURE__*/React.createElement("p", null, /*#__PURE__*/React.createElement("strong", null, "No warranty."), " The app is provided \"as is\" and \"as available,\" without warranties of any kind, express or implied, including fitness for a particular purpose. It isn't guaranteed to be error-free or always available, and it isn't a substitute for systems you need to rely on for critical deadlines or records."), /*#__PURE__*/React.createElement("p", null, /*#__PURE__*/React.createElement("strong", null, "Limitation of liability."), " To the extent the law allows, the developer isn't liable for any loss or damage arising from use of the app, including lost data, missed deadlines, or lost time. Some places don't allow these limits, so they may not fully apply to you."), /*#__PURE__*/React.createElement("p", null, /*#__PURE__*/React.createElement("strong", null, "Intellectual property."), " The app's own code, design, and name belong to its developer. You're welcome to use the app for your own personal or business tasks. Open-source components it includes are used under their own licenses (see Credits)."), /*#__PURE__*/React.createElement("p", null, /*#__PURE__*/React.createElement("strong", null, "Changes and availability."), " The app may be updated, changed, or taken down at any time without notice. It's free, with no service-level guarantee."), /*#__PURE__*/React.createElement("p", null, /*#__PURE__*/React.createElement("strong", null, "Contact."), " Questions about these terms can be sent to the developer through the site where you found this app.")), activeTab === 'disclaimer' && /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement(H, null, "Disclaimer"), /*#__PURE__*/React.createElement(Updated, null), /*#__PURE__*/React.createElement("p", null, /*#__PURE__*/React.createElement("strong", null, "Not professional advice."), " actionplan.mcbflow.com is a general organizing tool. It doesn't provide medical, legal, financial, tax, or other professional advice."), /*#__PURE__*/React.createElement("p", null, /*#__PURE__*/React.createElement("strong", null, "No reminders or alerts."), " Due dates and times are shown in the app only. actionplan.mcbflow.com doesn't send notifications, emails, or alarms. The timer sound plays only while the page is open. Don't rely on it as your only reminder for anything important."), /*#__PURE__*/React.createElement("p", null, /*#__PURE__*/React.createElement("strong", null, "Not secure storage."), " \"Local-only\" isn't the same as \"backed up\" or \"encrypted.\" Anyone with access to this device and browser profile can see the same data you can."), /*#__PURE__*/React.createElement("p", null, /*#__PURE__*/React.createElement("strong", null, "How the numbers work.")), /*#__PURE__*/React.createElement("ul", {
     className: "list-disc pl-5 space-y-1"
   }, /*#__PURE__*/React.createElement("li", null, /*#__PURE__*/React.createElement("strong", null, "Completion rate"), " = completed tasks \xF7 all tasks shown (for the current project filter and search)."), /*#__PURE__*/React.createElement("li", null, /*#__PURE__*/React.createElement("strong", null, "Today's progress"), " = tasks you completed today \xF7 (tasks completed today + open tasks due today or overdue)."), /*#__PURE__*/React.createElement("li", null, /*#__PURE__*/React.createElement("strong", null, "Focus time"), " adds 1 minute to the selected task for every full minute the timer runs during a focus block. Breaks aren't counted. Browsers may slow timers in background tabs, so keep the tab visible for accurate timing."), /*#__PURE__*/React.createElement("li", null, /*#__PURE__*/React.createElement("strong", null, "Repeating tasks:"), " completing one moves its due date forward from its current due date (or from today if it has none, or if you chose \"Count from when I finish\"). Monthly, quarterly, 6-month, and yearly repeats keep the same day of the month, using the month's last day when that date doesn't exist (for example, Jan 31 \u2192 Feb 28)."), /*#__PURE__*/React.createElement("li", null, /*#__PURE__*/React.createElement("strong", null, "Suggestions:"), " \"What should I do now?\" and \"Explain my tasks\" use simple rules on your device (due dates, priority, estimates, and the filters you pick). No AI service is involved and nothing is sent anywhere.")), /*#__PURE__*/React.createElement("p", null, "These are conveniences for personal planning and aren't certified for billing, payroll, compliance, or other official purposes.")), activeTab === 'notes' && /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement(H, null, "Release notes"), RELEASE_NOTES.map(r => /*#__PURE__*/React.createElement("section", {
     key: r.v,
@@ -3364,8 +3633,57 @@ function LegalModal({
   }, "The app uses the name \"Focus Timer,\" not a trademarked method name, and isn't affiliated with or endorsed by any of the projects above.")))));
 }
 
-// ---------------- FIRST-RUN WELCOME ----------------
-// Three short steps, one decision each: what this is → light or dark → first task (or import).
+// ---------------- FIRST-RUN WELCOME (MB Suite v3.3 .mbw shell) ----------------
+// Three short steps, one decision each: what this is → light or dark → first task (or sign in / import).
+// The same shell, header, progress bar and footer as every mcbflow.com app; the content is Action Plan's own.
+// Small stroke icons drawn like the suite reference page (the Data menu, Settings and welcome use them).
+const UIC_PATHS = {
+  save: '<path d="M5 3h11l3 3v15H5z"/><path d="M8 3v5h7V3M8 21v-7h8v7"/>',
+  sync: '<path d="M20 11a8 8 0 0 0-14.7-4.4L4 8"/><path d="M4 3v5h5"/><path d="M4 13a8 8 0 0 0 14.7 4.4L20 16"/><path d="M20 21v-5h-5"/>',
+  json: '<path d="M14 3H6v18h12V7z"/><path d="M14 3v4h4"/><path d="M10 12c-1 0-1 .5-1 1.5S8.5 15 8 15c.5 0 1 .5 1 1.5s0 1.5 1 1.5M14 12c1 0 1 .5 1 1.5s.5 1.5 1 1.5c-.5 0-1 .5-1 1.5s0 1.5-1 1.5"/>',
+  csv: '<rect x="3" y="4" width="18" height="16" rx="1.5"/><path d="M3 10h18M3 15h18M9 4v16"/>',
+  zip: '<path d="M4 7h16v13H4z"/><path d="M3 4h18v3H3zM10 11h4"/>',
+  import: '<path d="M12 16V4M7 9l5-5 5 5"/><path d="M5 20h14"/>',
+  apps: '<rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><path d="M17.5 14v7M14 17.5h7"/>',
+  text: '<path d="M14 3H6v18h12V7z"/><path d="M14 3v4h4"/><path d="M9 12h6M9 16h6"/>',
+  print: '<path d="M7 8V3h10v5"/><rect x="3" y="8" width="18" height="9" rx="1.5"/><path d="M7 14h10v7H7z"/>',
+  clear: '<path d="M4 7h16M9 7V4h6v3M6 7l1 13h10l1-13"/>',
+  // Standard suite nav icons (suite-nav-icons.html): Home and the toothed Settings gear, copied exactly.
+  home: '<path d="M3.5 11 12 4l8.5 7"/><path d="M5.5 9.5V20h13V9.5"/><path d="M10 20v-5.5h4V20"/>',
+  gear: '<path d="M19.00 10.32 L21.51 10.72 L21.51 13.28 L19.00 13.68 L18.14 15.76 L19.63 17.82 L17.82 19.63 L15.76 18.14 L13.68 19.00 L13.28 21.51 L10.72 21.51 L10.32 19.00 L8.24 18.14 L6.18 19.63 L4.37 17.82 L5.86 15.76 L5.00 13.68 L2.49 13.28 L2.49 10.72 L5.00 10.32 L5.86 8.24 L4.37 6.18 L6.18 4.37 L8.24 5.86 L10.32 5.00 L10.72 2.49 L13.28 2.49 L13.68 5.00 L15.76 5.86 L17.82 4.37 L19.63 6.18 L18.14 8.24Z"/><circle cx="12" cy="12" r="3"/>',
+  projects: '<path d="M3.5 6.5a1 1 0 0 1 1-1h4.6l1.8 2h8.6a1 1 0 0 1 1 1V19a1 1 0 0 1-1 1h-15a1 1 0 0 1-1-1z"/><path d="M8 11.5v4.5M12 11.5v2.5M16 11.5v5.5"/>',
+  sun: '<circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/>',
+  moon: '<path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5Z"/>',
+  shield: '<path d="M12 3 5 6v6c0 4.5 3 7.5 7 9 4-1.5 7-4.5 7-9V6z"/><path d="m9 12 2 2 4-4"/>',
+  back: '<path d="M19 12H5M11 6l-6 6 6 6"/>',
+  next: '<path d="M5 12h14M13 6l6 6-6 6"/>',
+  sunrise: '<path d="M12 2v6M8 6l4-4 4 4M4.9 10.9l1.4 1.4M17.7 12.3l1.4-1.4M2 18h2M20 18h2M22 22H2M16 18a4 4 0 0 0-8 0"/>',
+  matrix: '<rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/>',
+  calendar: '<rect x="3" y="4" width="18" height="17" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/>',
+  timer: '<path d="M10 2h4M12 14l3-3"/><circle cx="12" cy="14" r="8"/>'
+};
+function Uic({
+  n,
+  size = 18,
+  className = ''
+}) {
+  return /*#__PURE__*/React.createElement("svg", {
+    className: `uic ${className}`,
+    viewBox: "0 0 24 24",
+    width: size,
+    height: size,
+    fill: "none",
+    stroke: "currentColor",
+    strokeWidth: "1.8",
+    strokeLinecap: "round",
+    strokeLinejoin: "round",
+    "aria-hidden": "true",
+    focusable: "false",
+    dangerouslySetInnerHTML: {
+      __html: UIC_PATHS[n] || ''
+    }
+  });
+}
 function Onboarding({
   theme,
   setTheme,
@@ -3376,26 +3694,35 @@ function Onboarding({
 }) {
   const [step, setStep] = useState(0);
   const [firstTitle, setFirstTitle] = useState('');
+  const [, setSyncTick] = useState(0);
   const inputRef = useRef(null);
-  const titleId = 'onb-title';
+  const nextRef = useRef(null);
   const STEPS = 3;
+  // Sign in in the header turns into "Signed in" as soon as the account dialog finishes.
+  useEffect(() => {
+    const fn = () => setSyncTick(n => n + 1);
+    window.addEventListener('mbsync:status', fn);
+    return () => window.removeEventListener('mbsync:status', fn);
+  }, []);
+  // Esc = Skip (not while the Privacy page or the account dialog is open on top; those close first).
   useEffect(() => {
     if (paused) return;
     const onKey = e => {
-      if (e.key === 'Escape') onFinish('');
+      if (e.key !== 'Escape' || document.querySelector('dialog[open]')) return;
+      onFinish('');
     };
     document.addEventListener('keydown', onKey);
     return () => document.removeEventListener('keydown', onKey);
   }, [paused, onFinish]);
   useEffect(() => {
-    if (step === 2) inputRef.current?.focus();
+    if (step === 2) inputRef.current?.focus();else nextRef.current?.focus();
   }, [step]);
   const tools = [{
-    icon: 'sunrise',
-    name: 'Today',
-    text: 'Type a task, see what to do next, and wrap up the day.'
+    icon: 'home',
+    name: 'Home',
+    text: "Today's list: type a task, see what to do next, and wrap up the day."
   }, {
-    icon: 'grid',
+    icon: 'matrix',
     name: 'Tasks Matrix',
     text: 'Sort by urgent vs. important so the right things get done.'
   }, {
@@ -3407,137 +3734,113 @@ function Onboarding({
     name: 'Focus Timer',
     text: 'Work in focused blocks; time is logged to the task.'
   }];
+  const sync = window.MBS_SYNC || null;
+  const signedIn = !!(sync && sync.status().signedIn);
   const next = () => setStep(s => Math.min(STEPS - 1, s + 1));
   const back = () => setStep(s => Math.max(0, s - 1));
   const finish = e => {
     if (e) e.preventDefault();
     onFinish(firstTitle);
   };
+  const look = (id, label) => /*#__PURE__*/React.createElement("button", {
+    key: id,
+    type: "button",
+    className: "mbw-look",
+    "data-theme-set": id,
+    "aria-pressed": theme === id,
+    onClick: () => setTheme(id)
+  }, /*#__PURE__*/React.createElement("span", {
+    className: `pv ${id === 'light' ? 'l' : 'd'}`,
+    "aria-hidden": "true"
+  }, /*#__PURE__*/React.createElement("b", {
+    className: "a"
+  }), /*#__PURE__*/React.createElement("b", null), /*#__PURE__*/React.createElement("b", null)), /*#__PURE__*/React.createElement("span", {
+    className: "ap-look-l"
+  }, /*#__PURE__*/React.createElement(Uic, {
+    n: id === 'light' ? 'sun' : 'moon',
+    size: 16
+  }), label));
   return /*#__PURE__*/React.createElement("div", {
-    className: "overlay animate-fade-in"
-  }, /*#__PURE__*/React.createElement("div", {
+    className: "mbw",
     role: "dialog",
     "aria-modal": "true",
-    "aria-labelledby": titleId,
-    className: "dialog sm:max-w-lg animate-fade-in-up"
+    "aria-labelledby": "mbwTitle"
   }, /*#__PURE__*/React.createElement("div", {
-    className: "px-5 pt-4 pb-3 border-b border-slate-200 dark:border-slate-800 shrink-0"
-  }, /*#__PURE__*/React.createElement("div", {
-    className: "flex items-center justify-between mb-2"
+    className: "mbw-card"
+  }, /*#__PURE__*/React.createElement("header", {
+    className: "mbw-head"
   }, /*#__PURE__*/React.createElement("span", {
-    className: "text-xs font-semibold text-slate-500 dark:text-slate-400 tabular"
+    className: "mbw-step"
   }, "Step ", step + 1, " of ", STEPS), /*#__PURE__*/React.createElement("span", {
-    className: "flex items-center gap-1"
-  }, window.MBS_SYNC && !window.MBS_SYNC.status().signedIn && /*#__PURE__*/React.createElement("button", {
+    className: "mbw-head-a"
+  }, sync && (signedIn ? /*#__PURE__*/React.createElement("span", {
+    className: "mbw-signed"
+  }, "Signed in") : /*#__PURE__*/React.createElement("button", {
     type: "button",
-    onClick: () => {
-      onFinish('');
-      window.MBS_SYNC.open();
-    },
-    className: "btn ghost sm",
+    className: "mbw-link acc",
+    onClick: () => sync.open(),
     title: "Already use Action Plan on another device? Sign in to bring your tasks here."
-  }, "Sign in to sync"), /*#__PURE__*/React.createElement("button", {
+  }, "Sign in")), /*#__PURE__*/React.createElement("button", {
     type: "button",
-    onClick: () => onFinish(''),
-    className: "btn ghost sm -mr-2"
-  }, "Skip"))), /*#__PURE__*/React.createElement("div", {
-    className: "onb-steps",
+    className: "mbw-link",
+    onClick: () => onFinish('')
+  }, "Skip")), /*#__PURE__*/React.createElement("div", {
+    className: "mbw-prog",
     "aria-hidden": "true"
   }, Array.from({
     length: STEPS
   }).map((_, i) => /*#__PURE__*/React.createElement("i", {
     key: i,
     className: i <= step ? 'on' : ''
-  })))), /*#__PURE__*/React.createElement("div", {
-    className: "flex-1 overflow-y-auto px-5 py-5"
-  }, step === 0 && /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("div", {
-    className: "flex items-center gap-3 mb-3"
-  }, /*#__PURE__*/React.createElement("svg", {viewBox: "0 0 64 64", className: "app-logo-lg shrink-0", "aria-hidden": "true", focusable: "false", dangerouslySetInnerHTML: {__html: "<defs><linearGradient id=\"ap-onb-g\" gradientUnits=\"userSpaceOnUse\" x1=\"10\" y1=\"0\" x2=\"54\" y2=\"64\"><stop offset=\"0\" stop-color=\"#6860b2\"/><stop offset=\".55\" stop-color=\"#4F46A5\"/><stop offset=\"1\" stop-color=\"#3f3884\"/></linearGradient><clipPath id=\"ap-onb-c\"><rect width=\"64\" height=\"64\" rx=\"18\"/></clipPath></defs><g clip-path=\"url(#ap-onb-c)\"><rect width=\"64\" height=\"64\" fill=\"url(#ap-onb-g)\"/><rect x=\"15.5\" y=\"15.5\" width=\"33\" height=\"33\" rx=\"5\" stroke=\"#fff\" stroke-opacity=\".55\" stroke-width=\"4.5\" fill=\"none\"/><path d=\"m 23,32.000052 6.5,6.5 11.5,-13\" stroke=\"#ffffff\" stroke-width=\"4.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\" fill=\"none\"/></g>"}}), /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("h2", {
-    id: titleId,
-    className: "text-lg font-bold text-slate-900 dark:text-slate-100"
-  }, "Welcome to actionplan.mcbflow.com"), /*#__PURE__*/React.createElement("p", {
-    className: "text-sm text-slate-600 dark:text-slate-400"
-  }, "A simple planner for getting the right things done."))), /*#__PURE__*/React.createElement("div", {
-    className: "mt-2"
-  }, tools.map(t => /*#__PURE__*/React.createElement("div", {
-    key: t.name,
-    className: "onb-row"
-  }, /*#__PURE__*/React.createElement("span", {
-    className: "onb-ic"
-  }, /*#__PURE__*/React.createElement(Icon, {
-    name: t.icon,
-    className: "w-4 h-4"
-  })), /*#__PURE__*/React.createElement("div", {
-    className: "min-w-0"
+  })))), step === 0 && /*#__PURE__*/React.createElement("div", {
+    className: "mbw-body"
   }, /*#__PURE__*/React.createElement("div", {
-    className: "text-sm font-semibold text-slate-900 dark:text-slate-100"
-  }, t.name), /*#__PURE__*/React.createElement("div", {
-    className: "text-[13px] text-slate-600 dark:text-slate-400"
-  }, t.text))))), /*#__PURE__*/React.createElement("p", {
-    className: "mt-3 flex items-start gap-2 text-xs text-slate-600 dark:text-slate-400"
-  }, /*#__PURE__*/React.createElement(Icon, {
-    name: "shield-check",
-    className: "w-4 h-4 text-sky-600 dark:text-sky-400 shrink-0"
-  }), /*#__PURE__*/React.createElement("span", null, "No account, no cookies, no tracking. Everything stays in this browser on this device, so please don't store passwords or card numbers here. ", /*#__PURE__*/React.createElement("button", {
-    type: "button",
-    onClick: onPrivacy,
-    className: "link text-xs"
-  }, "Privacy")))), step === 1 && /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("h2", {
-    id: titleId,
-    className: "text-lg font-bold text-slate-900 dark:text-slate-100"
-  }, "Pick a look"), /*#__PURE__*/React.createElement("p", {
-    className: "text-sm text-slate-600 dark:text-slate-400 mb-4"
-  }, "You can switch anytime with the toggle in the header."), /*#__PURE__*/React.createElement("div", {
-    className: "grid grid-cols-2 gap-3",
-    role: "radiogroup",
-    "aria-label": "Theme"
-  }, [{
-    id: 'light',
-    label: 'Light'
-  }, {
-    id: 'dark',
-    label: 'Dark'
-  }].map(o => /*#__PURE__*/React.createElement("label", {
-    key: o.id,
-    className: "look"
-  }, /*#__PURE__*/React.createElement("input", {
-    type: "radio",
-    name: "onb-theme",
-    value: o.id,
-    checked: theme === o.id,
-    onChange: () => setTheme(o.id),
-    className: "sr-only"
-  }), /*#__PURE__*/React.createElement("span", {
-    className: `pv ${o.id === 'light' ? 'l' : 'd'}`,
-    "aria-hidden": "true"
-  }, /*#__PURE__*/React.createElement("b", {
-    className: "a"
-  }), /*#__PURE__*/React.createElement("b", null), /*#__PURE__*/React.createElement("b", {
-    style: {
-      width: '70%'
-    }
-  })), /*#__PURE__*/React.createElement("span", {
-    className: "flex items-center justify-between text-sm font-semibold text-slate-900 dark:text-slate-100"
+    className: "mbw-hero"
   }, /*#__PURE__*/React.createElement("span", {
-    className: "flex items-center gap-2"
-  }, /*#__PURE__*/React.createElement(Icon, {
-    name: o.id === 'light' ? 'sun' : 'moon',
-    className: "w-4 h-4"
-  }), o.label), theme === o.id && /*#__PURE__*/React.createElement(Icon, {
-    name: "check",
-    className: "w-4 h-4 text-sky-600 dark:text-sky-400"
-  })))))), step === 2 && /*#__PURE__*/React.createElement("form", {
+    className: "mbw-logo"
+  }, /*#__PURE__*/React.createElement(BrandLogo, {
+    uid: "onb"
+  })), /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("h2", {
+    id: "mbwTitle"
+  }, "Welcome to Action Plan"), /*#__PURE__*/React.createElement("p", {
+    className: "mbw-lead"
+  }, "A simple planner for getting the right things done."))), /*#__PURE__*/React.createElement("ul", {
+    className: "mbw-feats"
+  }, tools.map(t => /*#__PURE__*/React.createElement("li", {
+    key: t.name
+  }, /*#__PURE__*/React.createElement("span", {
+    className: "mbw-ic"
+  }, /*#__PURE__*/React.createElement(Uic, {
+    n: t.icon
+  })), /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("b", null, t.name), /*#__PURE__*/React.createElement("span", null, t.text))))), /*#__PURE__*/React.createElement("p", {
+    className: "mbw-privacy"
+  }, /*#__PURE__*/React.createElement(Uic, {
+    n: "shield",
+    size: 16
+  }), /*#__PURE__*/React.createElement("span", null, "No account needed. Everything stays in this browser on this device unless you sign in to sync. No cookies or tracking; please don't store passwords or card numbers here. ", /*#__PURE__*/React.createElement("button", {
+    type: "button",
+    onClick: onPrivacy
+  }, "Privacy")))), step === 1 && /*#__PURE__*/React.createElement("div", {
+    className: "mbw-body"
+  }, /*#__PURE__*/React.createElement("h2", {
+    id: "mbwTitle"
+  }, "Pick a look"), /*#__PURE__*/React.createElement("p", {
+    className: "mbw-lead"
+  }, "You can switch anytime from the top bar or Settings."), /*#__PURE__*/React.createElement("div", {
+    className: "mbw-looks",
+    role: "group",
+    "aria-label": "Theme"
+  }, look('light', 'Light'), look('dark', 'Dark'))), step === 2 && /*#__PURE__*/React.createElement("form", {
     id: "onb-form",
+    className: "mbw-body",
     onSubmit: finish
   }, /*#__PURE__*/React.createElement("h2", {
-    id: titleId,
-    className: "text-lg font-bold text-slate-900 dark:text-slate-100"
+    id: "mbwTitle"
   }, "Start with one task"), /*#__PURE__*/React.createElement("p", {
-    className: "text-sm text-slate-600 dark:text-slate-400 mb-4"
+    className: "mbw-lead"
   }, "What's one thing you want done today? It goes on today's list under Do First; change either anytime."), /*#__PURE__*/React.createElement("label", {
-    htmlFor: "onb-first",
-    className: "fld-label"
-  }, "First task"), /*#__PURE__*/React.createElement("input", {
+    className: "mbw-field"
+  }, /*#__PURE__*/React.createElement("span", null, "First task"), /*#__PURE__*/React.createElement("input", {
     id: "onb-first",
     ref: inputRef,
     type: "text",
@@ -3545,46 +3848,50 @@ function Onboarding({
     value: firstTitle,
     onChange: e => setFirstTitle(e.target.value),
     placeholder: "e.g. Call the insurance company",
-    autoComplete: "off",
-    className: "w-full px-3"
-  }), /*#__PURE__*/React.createElement("div", {
-    className: "mt-5 pt-4 border-t border-slate-200 dark:border-slate-800 flex items-center justify-between gap-3 flex-wrap"
-  }, /*#__PURE__*/React.createElement("span", {
-    className: "text-sm text-slate-600 dark:text-slate-400"
-  }, "Moving from another device?"), /*#__PURE__*/React.createElement("button", {
+    autoComplete: "off"
+  })), /*#__PURE__*/React.createElement("div", {
+    className: "mbw-alt"
+  }, /*#__PURE__*/React.createElement("span", null, "Moving from another device?"), sync && !signedIn && /*#__PURE__*/React.createElement("button", {
     type: "button",
-    onClick: onImport,
-    className: "btn sm"
-  }, /*#__PURE__*/React.createElement(Icon, {
-    name: "upload",
-    className: "w-4 h-4"
-  }), " Import a backup (JSON or CSV)")))), /*#__PURE__*/React.createElement("div", {
-    className: "px-5 py-3 border-t border-slate-200 dark:border-slate-800 flex items-center justify-between gap-3 shrink-0 bg-slate-50 dark:bg-slate-900 sm:rounded-b-3xl"
-  }, /*#__PURE__*/React.createElement("div", null, step > 0 && /*#__PURE__*/React.createElement("button", {
+    className: "mbw-btn sm",
+    onClick: () => sync.open()
+  }, /*#__PURE__*/React.createElement(Uic, {
+    n: "sync",
+    size: 16
+  }), "Sign in to sync"), /*#__PURE__*/React.createElement("button", {
+    type: "button",
+    className: "mbw-btn sm",
+    onClick: onImport
+  }, /*#__PURE__*/React.createElement(Uic, {
+    n: "import",
+    size: 16
+  }), "Import a backup"))), /*#__PURE__*/React.createElement("footer", {
+    className: "mbw-foot"
+  }, step > 0 && /*#__PURE__*/React.createElement("button", {
     type: "button",
     onClick: back,
-    className: "btn ghost"
-  }, /*#__PURE__*/React.createElement(Icon, {
-    name: "arrow-left",
-    className: "w-4 h-4"
-  }), " Back")), step < STEPS - 1 ? /*#__PURE__*/React.createElement("button", {
+    className: "mbw-btn"
+  }, /*#__PURE__*/React.createElement(Uic, {
+    n: "back",
+    size: 16
+  }), "Back"), step < STEPS - 1 ? /*#__PURE__*/React.createElement("button", {
     key: "next",
+    ref: nextRef,
     type: "button",
     onClick: next,
-    className: "btn primary min-w-[120px]",
-    autoFocus: true
-  }, step === 0 ? 'Get started' : 'Next', " ", /*#__PURE__*/React.createElement(Icon, {
-    name: "arrow-right",
-    className: "w-4 h-4"
+    className: "mbw-btn pri"
+  }, "Next", /*#__PURE__*/React.createElement(Uic, {
+    n: "next",
+    size: 16
   })) : /*#__PURE__*/React.createElement("button", {
     key: "finish",
     type: "submit",
     form: "onb-form",
-    className: "btn primary min-w-[120px]"
-  }, /*#__PURE__*/React.createElement(Icon, {
-    name: "check",
-    className: "w-4 h-4"
-  }), " ", firstTitle.trim() ? 'Add task & finish' : 'Finish'))));
+    className: "mbw-btn pri"
+  }, firstTitle.trim() ? 'Add task & start' : 'Get started', /*#__PURE__*/React.createElement(Uic, {
+    n: "next",
+    size: 16
+  })))));
 }
 
 // ================= TODAY-FIRST PIPELINE: constants + pure helpers (v15) =================
@@ -4099,7 +4406,7 @@ const explainTasks = (tasks, projects, todayStr = getLocalDateStr()) => {
   });
   const n = (k, w) => `${k} ${w}${k === 1 ? '' : 's'}`;
   if (!active.length) {
-    add('good', 'Nothing is open. Add what is on your mind and it will show up on Today.');
+    add('good', 'Nothing is open. Add what is on your mind and it will show up on Home.');
     return lines;
   }
   const todayCount = model.todayAll.length;
@@ -4724,11 +5031,11 @@ function TodayView({
       build: (o) => o.names && names.length ? { sub: "Done: " + names.slice(0, 3).join(", ") + (names.length > 3 ? ` and ${names.length - 3} more` : "") } : { sub: dateLabel }
     });
   };
-  return /* @__PURE__ */ React.createElement("div", { className: "space-y-4 animate-fade-in-up" }, /* @__PURE__ */ React.createElement("section", { className: "cu-banner" }, /* @__PURE__ */ React.createElement("svg", { viewBox: "0 0 640 136", preserveAspectRatio: "xMaxYMid slice", className: "cu-art", "aria-hidden": "true", focusable: "false", dangerouslySetInnerHTML: { __html: "<circle class=\"b\" cx=\"588\" cy=\"50\" r=\"30\"/><path class=\"s\" d=\"M260 140 C365 100 575 100 680 140Z\"/><path class=\"d\" transform=\"translate(540 107.4)\" d=\"M-39 2.2 C-39 -15.8 21.5 -16.5 39 -1.5 C39.8 14.2 -21.5 16.5 -39 2.2Z\"/><path class=\"m\" transform=\"translate(540 83.1)\" d=\"M-30 1.9 C-30 -13.7 16.5 -14.3 30 -1.3 C30.6 12.3 -16.5 14.3 -30 1.9Z\"/><path class=\"n\" transform=\"translate(540 62.4)\" d=\"M-23 1.6 C-23 -11.6 12.7 -12.1 23 -1.1 C23.5 10.4 -12.7 12.1 -23 1.6Z\"/><path class=\"d\" transform=\"translate(540 47.1)\" d=\"M-15 1.2 C-15 -8.4 8.2 -8.8 15 -0.8 C15.3 7.6 -8.2 8.8 -15 1.2Z\"/><path class=\"m\" transform=\"translate(452 114)\" d=\"M-25 1.6 C-25 -11.6 13.8 -12.1 25 -1.1 C25.5 10.4 -13.8 12.1 -25 1.6Z\"/><path class=\"d\" transform=\"translate(452 97)\" d=\"M-18 1.3 C-18 -9.5 9.9 -9.9 18 -0.9 C18.4 8.5 -9.9 9.9 -18 1.3Z\"/><path class=\"s\" transform=\"translate(452 84.5)\" d=\"M-11 1 C-11 -6.8 6.1 -7.2 11 -0.7 C11.2 6.2 -6.1 7.2 -11 1Z\"/><path class=\"m\" transform=\"translate(590 132) rotate(-62) scale(0.6)\" d=\"M0 0 C 20 -34 66 -40 96 -6 C 70 28 22 34 0 0Z\"/><path class=\"d\" transform=\"translate(602 132) rotate(-118) scale(0.5)\" d=\"M0 0 C 20 -34 66 -40 96 -6 C 70 28 22 34 0 0Z\"/><path class=\"s\" transform=\"translate(380 126)\" d=\"M-13 0.9 C-13 -6.3 7.2 -6.6 13 -0.6 C13.3 5.7 -7.2 6.6 -13 0.9Z\"/><circle class=\"r\" cx=\"400\" cy=\"44\" r=\"6\"/><circle class=\"b\" cx=\"372\" cy=\"70\" r=\"4\"/>" } }), /* @__PURE__ */ React.createElement("div", { className: "cu-txt" }, /* @__PURE__ */ React.createElement("h2", { className: "cu-t" }, headline), /* @__PURE__ */ React.createElement("p", { className: "cu-s tabular" }, dateLabel, model.plannedMins > 0 ? " \u00B7 About " + fmtMins(model.plannedMins) + " planned" + (model.unestimated ? ", " + model.unestimated + " without an estimate" : "") : ""), dayDone && canShare && /* @__PURE__ */ React.createElement("button", { type: "button", className: "btn sm mb-share-btn ap-share", onClick: shareProgress }, /* @__PURE__ */ React.createElement(Icon, { name: "share-2", className: "w-4 h-4" }), "Share"))), /* @__PURE__ */ React.createElement("div", { className: "ap-tbar" }, /* @__PURE__ */ React.createElement("div", { className: "ap-tbar-row" }, projects.length > 1 && /* @__PURE__ */ React.createElement("div", { className: "ap-tbar-grow" }, /* @__PURE__ */ React.createElement("label", { htmlFor: "today-project-filter", className: "sr-only" }, "Project"), /* @__PURE__ */ React.createElement("select", { id: "today-project-filter", value: selectedProjectId, onChange: (e) => setSelectedProjectId(e.target.value), className: "px-3 td-select ap-tbar-select" }, /* @__PURE__ */ React.createElement("option", { value: "all" }, "All projects"), projects.map((p) => /* @__PURE__ */ React.createElement("option", { key: p.id, value: p.id }, p.name)))), /* @__PURE__ */ React.createElement("button", { type: "button", className: `btn sm ap-tbar-btn ${hour >= 16 && left > 0 ? "primary" : ""}`, onClick: onReview }, /* @__PURE__ */ React.createElement(Icon, { name: "calendar-check", className: "w-4 h-4" }), /* @__PURE__ */ React.createElement("span", null, "Wrap up", /* @__PURE__ */ React.createElement("span", { className: "hidden sm:inline" }, " day"))), /* @__PURE__ */ React.createElement("button", { type: "button", className: "btn sm ap-tbar-btn", onClick: onExplain }, /* @__PURE__ */ React.createElement(Icon, { name: "info", className: "w-4 h-4" }), /* @__PURE__ */ React.createElement("span", null, "Explain", /* @__PURE__ */ React.createElement("span", { className: "hidden sm:inline" }, " my tasks")))), total > 0 && /* @__PURE__ */ React.createElement("div", { className: "ap-tbar-prog" }, total <= 14 ? /* @__PURE__ */ React.createElement("div", { className: "segs", role: "progressbar", "aria-label": "Today's progress", "aria-valuenow": doneToday, "aria-valuemin": "0", "aria-valuemax": total }, Array.from({
+  return /* @__PURE__ */ React.createElement("div", { className: "space-y-4 animate-fade-in-up" }, /* @__PURE__ */ React.createElement("section", { className: "cu-banner" }, /* @__PURE__ */ React.createElement("svg", { viewBox: "0 0 640 136", preserveAspectRatio: "xMaxYMid slice", className: "cu-art", "aria-hidden": "true", focusable: "false", dangerouslySetInnerHTML: { __html: "<circle class=\"b\" cx=\"588\" cy=\"50\" r=\"30\"/><path class=\"s\" d=\"M260 140 C365 100 575 100 680 140Z\"/><path class=\"d\" transform=\"translate(540 107.4)\" d=\"M-39 2.2 C-39 -15.8 21.5 -16.5 39 -1.5 C39.8 14.2 -21.5 16.5 -39 2.2Z\"/><path class=\"m\" transform=\"translate(540 83.1)\" d=\"M-30 1.9 C-30 -13.7 16.5 -14.3 30 -1.3 C30.6 12.3 -16.5 14.3 -30 1.9Z\"/><path class=\"n\" transform=\"translate(540 62.4)\" d=\"M-23 1.6 C-23 -11.6 12.7 -12.1 23 -1.1 C23.5 10.4 -12.7 12.1 -23 1.6Z\"/><path class=\"d\" transform=\"translate(540 47.1)\" d=\"M-15 1.2 C-15 -8.4 8.2 -8.8 15 -0.8 C15.3 7.6 -8.2 8.8 -15 1.2Z\"/><path class=\"m\" transform=\"translate(452 114)\" d=\"M-25 1.6 C-25 -11.6 13.8 -12.1 25 -1.1 C25.5 10.4 -13.8 12.1 -25 1.6Z\"/><path class=\"d\" transform=\"translate(452 97)\" d=\"M-18 1.3 C-18 -9.5 9.9 -9.9 18 -0.9 C18.4 8.5 -9.9 9.9 -18 1.3Z\"/><path class=\"s\" transform=\"translate(452 84.5)\" d=\"M-11 1 C-11 -6.8 6.1 -7.2 11 -0.7 C11.2 6.2 -6.1 7.2 -11 1Z\"/><path class=\"m\" transform=\"translate(590 132) rotate(-62) scale(0.6)\" d=\"M0 0 C 20 -34 66 -40 96 -6 C 70 28 22 34 0 0Z\"/><path class=\"d\" transform=\"translate(602 132) rotate(-118) scale(0.5)\" d=\"M0 0 C 20 -34 66 -40 96 -6 C 70 28 22 34 0 0Z\"/><path class=\"s\" transform=\"translate(380 126)\" d=\"M-13 0.9 C-13 -6.3 7.2 -6.6 13 -0.6 C13.3 5.7 -7.2 6.6 -13 0.9Z\"/><circle class=\"r\" cx=\"400\" cy=\"44\" r=\"6\"/><circle class=\"b\" cx=\"372\" cy=\"70\" r=\"4\"/>" } }), /* @__PURE__ */ React.createElement("div", { className: "cu-txt" }, /* @__PURE__ */ React.createElement(Greeting, null), /* @__PURE__ */ React.createElement("h2", { className: "cu-t" }, headline), /* @__PURE__ */ React.createElement("p", { className: "cu-s tabular" }, dateLabel, model.plannedMins > 0 ? " \u00B7 About " + fmtMins(model.plannedMins) + " planned" + (model.unestimated ? ", " + model.unestimated + " without an estimate" : "") : ""), dayDone && canShare && /* @__PURE__ */ React.createElement("button", { type: "button", className: "btn sm mb-share-btn ap-share", onClick: shareProgress }, /* @__PURE__ */ React.createElement(Icon, { name: "share-2", className: "w-4 h-4" }), "Share"))), /* @__PURE__ */ React.createElement("div", { className: "ap-tbar" }, /* @__PURE__ */ React.createElement("div", { className: "ap-tbar-row" }, projects.length > 1 && /* @__PURE__ */ React.createElement("div", { className: "ap-tbar-grow" }, /* @__PURE__ */ React.createElement("label", { htmlFor: "today-project-filter", className: "sr-only" }, "Project"), /* @__PURE__ */ React.createElement("select", { id: "today-project-filter", value: selectedProjectId, onChange: (e) => setSelectedProjectId(e.target.value), className: "px-3 td-select ap-tbar-select" }, /* @__PURE__ */ React.createElement("option", { value: "all" }, "All projects"), projects.map((p) => /* @__PURE__ */ React.createElement("option", { key: p.id, value: p.id }, p.name)))), /* @__PURE__ */ React.createElement("button", { type: "button", className: `btn sm ap-tbar-btn ${hour >= 16 && left > 0 ? "primary" : ""}`, onClick: onReview }, /* @__PURE__ */ React.createElement(Icon, { name: "calendar-check", className: "w-4 h-4" }), /* @__PURE__ */ React.createElement("span", null, "Wrap up", /* @__PURE__ */ React.createElement("span", { className: "hidden sm:inline" }, " day"))), /* @__PURE__ */ React.createElement("button", { type: "button", className: "btn sm ap-tbar-btn", onClick: onExplain }, /* @__PURE__ */ React.createElement(Icon, { name: "info", className: "w-4 h-4" }), /* @__PURE__ */ React.createElement("span", null, "Explain", /* @__PURE__ */ React.createElement("span", { className: "hidden sm:inline" }, " my tasks")))), total > 0 && /* @__PURE__ */ React.createElement("div", { className: "ap-tbar-prog" }, total <= 14 ? /* @__PURE__ */ React.createElement("div", { className: "segs", role: "progressbar", "aria-label": "Today's progress", "aria-valuenow": doneToday, "aria-valuemin": "0", "aria-valuemax": total, "aria-valuetext": `${doneToday} of ${total} done`, "data-tip-group": "" }, Array.from({
     length: total
-  }).map((_, i) => /* @__PURE__ */ React.createElement("i", { key: i, className: i < doneToday ? "on" : "" }))) : /* @__PURE__ */ React.createElement("div", { className: "meter", role: "progressbar", "aria-label": "Today's progress", "aria-valuenow": pct, "aria-valuemin": "0", "aria-valuemax": "100" }, /* @__PURE__ */ React.createElement("i", { style: {
+  }).map((_, i) => /* @__PURE__ */ React.createElement("i", { key: i, className: i < doneToday ? "on" : "", role: "img", tabIndex: i === 0 ? 0 : -1, "aria-label": `Task ${i + 1} of ${total} for today: ${i < doneToday ? "done" : "still to do"}`, "data-tip-v": i < doneToday ? "Done" : "Still to do", "data-tip-w": `Task ${i + 1} of ${total} for today`, "data-tip-c": `${doneToday} of ${total} done \u00B7 ${pct}%` }))) : /* @__PURE__ */ React.createElement("div", { className: "meter", role: "progressbar", "aria-label": "Today's progress", "aria-valuenow": pct, "aria-valuemin": "0", "aria-valuemax": "100", "aria-valuetext": `${pct}%: ${doneToday} of ${total} done`, tabIndex: 0, "data-tip-v": `${pct}% done`, "data-tip-w": "Today's tasks", "data-tip-c": `${doneToday} of ${total} done \u00B7 ${total - doneToday} to go` }, /* @__PURE__ */ React.createElement("i", { style: {
     width: `${pct}%`
-  } })), /* @__PURE__ */ React.createElement("div", { className: "flex justify-between mt-1 text-xs text-slate-600 dark:text-slate-400 tabular" }, /* @__PURE__ */ React.createElement("span", null, doneToday, " of ", total, " done"), /* @__PURE__ */ React.createElement("span", null, streak > 1 ? `${streak}-day streak` : "")))), /* @__PURE__ */ React.createElement("div", { className: "grid grid-cols-1 lg:grid-cols-5 gap-4 items-start" }, /* @__PURE__ */ React.createElement("div", { className: "lg:col-span-3 space-y-4 min-w-0" }, /* @__PURE__ */ React.createElement(QuickAdd, { projects, inputRef: quickAddRef, onAdd: onQuickAdd, onOpenFull }), hasAnyActive && /* @__PURE__ */ React.createElement(NextActionCard, { tasks, onStart, onDone: onToggle, onOpen: onOpenTask }), model.overdue.length > 0 && /* @__PURE__ */ React.createElement(TriagePanel, { list: model.overdue, projects, onPostpone, onToggle, onOpen: onOpenTask, onWhy }), ["must", "should", "iftime"].map((k) => model[k].length > 0 && /* @__PURE__ */ React.createElement("section", { key: k, className: "panel", "aria-labelledby": `tier-${k}` }, /* @__PURE__ */ React.createElement("div", { className: "td-tier-h" }, /* @__PURE__ */ React.createElement("i", { className: "td-dot", style: {
+  } })), /* @__PURE__ */ React.createElement("div", { className: "flex justify-between gap-2 mt-1 text-xs text-slate-600 dark:text-slate-400 tabular" }, /* @__PURE__ */ React.createElement("span", null, doneToday, " of ", total, " done"), /* @__PURE__ */ React.createElement("span", { className: "ap-hint", "aria-hidden": "true" }, total <= 14 ? "Hover or tap a bar" : "Hover or tap the bar"), /* @__PURE__ */ React.createElement("span", null, streak > 1 ? `${streak}-day streak` : "")))), /* @__PURE__ */ React.createElement("div", { className: "grid grid-cols-1 lg:grid-cols-5 gap-4 items-start" }, /* @__PURE__ */ React.createElement("div", { className: "lg:col-span-3 space-y-4 min-w-0" }, /* @__PURE__ */ React.createElement(QuickAdd, { projects, inputRef: quickAddRef, onAdd: onQuickAdd, onOpenFull }), hasAnyActive && /* @__PURE__ */ React.createElement(NextActionCard, { tasks, onStart, onDone: onToggle, onOpen: onOpenTask }), model.overdue.length > 0 && /* @__PURE__ */ React.createElement(TriagePanel, { list: model.overdue, projects, onPostpone, onToggle, onOpen: onOpenTask, onWhy }), ["must", "should", "iftime"].map((k) => model[k].length > 0 && /* @__PURE__ */ React.createElement("section", { key: k, className: "panel", "aria-labelledby": `tier-${k}` }, /* @__PURE__ */ React.createElement("div", { className: "td-tier-h" }, /* @__PURE__ */ React.createElement("i", { className: "td-dot", style: {
     backgroundColor: TIER_META[k].color
   }, "aria-hidden": "true" }), /* @__PURE__ */ React.createElement("h3", { id: `tier-${k}` }, TIER_META[k].label), /* @__PURE__ */ React.createElement("span", { className: "badge tabular" }, model[k].length), /* @__PURE__ */ React.createElement("span", { className: "hint td-push hidden sm:inline" }, k === "must" && model.must.length > 5 ? "That is a lot of must-dos. Try keeping it to about 3." : TIER_META[k].hint), model[k].some((t) => t.estimate) && /* @__PURE__ */ React.createElement("span", { className: "hint tabular" }, fmtMins(model[k].reduce((n, t) => n + (t.estimate || 0), 0)))), /* @__PURE__ */ React.createElement("ul", null, model[k].map((t) => /* @__PURE__ */ React.createElement(TodayRow, { key: t.id, task: t, project: pOf(t), onToggle, onOpen: onOpenTask, onStart, onPostpone, onWhy }))))), model.todayAll.length === 0 && model.overdue.length === 0 && /* @__PURE__ */ React.createElement("div", { className: "panel" }, /* @__PURE__ */ React.createElement("div", { className: "empty" }, doneToday > 0 ? /* @__PURE__ */ React.createElement(React.Fragment, null, /* @__PURE__ */ React.createElement(Icon, { name: "party-popper", className: "w-7 h-7 mx-auto mb-2 text-emerald-600 dark:text-emerald-400" }), /* @__PURE__ */ React.createElement("b", null, "Everything for today is done."), "You finished ", doneToday, " task", doneToday === 1 ? "" : "s", ". Enjoy the rest of it.") : /* @__PURE__ */ React.createElement(React.Fragment, null, /* @__PURE__ */ React.createElement(Icon, { name: "calendar-check", className: "w-6 h-6 text-slate-400 mb-2 mx-auto" }), /* @__PURE__ */ React.createElement("b", null, "Nothing planned for today"), "Type a task above, or pull something in from Upcoming or your Inbox."), laterCount > 0 && /* @__PURE__ */ React.createElement("div", { className: "mt-3" }, /* @__PURE__ */ React.createElement("button", { type: "button", className: "btn sm", onClick: () => setOpenLater(model.inbox.length ? "inbox" : "upcoming") }, "See what is coming up")))), !tasks.length && /* @__PURE__ */ React.createElement("div", { className: "panel" }, /* @__PURE__ */ React.createElement("div", { className: "empty" }, /* @__PURE__ */ React.createElement("b", null, "Bring your tasks with you"), "Already using another app? Paste a list or import a file from Todoist, Google Tasks, TickTick or a CSV.", /* @__PURE__ */ React.createElement("div", { className: "mt-3" }, /* @__PURE__ */ React.createElement("button", { type: "button", className: "btn sm", onClick: onImport }, /* @__PURE__ */ React.createElement(Icon, { name: "upload", className: "w-4 h-4" }), " Import from another app")))), doneTodayList.length > 0 && /* @__PURE__ */ React.createElement("div", null, /* @__PURE__ */ React.createElement("button", { type: "button", className: "td-toggle", "aria-expanded": showDone, onClick: () => setShowDone((v) => !v) }, /* @__PURE__ */ React.createElement(Icon, { name: "chevron-down", className: "w-4 h-4 chev" }), " Done today (", doneTodayList.length, ")"), showDone && /* @__PURE__ */ React.createElement("ul", { className: "panel mt-2" }, doneTodayList.map((t) => /* @__PURE__ */ React.createElement("li", { key: t.id, className: "td-row" }, /* @__PURE__ */ React.createElement(CheckBox, { done: true, title: t.title, onToggle: () => onToggle(t.id) }), /* @__PURE__ */ React.createElement("span", { className: "td-title td-done-title truncate" }, t.title)))))), /* @__PURE__ */ React.createElement("div", { className: "lg:col-span-2 space-y-4 min-w-0" }, /* @__PURE__ */ React.createElement("section", { className: "panel", "aria-labelledby": "later-h" }, /* @__PURE__ */ React.createElement("div", { className: "panel-h" }, /* @__PURE__ */ React.createElement("h3", { id: "later-h" }, /* @__PURE__ */ React.createElement(Icon, { name: "calendar", className: "w-4 h-4 text-sky-600 dark:text-sky-400" }), " Coming up"), /* @__PURE__ */ React.createElement("span", { className: "hint tabular" }, laterCount ? `+${laterCount} later` : "")), laterCount === 0 ? /* @__PURE__ */ React.createElement("div", { className: "empty" }, /* @__PURE__ */ React.createElement("b", null, "Nothing parked"), "Tasks with a later date or no date land here, out of your way until you need them.") : /* @__PURE__ */ React.createElement("div", null, laterGroups.map((g) => g.list.length > 0 && /* @__PURE__ */ React.createElement("div", { key: g.id, className: "td-group" }, /* @__PURE__ */ React.createElement("button", { type: "button", className: "td-toggle td-pad", "aria-expanded": openLater === g.id, onClick: () => setOpenLater((o) => o === g.id ? "" : g.id) }, /* @__PURE__ */ React.createElement(Icon, { name: "chevron-down", className: "w-4 h-4 chev" }), " ", g.label, " ", /* @__PURE__ */ React.createElement("span", { className: "badge tabular td-push" }, g.list.length)), openLater === g.id && /* @__PURE__ */ React.createElement("ul", null, g.list.slice(0, 30).map((t) => /* @__PURE__ */ React.createElement(MiniRow, { key: t.id, task: t, project: pOf(t), showDate: g.date, onToggle, onOpen: onOpenTask, onPull })), g.list.length > 30 && /* @__PURE__ */ React.createElement("li", { className: "hint td-pad py-2" }, "And ", g.list.length - 30, " more. Use the Matrix or Calendar to see them all.")))))), /* @__PURE__ */ React.createElement("section", { className: "panel" }, /* @__PURE__ */ React.createElement("button", { type: "button", className: "td-toggle td-pad", "aria-expanded": showStats, onClick: () => setShowStats((v) => !v) }, /* @__PURE__ */ React.createElement(Icon, { name: "chevron-down", className: "w-4 h-4 chev" }), " Your numbers"), showStats && /* @__PURE__ */ React.createElement("div", { className: "grid grid-cols-2 gap-3 p-3" }, /* @__PURE__ */ React.createElement("div", { className: "tile" }, /* @__PURE__ */ React.createElement("div", { className: "lbl" }, "Streak"), /* @__PURE__ */ React.createElement("div", { className: "val" }, streak), /* @__PURE__ */ React.createElement("div", { className: "note" }, streak === 1 ? "day" : "days", " in a row")), /* @__PURE__ */ React.createElement("div", { className: "tile" }, /* @__PURE__ */ React.createElement("div", { className: "lbl" }, "Last 7 days"), /* @__PURE__ */ React.createElement("div", { className: "val" }, week), /* @__PURE__ */ React.createElement("div", { className: "note" }, "tasks finished")), /* @__PURE__ */ React.createElement("div", { className: "tile" }, /* @__PURE__ */ React.createElement("div", { className: "lbl" }, "Focus time"), /* @__PURE__ */ React.createElement("div", { className: "val" }, fmtMins(totalFocus)), /* @__PURE__ */ React.createElement("div", { className: "note" }, "logged on tasks")), /* @__PURE__ */ React.createElement("div", { className: "tile" }, /* @__PURE__ */ React.createElement("div", { className: "lbl" }, "Completion"), /* @__PURE__ */ React.createElement("div", { className: "val" }, rate, "%"), /* @__PURE__ */ React.createElement("div", { className: "note" }, completedAll, " of ", tasks.length))), showStats && canShare && /* @__PURE__ */ React.createElement("div", { className: "ap-share-row" }, /* @__PURE__ */ React.createElement("p", { className: "hint" }, "Share your streak and finished count as an image. Task names stay off it unless you turn them on."), /* @__PURE__ */ React.createElement("button", { type: "button", className: "btn sm mb-share-btn", onClick: shareProgress }, /* @__PURE__ */ React.createElement(Icon, { name: "share-2", className: "w-4 h-4" }), "Share"))), /* @__PURE__ */ React.createElement("p", { className: "hint px-1" }, "Tiers follow your matrix: Do First and pinned tasks are Must do, Schedule and Delegate are Should do, Eliminate is If time. ", /* @__PURE__ */ React.createElement("button", { type: "button", className: "link text-xs", onClick: () => setActiveTab("tasks") }, "Open the matrix")))));
 }
@@ -5013,12 +5320,55 @@ function TaskModal({
     }
   } }), /* @__PURE__ */ React.createElement("button", { type: "button", className: "btn", onClick: addStep, disabled: !newStep.trim() }, "Add"))), /* @__PURE__ */ React.createElement("div", { className: "space-y-1.5" }, /* @__PURE__ */ React.createElement("label", { htmlFor: "task-recurring-select", className: "fld-label" }, "Repeat"), /* @__PURE__ */ React.createElement("select", { id: "task-recurring-select", name: "recurring", value: formData.recurring || "none", onChange: handleChange, className: "w-full px-3" }, RECURRING_OPTIONS.map((opt) => /* @__PURE__ */ React.createElement("option", { key: opt.value, value: opt.value }, opt.label))), formData.recurring && formData.recurring !== "none" && /* @__PURE__ */ React.createElement("div", { className: "chips mt-1.5", role: "group", "aria-label": "When the next one is scheduled" }, /* @__PURE__ */ React.createElement("button", { type: "button", className: "chip", "aria-pressed": formData.repeatMode !== "done", onClick: () => setField("repeatMode", "due") }, "Keep my schedule"), /* @__PURE__ */ React.createElement("button", { type: "button", className: "chip", "aria-pressed": formData.repeatMode === "done", onClick: () => setField("repeatMode", "done") }, "Count from when I finish")), formData.recurring && formData.recurring !== "none" && !formData.dueDate && /* @__PURE__ */ React.createElement("p", { className: "hint warn" }, "Without a due date, the next one is counted from the day you complete it.")), /* @__PURE__ */ React.createElement("div", { className: "space-y-1.5" }, /* @__PURE__ */ React.createElement("span", { className: "fld-label", id: "task-ctx-label" }, "Where"), /* @__PURE__ */ React.createElement("div", { className: "chips", role: "group", "aria-labelledby": "task-ctx-label" }, /* @__PURE__ */ React.createElement("button", { type: "button", className: "chip", "aria-pressed": !formData.context, onClick: () => setField("context", "") }, "Anywhere"), CONTEXTS.map((c) => /* @__PURE__ */ React.createElement("button", { key: c.id, type: "button", className: "chip", "aria-pressed": formData.context === c.id, onClick: () => setField("context", c.id) }, c.label)))), /* @__PURE__ */ React.createElement("div", { className: "space-y-1.5" }, /* @__PURE__ */ React.createElement("span", { className: "fld-label", id: "task-energy-label" }, "Energy needed"), /* @__PURE__ */ React.createElement("div", { className: "chips", role: "group", "aria-labelledby": "task-energy-label" }, /* @__PURE__ */ React.createElement("button", { type: "button", className: "chip", "aria-pressed": !formData.energy, onClick: () => setField("energy", "") }, "Not set"), ENERGY_LEVELS.map((e) => /* @__PURE__ */ React.createElement("button", { key: e.id, type: "button", className: "chip", "aria-pressed": formData.energy === e.id, onClick: () => setField("energy", e.id) }, e.label)))), /* @__PURE__ */ React.createElement("div", { className: "space-y-1.5" }, /* @__PURE__ */ React.createElement("label", { htmlFor: "task-description", className: "fld-label" }, "Notes"), /* @__PURE__ */ React.createElement("textarea", { id: "task-description", name: "description", value: formData.description || "", onChange: handleChange, maxLength: LIMITS.description, rows: "3", className: "w-full px-3 resize-none" }), /* @__PURE__ */ React.createElement("p", { className: "hint" }, "Saved only in this browser. Avoid passwords, SSNs, card numbers, or other highly sensitive information.")), /* @__PURE__ */ React.createElement("label", { className: "inline-flex items-center gap-2.5 cursor-pointer min-h-[36px]" }, /* @__PURE__ */ React.createElement("input", { type: "checkbox", name: "isPinned", checked: !!formData.isPinned, onChange: handleChange }), /* @__PURE__ */ React.createElement("span", { className: "text-sm font-medium text-slate-700 dark:text-slate-300" }, "Pin to Today (always under Must do)"))))), /* @__PURE__ */ React.createElement("div", { className: "px-5 py-3 border-t border-slate-200 dark:border-slate-800 flex items-center justify-between gap-3 shrink-0 bg-slate-50 dark:bg-slate-900 sm:rounded-b-3xl" }, /* @__PURE__ */ React.createElement("div", null, task?.id && onCompleteTask && task.status !== "Completed" && /* @__PURE__ */ React.createElement("button", { type: "button", onClick: onCompleteTask, className: "btn success" }, /* @__PURE__ */ React.createElement(Icon, { name: "check-circle-2", className: "w-4 h-4" }), /* @__PURE__ */ React.createElement("span", null, "Complete", /* @__PURE__ */ React.createElement("span", { className: "hidden sm:inline" }, " Task"))), task?.id && onCompleteTask && task.status === "Completed" && /* @__PURE__ */ React.createElement("button", { type: "button", onClick: onCompleteTask, className: "btn" }, /* @__PURE__ */ React.createElement(Icon, { name: "rotate-ccw", className: "w-4 h-4" }), "Restore", /* @__PURE__ */ React.createElement("span", { className: "hidden sm:inline" }, " Task")), !task?.id && /* @__PURE__ */ React.createElement("span", { className: "hint hidden sm:inline" }, /* @__PURE__ */ React.createElement("kbd", null, "Ctrl"), " + ", /* @__PURE__ */ React.createElement("kbd", null, "Enter"), " to save")), /* @__PURE__ */ React.createElement("div", { className: "flex items-center gap-2" }, /* @__PURE__ */ React.createElement("button", { type: "button", onClick: onClose, className: "btn" }, "Cancel"), /* @__PURE__ */ React.createElement("button", { type: "submit", form: "task-form", disabled: !canSave, title: canSave ? "Save (Ctrl+Enter)" : "Add a task name to save", className: "btn primary" }, task?.id ? "Save" : "Add Task")))));
 }
-function DataMenuExtras({
-  onImportApp,
-  onText,
-  onPrint
+// ---- Data list (MB Suite v3.3 §5) ----
+// One list of backup / sync / export / import items, used by the Data menu in the top bar (menu = true: role=menuitem)
+// and by Settings › Backup & data. Same wording and order as every mcbflow.com app; the handlers are the app's own.
+function DataList({
+  menu,
+  d
 }) {
-  return /* @__PURE__ */ React.createElement(React.Fragment, null, /* @__PURE__ */ React.createElement("div", { className: "dm-sep" }), /* @__PURE__ */ React.createElement("button", { type: "button", className: "dm-item", onClick: onImportApp }, /* @__PURE__ */ React.createElement(Icon, { name: "upload", className: "w-4 h-4 ic" }), /* @__PURE__ */ React.createElement("span", { className: "flex-1 min-w-0" }, /* @__PURE__ */ React.createElement("span", { className: "t" }, "Import from another app\u2026"), /* @__PURE__ */ React.createElement("span", { className: "s" }, "Paste a list, or bring in Todoist, Google Tasks, TickTick or any CSV."))), /* @__PURE__ */ React.createElement("button", { type: "button", className: "dm-item", onClick: onText }, /* @__PURE__ */ React.createElement(Icon, { name: "file-text", className: "w-4 h-4 ic" }), /* @__PURE__ */ React.createElement("span", { className: "flex-1 min-w-0" }, /* @__PURE__ */ React.createElement("span", { className: "t" }, "Export as text list (.txt)"), /* @__PURE__ */ React.createElement("span", { className: "s" }, "Readable checklist of what is open. Not a backup."))), /* @__PURE__ */ React.createElement("button", { type: "button", className: "dm-item", onClick: onPrint }, /* @__PURE__ */ React.createElement(Icon, { name: "download", className: "w-4 h-4 ic" }), /* @__PURE__ */ React.createElement("span", { className: "flex-1 min-w-0" }, /* @__PURE__ */ React.createElement("span", { className: "t" }, "Print or save as PDF\u2026"), /* @__PURE__ */ React.createElement("span", { className: "s" }, "A clean checklist of open tasks."))));
+  const role = menu ? 'menuitem' : undefined;
+  const it = (icon, title, desc, onClick, opts = {}) => /*#__PURE__*/React.createElement("button", {
+    type: "button",
+    className: `mb-dm-it${opts.cls ? ' ' + opts.cls : ''}`,
+    role: role,
+    onClick: onClick
+  }, /*#__PURE__*/React.createElement(Uic, {
+    n: icon
+  }), /*#__PURE__*/React.createElement("span", {
+    className: "t"
+  }, /*#__PURE__*/React.createElement("b", null, title), /*#__PURE__*/React.createElement("small", null, desc)), opts.kbd ? /*#__PURE__*/React.createElement("kbd", null, opts.kbd) : null);
+  const sec = label => /*#__PURE__*/React.createElement("div", {
+    className: "mb-dm-sec",
+    role: menu ? 'presentation' : undefined
+  }, label);
+  const s = d.sync;
+  return /*#__PURE__*/React.createElement(React.Fragment, null, it('save', 'Save backup now', !FS_SUPPORTED ? 'Saves a backup file in one click. Best for regular backups.' : d.savedName ? 'Updates your backup file in one click. Best for regular backups.' : "Choose where to keep your backup file. After that it's one click.", d.onBackup, {
+    cls: 'is-key',
+    kbd: 'Ctrl+S'
+  }), window.MBS_SYNC && it('sync', s && s.signedIn ? 'Sync: ' + s.label : 'Sync across devices…', s && s.signedIn ? 'Signed in as ' + s.email : 'Free, optional account. Keeps your phone and computer the same.', d.onSync), sec('Export'), it('json', 'Export All (JSON)…', 'Complete backup of everything. Best for restoring or moving to another browser.', d.onJSON), it('csv', 'Export All (CSV)…', 'Spreadsheet copy for Excel, Numbers or Google Sheets. Best for totals and reports. Can be imported back.', d.onCSV), it('zip', 'Export All (ZIP)…', 'Backup and spreadsheets together in one file. Best for archiving.', d.onZIP), it('text', 'Export as text list (.txt)…', 'Readable checklist of what is open. Best for reading or pasting. Not a backup.', d.onText), it('print', 'Print or save as PDF…', 'A clean checklist of open tasks. Best for paper or sharing one view.', d.onPrint), sec('Import'), it('import', 'Import Backup…', "Restore from a JSON, CSV or ZIP file. Adds what's missing and skips anything already here.", d.onImport), it('apps', 'Import from another app…', 'Paste a list, or bring in Todoist, Google Tasks, TickTick or any CSV.', d.onImportApp), /*#__PURE__*/React.createElement("div", {
+    className: `mb-dm-status${d.statusCls ? ' ' + d.statusCls : ''}`,
+    role: menu ? 'presentation' : undefined
+  }, /*#__PURE__*/React.createElement("span", {
+    className: "sq"
+  }), /*#__PURE__*/React.createElement("span", null, d.statusText)), /*#__PURE__*/React.createElement("p", {
+    className: "mb-dm-note",
+    role: menu ? 'presentation' : undefined
+  }, s && s.signedIn ? 'Synced to your mcbflow.com account. A file backup now and then is still a good idea.' : 'Your data is stored in this browser on this device. Clearing your browser data deletes it, so keep a backup.'), FS_SUPPORTED ? d.savedName && /*#__PURE__*/React.createElement("p", {
+    className: "mb-dm-note ap-dm-loc",
+    role: menu ? 'presentation' : undefined
+  }, "Saving to ", /*#__PURE__*/React.createElement("b", null, d.savedName), d.csvName ? /*#__PURE__*/React.createElement(React.Fragment, null, " and ", /*#__PURE__*/React.createElement("b", null, d.csvName)) : null, " in the folder you chose. ", /*#__PURE__*/React.createElement("button", {
+    type: "button",
+    role: role,
+    onClick: d.onChangeLocation
+  }, "Change location…")) : /*#__PURE__*/React.createElement("p", {
+    className: "mb-dm-note ap-dm-loc",
+    role: menu ? 'presentation' : undefined
+  }, "This browser can't pick a save location, so backups go to your Downloads folder."), /*#__PURE__*/React.createElement("hr", {
+    className: "mb-dm-sep"
+  }), it('clear', 'Clear all data…', s && s.signedIn ? 'Deletes everything here and your synced copy.' : 'Deletes everything in this browser. You can save a backup first.', d.onClear, {
+    cls: 'danger'
+  }));
 }
 
 // ---------------- MAIN APP ----------------
@@ -5040,7 +5390,7 @@ function BrandLogo({
     }
   });
 }
-// Logo, name and subtitle are one link to Today. A normal click switches views without reloading;
+// Logo, name and subtitle are one link to Home. A normal click switches views without reloading;
 // Ctrl/Cmd/Shift/middle click still open a new tab as usual.
 function BrandLink({
   uid,
@@ -5050,7 +5400,7 @@ function BrandLink({
   return /*#__PURE__*/React.createElement("a", {
     className: `brand ${className}`,
     href: "./",
-    "aria-label": "actionplan.mcbflow.com: go to Today",
+    "aria-label": "Action Plan (actionplan.mcbflow.com): go to Home",
     onClick: e => {
       if (e.metaKey || e.ctrlKey || e.shiftKey || e.altKey || e.button !== 0) return;
       e.preventDefault();
@@ -5062,9 +5412,16 @@ function BrandLink({
     uid: uid
   })), /*#__PURE__*/React.createElement("span", {
     className: "bt"
-  }, /*#__PURE__*/React.createElement("b", null, "actionplan", /*#__PURE__*/React.createElement("i", {
+  }, /*#__PURE__*/React.createElement(Wordmark, null), /*#__PURE__*/React.createElement("span", null, "Official Web App \xB7 v", BRAND_VERSION)));
+}
+// Wordmark (MB Suite v3.3): "Action Plan ∙ mcbflow.com" on desktop, "Action Plan" on phones (the shared CSS hides the .tld part).
+function Wordmark() {
+  return /*#__PURE__*/React.createElement("b", null, "Action Plan", /*#__PURE__*/React.createElement("i", {
     className: "tld"
-  }, ".mcbflow.com")), /*#__PURE__*/React.createElement("span", null, "Official Web App \xB7 v", BRAND_VERSION)));
+  }, /*#__PURE__*/React.createElement("span", {
+    className: "sep",
+    "aria-hidden": "true"
+  }, "\u2219"), "mcbflow.com"));
 }
 // Install card (MB Suite v3 §7.2), drawn from the install state captured at startup (deferredInstall).
 // Returns null where installing isn't possible, so it never shows a button that does nothing.
@@ -5093,54 +5450,140 @@ function InstallCard({
   }), /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("b", null, "Add Action Plan to your Home Screen"), /*#__PURE__*/React.createElement("p", null, "On iPhone or iPad: tap ", /*#__PURE__*/React.createElement("b", null, "Share"), ", then ", /*#__PURE__*/React.createElement("b", null, "Add to Home Screen"), ". It opens full screen with its own icon.")));
   return null;
 }
-function MoreView({
-  renderThemeSwitch,
+// Greeting line on Home ("Good morning, Matthew" when signed in with a screen name; "Good morning" otherwise). mb-sync.js writes it.
+function Greeting() {
+  const ref = useRef(null);
+  useEffect(() => {
+    if (window.MBS_SYNC && ref.current) window.MBS_SYNC.greet(ref.current, {
+      name: ''
+    });
+  }, []);
+  if (!window.MBSync || !window.MBS_SYNC) return null;
+  return /*#__PURE__*/React.createElement("p", {
+    ref: ref,
+    className: "mb-greet",
+    id: "greet"
+  });
+}
+// Account button for the top bar (mb-sync.js draws "Sign in" or the initial with a sync dot inside it).
+// React renders it empty and never touches its contents, so the sync engine owns what is inside.
+function AcctButton() {
+  const ref = useRef(null);
+  useEffect(() => {
+    if (window.MBS_SYNC && ref.current) window.MBS_SYNC.button(ref.current);
+  }, []);
+  if (!window.MBSync || !window.MBS_SYNC) return null;
+  return /*#__PURE__*/React.createElement("button", {
+    ref: ref,
+    type: "button",
+    className: "tb tb-acct",
+    id: "acctBtn"
+  });
+}
+// Settings › Account & sync: the standard card from mb-sync.js (sign in, status, Sync now, Sign out, Keep me signed in).
+function SyncCard() {
+  const ref = useRef(null);
+  useEffect(() => {
+    if (window.MBS_SYNC && ref.current) window.MBS_SYNC.card(ref.current);
+  }, []);
+  if (!window.MBS_SYNC) return /*#__PURE__*/React.createElement("div", {
+    className: "mb-set-card pad"
+  }, /*#__PURE__*/React.createElement("p", {
+    className: "hint",
+    style: {
+      margin: 0
+    }
+  }, "Sync isn't available right now (its code didn't load). Everything still saves in this browser."));
+  return /*#__PURE__*/React.createElement("div", {
+    ref: ref,
+    className: "mb-set-card pad"
+  });
+}
+// Page footer (MB Suite v3.3 §7): the last thing on every view except Settings.
+function AppFooter({
+  onLegal
+}) {
+  return /*#__PURE__*/React.createElement("footer", {
+    className: "mb-foot"
+  }, /*#__PURE__*/React.createElement("p", {
+    className: "mb-foot-main"
+  }, /*#__PURE__*/React.createElement("b", null, "Action Plan"), " v", BRAND_VERSION, " \xB7 Free \xB7 No account needed"), /*#__PURE__*/React.createElement("nav", {
+    className: "mb-foot-links",
+    "aria-label": "About Action Plan"
+  }, /*#__PURE__*/React.createElement("button", {
+    type: "button",
+    onClick: () => onLegal('notes')
+  }, "What’s new"), /*#__PURE__*/React.createElement("button", {
+    type: "button",
+    onClick: () => onLegal('privacy')
+  }, "Privacy"), /*#__PURE__*/React.createElement("button", {
+    type: "button",
+    onClick: () => onLegal('terms')
+  }, "Terms"), /*#__PURE__*/React.createElement("a", {
+    href: "https://mcbflow.com/"
+  }, "More free apps")), /*#__PURE__*/React.createElement("p", {
+    className: "mb-foot-copy"
+  }, "\xA9 2026 Matthew Broyer"));
+}
+// Settings (MB Suite v3.3 §6), replacing the old More page: Appearance → Account & sync → Help & legal →
+// Backup & data → Install → About. Everything More had is here (theme, backup, welcome guide, release notes,
+// legal pages, Install card, About card).
+function SettingsView({
+  theme,
+  setTheme,
+  dataList,
   onInstall,
-  backupText,
-  backupWarn,
-  onBackup,
   onLegal,
   onWelcome
 }) {
   const card = InstallCard({
     onInstall
   });
-  const links = [['Welcome guide', 'sunrise', onWelcome], ['Release notes', 'file-text', () => onLegal('notes')], ['Privacy Policy', 'shield-check', () => onLegal('privacy')], ['Terms of Use', 'file-text', () => onLegal('terms')], ['Disclaimer', 'scale', () => onLegal('disclaimer')], ['Credits', 'info', () => onLegal('credits')]];
-  return /*#__PURE__*/React.createElement("div", {
-    className: "more-grid animate-fade-in-up"
-  }, /*#__PURE__*/React.createElement("section", {
-    className: "panel",
-    "aria-labelledby": "more-app"
-  }, /*#__PURE__*/React.createElement("div", {
-    className: "panel-h"
+  const sec = (id, title, ...kids) => /*#__PURE__*/React.createElement("section", {
+    className: "mb-set-sec",
+    "aria-labelledby": id
   }, /*#__PURE__*/React.createElement("h2", {
-    id: "more-app"
-  }, "App")), /*#__PURE__*/React.createElement("div", {
-    className: "more-body"
+    className: "mb-set-h",
+    id: id
+  }, title), ...kids);
+  const links = [['Release notes', 'file-text', () => onLegal('notes')], ['Privacy Policy', 'shield-check', () => onLegal('privacy')], ['Terms of Use', 'file-text', () => onLegal('terms')], ['Disclaimer', 'scale', () => onLegal('disclaimer')], ['Credits', 'info', () => onLegal('credits')]];
+  return /*#__PURE__*/React.createElement("div", {
+    className: "mb-set animate-fade-in-up"
+  }, sec('set-look', 'Appearance', /*#__PURE__*/React.createElement("div", {
+    className: "mb-set-card"
   }, /*#__PURE__*/React.createElement("div", {
-    className: "more-row"
-  }, /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("b", null, "Dark theme"), /*#__PURE__*/React.createElement("p", null, "Remembered on this device.")), renderThemeSwitch()), /*#__PURE__*/React.createElement("div", {
-    className: "more-row"
-  }, /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("b", null, "Backup"), /*#__PURE__*/React.createElement("p", {
-    className: backupWarn ? 'hint warn' : ''
-  }, backupText, ". Your tasks live only in this browser. The Data menu has exports, imports and Clear all data.")), /*#__PURE__*/React.createElement("button", {
+    className: "mb-set-row"
+  }, /*#__PURE__*/React.createElement("div", {
+    className: "mb-set-l"
+  }, /*#__PURE__*/React.createElement("b", null, "Theme"), /*#__PURE__*/React.createElement("small", null, "Light or dark. Saved on this device.")), /*#__PURE__*/React.createElement("div", {
+    className: "mb-set-c"
+  }, /*#__PURE__*/React.createElement("div", {
+    className: "mb-seg",
+    role: "group",
+    "aria-label": "Theme"
+  }, ['light', 'dark'].map(id => /*#__PURE__*/React.createElement("button", {
+    key: id,
+    type: "button",
+    "data-theme-set": id,
+    "aria-pressed": theme === id,
+    onClick: () => setTheme(id)
+  }, /*#__PURE__*/React.createElement(Uic, {
+    n: id === 'light' ? 'sun' : 'moon',
+    size: 16
+  }), id === 'light' ? 'Light' : 'Dark'))))))), sec('set-sync', 'Account & sync', /*#__PURE__*/React.createElement(SyncCard, null)), sec('set-help', 'Help & legal', /*#__PURE__*/React.createElement("div", {
+    className: "mb-set-card"
+  }, /*#__PURE__*/React.createElement("div", {
+    className: "mb-set-row"
+  }, /*#__PURE__*/React.createElement("div", {
+    className: "mb-set-l"
+  }, /*#__PURE__*/React.createElement("b", null, "Welcome guide"), /*#__PURE__*/React.createElement("small", null, "The three-step tour from your first visit: what each page is for, the look, and a first task.")), /*#__PURE__*/React.createElement("div", {
+    className: "mb-set-c"
+  }, /*#__PURE__*/React.createElement("button", {
     type: "button",
     className: "btn sm",
-    onClick: onBackup
-  }, /*#__PURE__*/React.createElement(Icon, {
-    name: "download",
-    className: "w-4 h-4"
-  }), "Save backup")))), /*#__PURE__*/React.createElement("section", {
-    className: "panel",
-    "aria-labelledby": "more-help"
-  }, /*#__PURE__*/React.createElement("div", {
-    className: "panel-h"
-  }, /*#__PURE__*/React.createElement("h2", {
-    id: "more-help"
-  }, "Help and about")), /*#__PURE__*/React.createElement("div", {
-    className: "more-body"
-  }, /*#__PURE__*/React.createElement("div", {
-    className: "more-links"
+    onClick: onWelcome
+  }, "Show again"))), /*#__PURE__*/React.createElement("div", {
+    className: "more-links ap-set-links"
   }, links.map(([label, icon, fn]) => /*#__PURE__*/React.createElement("button", {
     key: label,
     type: "button",
@@ -5151,19 +5594,20 @@ function MoreView({
   }), label, /*#__PURE__*/React.createElement(Icon, {
     name: "chevron-right",
     className: "w-4 h-4 go"
-  })))), /*#__PURE__*/React.createElement("p", {
-    className: "more-ver"
-  }, "Free, no account, your data stays on this device."))), /*#__PURE__*/React.createElement("div", {
-    className: "more-end"
-  }, card || /*#__PURE__*/React.createElement("p", {
-    className: "hint"
-  }, "No install option here: this browser doesn't offer installing apps (for example Firefox on a computer, or a page opened from a file). Action Plan works the same in the browser."), /*#__PURE__*/React.createElement(AboutCard, {
+  })))))), sec('set-data', 'Backup & data', /*#__PURE__*/React.createElement("div", {
+    className: "mb-set-card ap-set-data"
+  }, dataList)), sec('set-install', 'Install', card || /*#__PURE__*/React.createElement("p", {
+    className: "hint",
+    style: {
+      margin: 0
+    }
+  }, "No install option here: this browser doesn't offer installing apps (for example Firefox on a computer, or a page opened from a file). Action Plan works the same in the browser.")), sec('set-about', 'About', /*#__PURE__*/React.createElement(AboutCard, {
     onWhatsNew: () => onLegal('notes'),
     onPrivacy: () => onLegal('privacy'),
     onTerms: () => onLegal('terms')
   })));
 }
-// About card (MB Suite §1): the last thing on More, right below the Install card. It is the app's footer:
+// About card (MB Suite §1): the last thing on Settings, right below the Install card. It is the app's footer:
 // name, version and release date, What's new, the hub link and the copyright line.
 function AboutCard({
   onWhatsNew,
@@ -5209,9 +5653,39 @@ function AboutCard({
     className: "mb-about-copy"
   }, "\xA9 2026 Matthew Broyer. All rights reserved.")));
 }
+const HASH_TABS = {
+  home: 'dashboard',
+  today: 'dashboard',
+  dashboard: 'dashboard',
+  projects: 'projects',
+  matrix: 'tasks',
+  tasks: 'tasks',
+  calendar: 'calendar',
+  focus: 'pomodoro',
+  timer: 'pomodoro',
+  pomodoro: 'pomodoro',
+  settings: 'settings',
+  more: 'settings'
+};
+const tabFromHash = () => {
+  try {
+    return HASH_TABS[decodeURIComponent(location.hash.replace(/^#\/?/, '')).toLowerCase()] || null;
+  } catch (e) {
+    return null;
+  }
+};
 function App() {
   const [theme, setTheme] = useState(() => store.get('actionplan.theme') === 'dark' ? 'dark' : 'light');
-  const [activeTab, setActiveTab] = useState('dashboard');
+  // Deep links: #home (and the old #today / #dashboard), #projects, #matrix, #calendar, #focus, #settings (#more) open that view.
+  const [activeTab, setActiveTab] = useState(() => tabFromHash() || 'dashboard');
+  useEffect(() => {
+    const onHash = () => {
+      const t = tabFromHash();
+      if (t) setActiveTab(t);
+    };
+    window.addEventListener('hashchange', onHash);
+    return () => window.removeEventListener('hashchange', onHash);
+  }, []);
   const [toast, setToast] = useState(null);
   const [highlightedTaskId, setHighlightedTaskId] = useState(null);
   const [selectedProjectId, setSelectedProjectId] = useState('all');
@@ -5222,10 +5696,10 @@ function App() {
   const [cookieAccepted, setCookieAccepted] = useState(() => store.get('actionplan.cookieAccepted') === 'true');
   const [legalModalOpen, setLegalModalOpen] = useState(false);
   const [legalTab, setLegalTab] = useState('privacy');
-  // First-run welcome: only for browsers that have never saved tasks and haven't seen it.
+  // First-run welcome: only for browsers that have never saved tasks, haven't seen it, and aren't signed in to sync.
   const [onboardOpen, setOnboardOpen] = useState(() => {
     try {
-      return !store.get('actionplan.onboarded') && !store.get('actionplan.tasks');
+      return !store.get('actionplan.onboarded') && !store.get('actionplan.tasks') && !(window.MBSync && window.MBSync.hasSavedSignIn());
     } catch (e) {
       return false;
     }
@@ -5353,6 +5827,40 @@ function App() {
     store.set('actionplan.theme', theme);
   }, [theme]);
 
+  // Optional account sync status (mb-sync.js 1.1): signed in, and whether backup reminders should stay quiet.
+  const [syncStat, setSyncStat] = useState(() => window.MBS_SYNC ? window.MBS_SYNC.status() : null);
+  useEffect(() => {
+    const fn = () => setSyncStat(window.MBS_SYNC ? window.MBS_SYNC.status() : null);
+    window.addEventListener('mbsync:status', fn);
+    fn();
+    return () => window.removeEventListener('mbsync:status', fn);
+  }, []);
+  const quietBackups = !!(syncStat && syncStat.quietBackups);
+
+  // Data menu: focus the first item when it opens; arrow keys, Home and End move between items.
+  useEffect(() => {
+    if (!dataMenuOpen) return;
+    const menu = document.getElementById('data-menu');
+    const items = () => menu ? Array.from(menu.querySelectorAll('[role="menuitem"]')) : [];
+    const first = items()[0];
+    if (first) first.focus();
+    const onNav = e => {
+      const list = items();
+      const i = list.indexOf(document.activeElement);
+      if (i < 0) return;
+      let n = null;
+      if (e.key === 'ArrowDown') n = (i + 1) % list.length;
+      if (e.key === 'ArrowUp') n = (i - 1 + list.length) % list.length;
+      if (e.key === 'Home') n = 0;
+      if (e.key === 'End') n = list.length - 1;
+      if (n === null) return;
+      e.preventDefault();
+      list[n].focus();
+    };
+    menu && menu.addEventListener('keydown', onNav);
+    return () => menu && menu.removeEventListener('keydown', onNav);
+  }, [dataMenuOpen]);
+
   // Close the Data menu on outside click or Escape.
   useEffect(() => {
     if (!dataMenuOpen) return;
@@ -5404,6 +5912,7 @@ function App() {
   useEffect(() => {
     const onKey = e => {
       if (e.key !== 'Tab') return;
+      if (document.querySelector('dialog[open]')) return; // native dialogs (account sign-in) keep focus inside on their own
       const dialogs = document.querySelectorAll('[role="dialog"][aria-modal="true"]');
       const dlg = dialogs[dialogs.length - 1];
       if (!dlg) return;
@@ -6062,7 +6571,7 @@ function App() {
   };
   const exportTextList = () => {
     setDataMenuOpen(false);
-    downloadText(buildTextExport(projects, tasksRef.current), `Action_Plan_Tasks_${getLocalDateStr()}.txt`, 'text/plain;charset=utf-8');
+    downloadText(buildTextExport(projects, tasksRef.current), `actionplan-tasks-${getLocalDateStr()}.txt`, 'text/plain;charset=utf-8');
     showToast('Saved a text checklist (this is not a backup).', 'success');
   };
   const printList = () => {
@@ -6154,7 +6663,7 @@ function App() {
   }, null, 2);
   const backupText = kind => kind === 'json' ? buildBackupJSON() : generateCSVData();
   const backupMime = kind => kind === 'json' ? 'application/json' : 'text/csv;charset=utf-8';
-  const datedName = kind => `Action_Plan_Backup_${getLocalDateStr()}.${kind}`;
+  const datedName = kind => `actionplan-backup-${getLocalDateStr()}.${kind}`;
 
   // Remembered save locations (file handles live in IndexedDB).
   const [fileHandles, setFileHandles] = useState({
@@ -6252,6 +6761,85 @@ function App() {
       }
     }
   };
+  // Export All (ZIP): the JSON backup (exactly what Export All (JSON) saves), one spreadsheet per record type and a
+  // short README, in one file. Built on this device by mb-files.js; saved the same way as the other backups.
+  const buildZipBlob = async () => {
+    const pName = id => (projects.find(p => p.id === id) || {}).name || '';
+    const day = ts => ts ? getLocalDateStr(new Date(ts)) : '';
+    const taskCols = [{ label: 'Title', key: 'title' }, { label: 'Project', get: t => pName(t.projectId) }, { label: 'Status', get: t => t.status === 'Completed' ? 'Done' : 'Open' },
+      { label: 'Priority', get: t => (QUAD_BY_ID[t.quadrant] || {}).title || t.quadrant || '' }, { label: 'Due date', key: 'dueDate' }, { label: 'Due time', key: 'dueTime' },
+      { label: 'Repeat', get: t => t.recurring && t.recurring !== 'none' ? t.recurring : '' }, { label: 'Pinned', get: t => t.isPinned ? 'Yes' : '' },
+      { label: 'Estimate (min)', get: t => t.estimate || '' }, { label: 'Focus minutes', get: t => t.focusMinutes || 0 }, { label: 'Energy', key: 'energy' }, { label: 'Where', key: 'context' },
+      { label: 'Steps', get: t => stepsToCsv(t.steps) }, { label: 'Notes', key: 'description' }, { label: 'Created', get: t => day(t.createdAt) }, { label: 'Completed', get: t => day(t.completedAt) }, { label: 'ID', key: 'id' }];
+    const projCols = [{ label: 'Name', key: 'name' }, { label: 'Code', key: 'code' }, { label: 'Status', key: 'status' }, { label: 'Description', key: 'description' }, { label: 'Color', key: 'color' },
+      { label: 'Open tasks', get: p => tasks.filter(t => t.projectId === p.id && t.status !== 'Completed').length }, { label: 'All tasks', get: p => tasks.filter(t => t.projectId === p.id).length }, { label: 'ID', key: 'id' }];
+    const readme = ['Action Plan backup (actionplan.mcbflow.com)', 'Saved ' + new Date().toLocaleString(), '',
+      'actionplan-backup.json   Everything: projects, tasks and your daily finished counts. Import this ZIP (or this file) with Data > Import Backup to restore.',
+      'actionplan-tasks.csv     Your tasks as a spreadsheet (Excel, Numbers, Google Sheets).',
+      'actionplan-projects.csv  Your projects as a spreadsheet.', '',
+      'Made on your device. Nothing was uploaded.'].join('\r\n');
+    return window.MBFiles.zip([{ name: 'actionplan-backup.json', data: buildBackupJSON() }, { name: 'actionplan-tasks.csv', data: window.MBFiles.csv(tasks, taskCols) },
+      { name: 'actionplan-projects.csv', data: window.MBFiles.csv(projects, projCols) }, { name: 'README.txt', data: readme }]);
+  };
+  const exportZip = async () => {
+    setDataMenuOpen(false);
+    if (!window.MBFiles) {
+      showToast("The ZIP tool didn't load. Reload the page and try again, or use Export All (JSON).", 'error');
+      return;
+    }
+    let blob;
+    try {
+      blob = await buildZipBlob();
+    } catch (e) {
+      showToast("Couldn't make the ZIP file. Nothing was saved. Try Export All (JSON) instead.", 'error');
+      return;
+    }
+    const name = `actionplan-backup-${getLocalDateStr()}.zip`;
+    if (FS_SUPPORTED) {
+      try {
+        const h = await window.showSaveFilePicker({
+          suggestedName: name,
+          startIn: fileHandles.json || fileHandles.csv || 'documents',
+          types: [{
+            description: 'actionplan.mcbflow.com backup (ZIP)',
+            accept: {
+              'application/zip': ['.zip']
+            }
+          }]
+        });
+        await writeHandle(h, blob);
+        markBackedUp();
+        showToast(`Saved ${h.name} in the folder you chose.`, 'success');
+      } catch (err) {
+        if (err.name !== 'AbortError') showToast("Couldn't save the ZIP file. Nothing was changed. Try again or pick another location.", 'error');
+      }
+      return;
+    }
+    const isTouchDevice = window.matchMedia && window.matchMedia('(pointer: coarse)').matches;
+    if (isTouchDevice) {
+      const file = new File([blob], name, {
+        type: 'application/zip'
+      });
+      if (navigator.canShare && navigator.canShare({
+        files: [file]
+      })) {
+        try {
+          await navigator.share({
+            title: 'actionplan.mcbflow.com backup',
+            files: [file]
+          });
+          markBackedUp();
+          showToast('Backup shared.', 'success');
+          return;
+        } catch (err) {
+          if (err.name === 'AbortError') return;
+        }
+      }
+    }
+    window.MBFiles.download(blob, name);
+    markBackedUp();
+    showToast(`Backup downloaded as ${name}. Check your Downloads folder.`, 'success');
+  };
   const handleImportClick = async () => {
     setDataMenuOpen(false);
     if (!FS_SUPPORTED) {
@@ -6262,10 +6850,11 @@ function App() {
       const [h] = await window.showOpenFilePicker({
         startIn: fileHandles.json || fileHandles.csv || 'documents',
         types: [{
-          description: 'actionplan.mcbflow.com backup (JSON or CSV)',
+          description: 'actionplan.mcbflow.com backup (JSON, CSV or ZIP)',
           accept: {
             'application/json': ['.json'],
-            'text/csv': ['.csv']
+            'text/csv': ['.csv'],
+            'application/zip': ['.zip']
           }
         }],
         multiple: false
@@ -6323,11 +6912,34 @@ function App() {
     const resetInput = () => {
       if (fileInputRef.current) fileInputRef.current.value = '';
     };
+    // A ZIP from Export All (ZIP): find the JSON backup inside and import it exactly like a JSON file.
+    if (/\.zip$/i.test(file.name) || /zip/i.test(file.type || '')) {
+      if (file.size > LIMITS.importBytes * 4 || !window.MBFiles) {
+        showToast(window.MBFiles ? 'That ZIP is larger than 20 MB, too big for an actionplan.mcbflow.com backup. Nothing was changed.' : "The ZIP tool didn't load. Reload the page and try again.", 'error');
+        resetInput();
+        return;
+      }
+      window.MBFiles.unzip(file).then(async entries => {
+        const jsons = entries.filter(e => /\.json$/i.test(e.name));
+        const entry = jsons.find(e => /(^|\/)[^/]*-backup\.json$/i.test(e.name)) || (jsons.length === 1 ? jsons[0] : null);
+        if (!entry) {
+          showToast("That ZIP has no Action Plan backup inside (actionplan-backup.json). Nothing was changed.", 'error');
+          return;
+        }
+        const text = String(await entry.text()).replace(/^\uFEFF/, '');
+        if (text.length > LIMITS.importBytes) {
+          showToast('The backup inside that ZIP is larger than 5 MB. Nothing was changed.', 'error');
+          return;
+        }
+        importJSONText(text);
+      }).catch(() => showToast("Couldn't read that ZIP file. Nothing was changed.", 'error')).finally(resetInput);
+      return;
+    }
     // Checked before reading: the file is only ever read locally, but a huge or wrong file could freeze the tab.
     const isJSON = /\.json$/i.test(file.name) || /json/i.test(file.type || '');
     const isCSV = !isJSON && (/\.csv$/i.test(file.name) || /csv|text\/plain/i.test(file.type || ''));
     if (!isJSON && !isCSV) {
-      showToast('Choose a .json or .csv backup exported from actionplan.mcbflow.com.', 'error');
+      showToast('Choose a .json, .csv or .zip backup exported from actionplan.mcbflow.com.', 'error');
       resetInput();
       return;
     }
@@ -6479,31 +7091,33 @@ function App() {
     setClearModalOpen(false);
     showToast('All tasks, projects and app settings were deleted from this browser.', 'success');
   };
+  // The start view (Today's list, quick add, next action) is the Home tab (MB Suite v3.3 §14); its id stays 'dashboard'.
+  // Icons: the suite's outline set (24 viewBox, stroke 1.8), drawn by Uic.
   const NAV_TABS = [{
     id: 'dashboard',
-    label: 'Today',
-    short: 'Today',
-    icon: 'sunrise'
+    label: 'Home',
+    short: 'Home',
+    uic: 'home'
   }, {
     id: 'projects',
     label: 'Projects',
     short: 'Projects',
-    icon: 'folder-kanban'
+    uic: 'projects'
   }, {
     id: 'tasks',
     label: 'Tasks Matrix',
     short: 'Matrix',
-    icon: 'grid'
+    uic: 'matrix'
   }, {
     id: 'calendar',
     label: 'Calendar',
     short: 'Calendar',
-    icon: 'calendar'
+    uic: 'calendar'
   }, {
     id: 'pomodoro',
     label: 'Focus Timer',
     short: 'Focus',
-    icon: 'timer'
+    uic: 'timer'
   }];
   const focusTask = focusTaskId ? tasks.find(t => t.id === focusTaskId) : null;
 
@@ -6515,7 +7129,7 @@ function App() {
     credits: 'Credits',
     notes: 'Release Notes'
   };
-  const pageName = onboardOpen ? 'Welcome' : legalModalOpen ? LEGAL_TITLES[legalTab] || 'About' : focusTask ? 'Focus Mode' : activeTab === 'more' ? 'More' : NAV_TABS.find(t => t.id === activeTab)?.label || 'Today';
+  const pageName = onboardOpen ? 'Welcome' : legalModalOpen ? LEGAL_TITLES[legalTab] || 'About' : focusTask ? 'Focus Mode' : activeTab === 'settings' ? 'Settings' : NAV_TABS.find(t => t.id === activeTab)?.label || 'Home';
   useEffect(() => {
     document.title = 'Action Plan | ' + pageName;
   }, [pageName]);
@@ -6539,21 +7153,68 @@ function App() {
       await ev.userChoice;
     } catch (e) {}
   };
-  // The Install card lives in More (MoreView): a real Install button where the browser offers one, a how-to
+  // The Install card lives in Settings (SettingsView): a real Install button where the browser offers one, a how-to
   // on iPhone/iPad, "Installed" inside the installed app, and nothing in browsers that can't install.
-  // The brand (logo, name and subtitle) always goes back to Today, at every screen size.
+  // The brand (logo, name and subtitle) always goes back to Home, at every screen size.
+  const openLegal = tab => {
+    setLegalTab(tab);
+    setLegalModalOpen(true);
+  };
   const goHome = () => {
     setActiveTab('dashboard');
     setIsMobileMenuOpen(false);
     if (mainRef.current) mainRef.current.scrollTop = 0;
   };
-  const viewTitle = activeTab === 'more' ? 'More' : NAV_TABS.find(t => t.id === activeTab)?.label || 'Today';
+  const viewTitle = activeTab === 'settings' ? 'Settings' : NAV_TABS.find(t => t.id === activeTab)?.label || 'Home';
   const whyTask = whyTaskId ? tasks.find(t => t.id === whyTaskId) : null;
   const canUndo = historyIndex > 0;
   const canRedo = historyIndex < history.length - 1;
   const hasData = tasks.length > 0 || projects.some(p => !['p_1', 'p_2'].includes(p.id));
   const bk = backupAge(lastBackup);
-  const backupWarn = hasData && bk.days > 7;
+  // Signed in and syncing fine: backup reminders stay quiet (no amber chip, dot or warning boxes).
+  const backupWarn = hasData && bk.days > 7 && !quietBackups;
+  const signedIn = !!(syncStat && syncStat.signedIn);
+  const chipText = quietBackups ? 'Synced' : hasData && !lastBackup ? 'Not backed up' : bk.text;
+  const fmtBackupDay = ts => new Date(ts).toLocaleDateString(undefined, {
+    month: 'short',
+    day: 'numeric'
+  });
+  const dataStatusText = quietBackups ? `Synced to your account \xB7 last file backup ${lastBackup ? fmtBackupDay(lastBackup) : 'none yet'}` : !lastBackup ? 'Never backed up' : `Last backup ${fmtBackupDay(lastBackup)} \xB7 ${bk.days === 0 ? 'today' : bk.days === 1 ? 'yesterday' : bk.days + ' days ago'}`;
+  const dataStatusCls = quietBackups ? 'ok' : backupWarn || hasData && !lastBackup ? 'warn' : lastBackup ? 'ok' : '';
+  // The same Data items in the top-bar menu and on Settings › Backup & data.
+  const dataProps = {
+    sync: syncStat,
+    savedName: fileHandles.json?.name,
+    csvName: fileHandles.csv?.name,
+    statusText: dataStatusText,
+    statusCls: dataStatusCls,
+    onBackup: saveBackupNow,
+    onSync: () => {
+      setDataMenuOpen(false);
+      if (window.MBS_SYNC) window.MBS_SYNC.open();
+    },
+    onJSON: () => exportBackup('json', {
+      pickNew: true
+    }),
+    onCSV: () => exportBackup('csv', {
+      pickNew: !fileHandles.csv
+    }),
+    onZIP: exportZip,
+    onText: exportTextList,
+    onPrint: printList,
+    onImport: handleImportClick,
+    onImportApp: () => {
+      setDataMenuOpen(false);
+      setImportOpen(true);
+    },
+    onChangeLocation: () => exportBackup('json', {
+      pickNew: true
+    }),
+    onClear: () => {
+      setDataMenuOpen(false);
+      setClearModalOpen(true);
+    }
+  };
   const savedName = fileHandles.json?.name;
   const csvName = fileHandles.csv?.name;
   const finishOnboarding = firstTitle => {
@@ -6581,11 +7242,12 @@ function App() {
       showToast(touch ? "You're set. Tap + anytime to add a task." : "You're set. Press N anytime to add a task.", 'success');
     }
   };
+  // Light/dark switch: the standard MB Suite markup (button.themesw > span.tk > sun + moon + thumb); the shared CSS sizes it.
   const renderThemeSwitch = (className = '') => /*#__PURE__*/React.createElement("button", {
     type: "button",
     role: "switch",
     "aria-checked": theme === 'dark',
-    "aria-label": "Dark theme",
+    "aria-label": "Dark mode",
     title: theme === 'dark' ? 'Switch to light theme' : 'Switch to dark theme',
     onClick: () => setTheme(theme === 'dark' ? 'light' : 'dark'),
     className: `themesw ${className}`
@@ -6593,29 +7255,29 @@ function App() {
     className: "tk"
   }, /*#__PURE__*/React.createElement("svg", {
     className: "i-sun",
-    viewBox: "0 0 20 20",
-    width: "14",
-    height: "14",
-    "aria-hidden": "true",
+    viewBox: "0 0 24 24",
     fill: "none",
     stroke: "currentColor",
-    strokeWidth: "1.8",
-    strokeLinecap: "round"
+    strokeWidth: "2",
+    strokeLinecap: "round",
+    "aria-hidden": "true"
   }, /*#__PURE__*/React.createElement("circle", {
-    cx: "10",
-    cy: "10",
-    r: "3.2"
+    cx: "12",
+    cy: "12",
+    r: "4"
   }), /*#__PURE__*/React.createElement("path", {
-    d: "M10 2.5v1.8M10 15.7v1.8M2.5 10h1.8M15.7 10h1.8M4.7 4.7l1.3 1.3M14 14l1.3 1.3M4.7 15.3 6 14M14 6l1.3-1.3"
+    d: "M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"
   })), /*#__PURE__*/React.createElement("svg", {
     className: "i-moon",
-    viewBox: "0 0 20 20",
-    width: "14",
-    height: "14",
-    "aria-hidden": "true",
-    fill: "currentColor"
+    viewBox: "0 0 24 24",
+    fill: "none",
+    stroke: "currentColor",
+    strokeWidth: "2",
+    strokeLinecap: "round",
+    strokeLinejoin: "round",
+    "aria-hidden": "true"
   }, /*#__PURE__*/React.createElement("path", {
-    d: "M16.5 12.2A6.6 6.6 0 0 1 7.8 3.5a6.6 6.6 0 1 0 8.7 8.7Z"
+    d: "M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5Z"
   })), /*#__PURE__*/React.createElement("i", {
     className: "th"
   })));
@@ -6664,24 +7326,22 @@ function App() {
     type: "button",
     onClick: () => setActiveTab(tab.id),
     "aria-current": activeTab === tab.id ? 'page' : undefined
-  }, /*#__PURE__*/React.createElement(Icon, {
-    name: tab.icon,
-    className: "w-4 h-4"
+  }, /*#__PURE__*/React.createElement(Uic, {
+    n: tab.uic
   }), /*#__PURE__*/React.createElement("span", {
     className: "lbl-full"
   }, tab.label), /*#__PURE__*/React.createElement("span", {
     className: "lbl-short"
   }, tab.short)))), /*#__PURE__*/React.createElement("nav", {
     className: "side-nav side-end",
-    "aria-label": "More"
+    "aria-label": "Settings"
   }, /*#__PURE__*/React.createElement("button", {
     type: "button",
-    onClick: () => setActiveTab('more'),
-    "aria-current": activeTab === 'more' ? 'page' : undefined
-  }, /*#__PURE__*/React.createElement(Icon, {
-    name: "ellipsis",
-    className: "w-4 h-4"
-  }), /*#__PURE__*/React.createElement("span", null, "More")))), /*#__PURE__*/React.createElement("div", {
+    onClick: () => setActiveTab('settings'),
+    "aria-current": activeTab === 'settings' ? 'page' : undefined
+  }, /*#__PURE__*/React.createElement(Uic, {
+    n: "gear"
+  }), /*#__PURE__*/React.createElement("span", null, "Settings")))), /*#__PURE__*/React.createElement("div", {
     className: "mb-main"
   }, /*#__PURE__*/React.createElement("header", {
     className: "page-bar"
@@ -6723,7 +7383,7 @@ function App() {
   }), /*#__PURE__*/React.createElement("kbd", null, "/")), /*#__PURE__*/React.createElement("input", {
     ref: fileInputRef,
     type: "file",
-    accept: ".json,application/json,.csv,text/csv",
+    accept: ".json,application/json,.csv,text/csv,.zip,application/zip",
     className: "hidden",
     onChange: handleImportCSV,
     tabIndex: -1,
@@ -6750,25 +7410,23 @@ function App() {
   }, /*#__PURE__*/React.createElement(Icon, {
     name: "redo-2",
     className: "w-4 h-4"
-  }))), (hasData || lastBackup > 0) && /*#__PURE__*/React.createElement("button", {
+  }))), (hasData || lastBackup > 0 || quietBackups) && /*#__PURE__*/React.createElement("button", {
     type: "button",
     onClick: saveBackupNow,
-    className: `bk-chip tb-chip ${backupWarn ? 'warn' : ''}`,
-    title: "Save backup now (Ctrl+S)"
-  }, /*#__PURE__*/React.createElement(Icon, {
-    name: backupWarn ? 'alert-triangle' : 'shield-check',
-    className: "w-3.5 h-3.5"
-  }), hasData && !lastBackup ? 'Not backed up' : bk.text), /*#__PURE__*/React.createElement("div", {
-    className: "relative",
+    className: `bk-chip tb-chip ${backupWarn ? 'warn' : quietBackups || lastBackup ? 'ok' : ''}`,
+    title: quietBackups ? `Synced to your account. Last file backup: ${lastBackup ? fmtBackupDay(lastBackup) : 'none yet'}. Click to save a backup now (Ctrl+S).` : "Save backup now (Ctrl+S)"
+  }, chipText), /*#__PURE__*/React.createElement("div", {
+    className: "relative ap-dm-wrap",
     ref: dataMenuRef
   }, /*#__PURE__*/React.createElement("button", {
     type: "button",
     onClick: () => setDataMenuOpen(o => !o),
+    "aria-haspopup": "menu",
     "aria-expanded": dataMenuOpen,
     "aria-controls": "data-menu",
-    "aria-label": "Data: backup, import and reset",
+    "aria-label": "Data: back up, sync, export or import",
     className: "tb",
-    title: "Backup, import and reset"
+    title: "Back up, sync, export or import"
   }, /*#__PURE__*/React.createElement(Icon, {
     name: "database",
     className: "w-4 h-4"
@@ -6778,134 +7436,19 @@ function App() {
     name: "chevron-down",
     className: "tb-chev"
   }), backupWarn && /*#__PURE__*/React.createElement("i", {
-    className: "warn-dot tb-dot",
+    className: "tb-dot",
     "aria-hidden": "true"
   }), backupWarn && /*#__PURE__*/React.createElement("span", {
     className: "sr-only"
   }, "(backup recommended)")), dataMenuOpen && /*#__PURE__*/React.createElement("div", {
     id: "data-menu",
-    className: "dmenu animate-fade-in"
-  }, /*#__PURE__*/React.createElement("button", {
-    type: "button",
-    className: "dm-item primary",
-    onClick: saveBackupNow
-  }, /*#__PURE__*/React.createElement(Icon, {
-    name: "download",
-    className: "w-4 h-4 ic"
-  }), /*#__PURE__*/React.createElement("span", {
-    className: "flex-1 min-w-0"
-  }, /*#__PURE__*/React.createElement("span", {
-    className: "t"
-  }, "Save backup now ", /*#__PURE__*/React.createElement("kbd", {
-    className: "hidden lg:inline"
-  }, "Ctrl+S")), /*#__PURE__*/React.createElement("span", {
-    className: "s"
-  }, FS_SUPPORTED ? savedName ? `Overwrites ${savedName}${csvName ? ` and ${csvName}` : ''}.` : 'Choose where to save it the first time.' : 'Downloads a JSON backup.'))), window.MBS_SYNC && /*#__PURE__*/React.createElement("button", {
-    type: "button",
-    className: "dm-item",
-    onClick: () => {
-      setDataMenuOpen(false);
-      window.MBS_SYNC.open();
-    }
-  }, /*#__PURE__*/React.createElement(Icon, {
-    name: "rotate-ccw",
-    className: "w-4 h-4 ic"
-  }), /*#__PURE__*/React.createElement("span", {
-    className: "flex-1 min-w-0"
-  }, /*#__PURE__*/React.createElement("span", {
-    className: "t"
-  }, window.MBS_SYNC.status().signedIn ? 'Sync: ' + window.MBS_SYNC.status().label : 'Sync across devices\u2026'), /*#__PURE__*/React.createElement("span", {
-    className: "s"
-  }, window.MBS_SYNC.status().signedIn ? window.MBS_SYNC.status().email : 'Optional free account. Your tasks stay on this device too.'))), /*#__PURE__*/React.createElement("button", {
-    type: "button",
-    className: "dm-item",
-    onClick: () => exportBackup('json', {
-      pickNew: true
-    })
-  }, /*#__PURE__*/React.createElement(Icon, {
-    name: "file-text",
-    className: "w-4 h-4 ic"
-  }), /*#__PURE__*/React.createElement("span", {
-    className: "flex-1 min-w-0"
-  }, /*#__PURE__*/React.createElement("span", {
-    className: "t"
-  }, "Export All (JSON)\u2026"), /*#__PURE__*/React.createElement("span", {
-    className: "s"
-  }, "Full backup of every project, task and setting. Best for restoring."))), /*#__PURE__*/React.createElement("button", {
-    type: "button",
-    className: "dm-item",
-    onClick: handleImportClick
-  }, /*#__PURE__*/React.createElement(Icon, {
-    name: "upload",
-    className: "w-4 h-4 ic"
-  }), /*#__PURE__*/React.createElement("span", {
-    className: "flex-1 min-w-0"
-  }, /*#__PURE__*/React.createElement("span", {
-    className: "t"
-  }, "Import Backup (JSON or CSV)\u2026"), /*#__PURE__*/React.createElement("span", {
-    className: "s"
-  }, "Adds what's missing; skips anything already here."))), /*#__PURE__*/React.createElement("button", {
-    type: "button",
-    className: "dm-item",
-    onClick: () => exportBackup('csv', {
-      pickNew: !fileHandles.csv
-    })
-  }, /*#__PURE__*/React.createElement(Icon, {
-    name: "grid",
-    className: "w-4 h-4 ic"
-  }), /*#__PURE__*/React.createElement("span", {
-    className: "flex-1 min-w-0"
-  }, /*#__PURE__*/React.createElement("span", {
-    className: "t"
-  }, "Export All (CSV)\u2026"), /*#__PURE__*/React.createElement("span", {
-    className: "s"
-  }, csvName ? `Updates ${csvName}. Opens in Excel or Sheets; can be re-imported.` : 'For Excel or Sheets. Can also be re-imported.'))), /*#__PURE__*/React.createElement(DataMenuExtras, {
-    onImportApp: () => {
-      setDataMenuOpen(false);
-      setImportOpen(true);
-    },
-    onText: exportTextList,
-    onPrint: printList
-  }), /*#__PURE__*/React.createElement("div", {
-    className: "dm-sep"
-  }), /*#__PURE__*/React.createElement("button", {
-    type: "button",
-    className: "dm-item danger",
-    onClick: () => {
-      setDataMenuOpen(false);
-      setClearModalOpen(true);
-    }
-  }, /*#__PURE__*/React.createElement(Icon, {
-    name: "trash-2",
-    className: "w-4 h-4 ic"
-  }), /*#__PURE__*/React.createElement("span", {
-    className: "flex-1 min-w-0"
-  }, /*#__PURE__*/React.createElement("span", {
-    className: "t"
-  }, "Clear all data\u2026"), /*#__PURE__*/React.createElement("span", {
-    className: "s"
-  }, "Asks you to confirm first."))), /*#__PURE__*/React.createElement("div", {
-    className: "dm-foot"
-  }, /*#__PURE__*/React.createElement("div", {
-    className: `flex items-center gap-1.5 ${backupWarn ? '!text-amber-700 dark:!text-amber-300' : ''}`
-  }, /*#__PURE__*/React.createElement(Icon, {
-    name: backupWarn ? 'alert-triangle' : 'shield-check',
-    className: "w-3.5 h-3.5"
-  }), hasData && !lastBackup ? 'Not backed up yet. Your data lives only in this browser.' : `${bk.text}.`), FS_SUPPORTED ? /*#__PURE__*/React.createElement("div", {
-    className: "mt-1 flex items-center justify-between gap-2 flex-wrap"
-  }, /*#__PURE__*/React.createElement("span", {
-    className: "min-w-0 truncate"
-  }, savedName ? /*#__PURE__*/React.createElement(React.Fragment, null, "Saving to ", /*#__PURE__*/React.createElement("b", {
-    className: "text-slate-700 dark:text-slate-200"
-  }, savedName), " in the folder you chose") : 'No save location chosen yet.'), savedName && /*#__PURE__*/React.createElement("button", {
-    type: "button",
-    className: "link text-xs",
-    onClick: () => exportBackup('json', {
-      pickNew: true
-    })
-  }, "Change location\u2026")) : /*#__PURE__*/React.createElement("div", {
-    className: "mt-1"
-  }, "This browser can't pick a save location, so backups go to your Downloads folder.")))), renderThemeSwitch(), /*#__PURE__*/React.createElement("button", {
+    className: "mb-dm animate-fade-in",
+    role: "menu",
+    "aria-label": "Data"
+  }, /*#__PURE__*/React.createElement(DataList, {
+    menu: true,
+    d: dataProps
+  }))), renderThemeSwitch(), /*#__PURE__*/React.createElement(AcctButton, null), /*#__PURE__*/React.createElement("button", {
     type: "button",
     onClick: () => openNewTask(),
     className: "tb tb-primary ap-add",
@@ -6922,10 +7465,10 @@ function App() {
       setPhoneSearchOpen(false);
       setIsMobileMenuOpen(!isMobileMenuOpen);
     },
-    "aria-label": isMobileMenuOpen ? 'Close tools menu' : 'Open tools menu: undo, redo, more',
+    "aria-label": isMobileMenuOpen ? 'Close tools menu' : 'Open tools menu: undo, redo, search, settings',
     "aria-expanded": isMobileMenuOpen,
     className: "tb ap-menu",
-    title: "Undo, redo and More"
+    title: "Undo, redo, search and Settings"
   }, /*#__PURE__*/React.createElement(Icon, {
     name: isMobileMenuOpen ? "x" : "menu",
     className: "w-4 h-4"
@@ -6968,15 +7511,25 @@ function App() {
     className: "w-4 h-4"
   }), " Redo")), /*#__PURE__*/React.createElement("button", {
     type: "button",
+    className: "btn w-full ap-menu-search",
+    onClick: () => {
+      setIsMobileMenuOpen(false);
+      setPhoneSearchOpen(true);
+    }
+  }, /*#__PURE__*/React.createElement(Icon, {
+    name: "search",
+    className: "w-4 h-4"
+  }), " Search tasks"), /*#__PURE__*/React.createElement("button", {
+    type: "button",
     className: "btn w-full",
     onClick: () => {
       setIsMobileMenuOpen(false);
-      setActiveTab('more');
+      setActiveTab('settings');
     }
-  }, /*#__PURE__*/React.createElement(Icon, {
-    name: "ellipsis",
-    className: "w-4 h-4"
-  }), " More: install, help and privacy"), (hasData || lastBackup > 0) && /*#__PURE__*/React.createElement("button", {
+  }, /*#__PURE__*/React.createElement(Uic, {
+    n: "gear",
+    size: 16
+  }), " Settings: theme, sync, backup and help"), (hasData || lastBackup > 0) && !quietBackups && /*#__PURE__*/React.createElement("button", {
     type: "button",
     onClick: () => {
       setIsMobileMenuOpen(false);
@@ -7121,59 +7674,19 @@ function App() {
     wakeLockEnabled: wakeLockEnabled,
     setWakeLockEnabled: setWakeLockEnabled,
     onCompleteTask: completeSelectedTask
-  }), activeTab === 'more' && /*#__PURE__*/React.createElement(MoreView, {
-    renderThemeSwitch: renderThemeSwitch,
+  }), activeTab === 'settings' && /*#__PURE__*/React.createElement(SettingsView, {
+    theme: theme,
+    setTheme: setTheme,
+    dataList: /*#__PURE__*/React.createElement(DataList, {
+      menu: false,
+      d: dataProps
+    }),
     onInstall: doInstall,
-    backupText: hasData && !lastBackup ? 'Not backed up yet' : bk.text,
-    backupWarn: backupWarn,
-    onBackup: saveBackupNow,
-    onLegal: tab => {
-      setLegalTab(tab);
-      setLegalModalOpen(true);
-    },
+    onLegal: openLegal,
     onWelcome: () => setOnboardOpen(true)
-  }), /*#__PURE__*/React.createElement("footer", {
-    className: "pt-8 pb-3 flex flex-wrap items-center justify-center gap-x-4 gap-y-1 text-xs text-slate-500 dark:text-slate-400"
-  }, /*#__PURE__*/React.createElement("span", null, "actionplan.mcbflow.com - a free, local-only productivity app."), /*#__PURE__*/React.createElement("button", {
-    type: "button",
-    onClick: () => {
-      setLegalTab('notes');
-      setLegalModalOpen(true);
-    },
-    className: "underline inline-flex items-center min-h-[32px] hover:text-sky-600 dark:hover:text-sky-400"
-  }, "Release notes"), /*#__PURE__*/React.createElement("button", {
-    type: "button",
-    onClick: () => {
-      setLegalTab('privacy');
-      setLegalModalOpen(true);
-    },
-    className: "underline inline-flex items-center min-h-[32px] hover:text-sky-600 dark:hover:text-sky-400"
-  }, "Privacy Policy"), /*#__PURE__*/React.createElement("button", {
-    type: "button",
-    onClick: () => {
-      setLegalTab('terms');
-      setLegalModalOpen(true);
-    },
-    className: "underline inline-flex items-center min-h-[32px] hover:text-sky-600 dark:hover:text-sky-400"
-  }, "Terms of Use"), /*#__PURE__*/React.createElement("button", {
-    type: "button",
-    onClick: () => {
-      setLegalTab('disclaimer');
-      setLegalModalOpen(true);
-    },
-    className: "underline inline-flex items-center min-h-[32px] hover:text-sky-600 dark:hover:text-sky-400"
-  }, "Disclaimer"), /*#__PURE__*/React.createElement("button", {
-    type: "button",
-    onClick: () => {
-      setLegalTab('credits');
-      setLegalModalOpen(true);
-    },
-    className: "underline inline-flex items-center min-h-[32px] hover:text-sky-600 dark:hover:text-sky-400"
-  }, "Credits"), /*#__PURE__*/React.createElement("button", {
-    type: "button",
-    onClick: () => setOnboardOpen(true),
-    className: "underline inline-flex items-center min-h-[32px] hover:text-sky-600 dark:hover:text-sky-400"
-  }, "Welcome guide"))))), /*#__PURE__*/React.createElement("nav", {
+  }), activeTab !== 'settings' && /*#__PURE__*/React.createElement(AppFooter, {
+    onLegal: openLegal
+  })))), /*#__PURE__*/React.createElement("nav", {
     className: "bnav",
     "aria-label": "Sections"
   }, NAV_TABS.map(tab => /*#__PURE__*/React.createElement("button", {
@@ -7184,10 +7697,20 @@ function App() {
       setIsMobileMenuOpen(false);
     },
     "aria-current": activeTab === tab.id ? 'page' : undefined
-  }, /*#__PURE__*/React.createElement(Icon, {
-    name: tab.icon,
-    className: "w-5 h-5"
-  }), /*#__PURE__*/React.createElement("span", null, tab.short)))), /*#__PURE__*/React.createElement("button", {
+  }, /*#__PURE__*/React.createElement(Uic, {
+    n: tab.uic,
+    size: 20
+  }), /*#__PURE__*/React.createElement("span", null, tab.short))), /*#__PURE__*/React.createElement("button", {
+    type: "button",
+    onClick: () => {
+      setActiveTab('settings');
+      setIsMobileMenuOpen(false);
+    },
+    "aria-current": activeTab === 'settings' ? 'page' : undefined
+  }, /*#__PURE__*/React.createElement(Uic, {
+    n: "gear",
+    size: 20
+  }), /*#__PURE__*/React.createElement("span", null, "Settings"))), /*#__PURE__*/React.createElement("button", {
     type: "button",
     onClick: () => openNewTask(),
     "aria-label": "Add task",
@@ -7597,7 +8120,18 @@ function ProjectsView({
     }, activeCount, " active \xB7 ", pTasks.length, " total"), /*#__PURE__*/React.createElement("span", {
       className: "font-semibold text-slate-700 dark:text-slate-200"
     }, prog, "%")), /*#__PURE__*/React.createElement("div", {
-      className: "meter"
+      className: "meter",
+      role: "progressbar",
+      "aria-label": `${project.name}: ${prog}% done, ${compCount} of ${pTasks.length} tasks`,
+      "aria-valuenow": prog,
+      "aria-valuemin": "0",
+      "aria-valuemax": "100",
+      tabIndex: 0,
+      "data-tip-v": `${prog}% done`,
+      "data-tip-w": project.name,
+      "data-tip-c": `${compCount} of ${pTasks.length} task${pTasks.length === 1 ? '' : 's'} done \u00B7 ${activeCount} active`,
+      onClick: e => e.stopPropagation(),
+      onKeyDown: e => e.stopPropagation()
     }, /*#__PURE__*/React.createElement("div", {
       className: "h-full rounded-sm transition-all duration-200",
       style: {
@@ -8038,7 +8572,11 @@ function PomodoroView({
     className: "relative w-56 h-56 flex items-center justify-center mb-5",
     role: "timer",
     "aria-live": "off",
-    "aria-label": `${formatSeconds(timeLeft)} remaining`
+    "aria-label": `${formatSeconds(timeLeft)} remaining`,
+    tabIndex: 0,
+    "data-tip-v": `${formatSeconds(timeLeft)} left`,
+    "data-tip-w": isWorkPhase ? 'Focus block' : 'Break',
+    "data-tip-c": `${Math.max(0, Math.min(100, Math.round(progressPercent)))}% of this block done \u00B7 cycle ${Math.floor(pomoCycle / 2) + 1} of 4`
   }, /*#__PURE__*/React.createElement("svg", {
     className: "absolute inset-0 w-full h-full -rotate-90",
     viewBox: "0 0 100 100",
@@ -8154,10 +8692,8 @@ if ('serviceWorker' in navigator && /^https?:$/.test(location.protocol)) {
     keepStorage();
   });
 }
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(/*#__PURE__*/React.createElement(App, null));
-
 /* ---- optional account sync (mb-sync.js) ----
+   Created before the app first renders, so the top-bar account button and the welcome screen can use it.
    One record per task and project; each day's finished count is one record. Reads and writes the same localStorage keys the app uses. */
 (function () {
   if (!window.MBSync) return;
@@ -8181,6 +8717,8 @@ root.render(/*#__PURE__*/React.createElement(App, null));
   window.MBS_SYNC = MBSync.create({
     app: 'actionplan',
     label: 'Action Plan',
+    what: 'your tasks, projects and streak',
+    note: 'Theme and focus timer stay on each device.',
     toRecords() {
       const r = {};
       const tasks = read('actionplan.tasks', []),
@@ -8205,7 +8743,115 @@ root.render(/*#__PURE__*/React.createElement(App, null));
     hasData: () => (read('actionplan.tasks', []) || []).length > 0
   });
 })();
+
+/* ---- Hover / tap / focus labels for progress bars and the timer ring (MB Suite v3.3 §10) ----
+   Any element with data-tip-v (bold value), data-tip-w (what) and data-tip-c (context) shows a small label on hover,
+   tap or keyboard focus. Marks inside a [data-tip-group] fade the others while one is read, and ← → move between
+   them. Esc, scrolling or leaving hides it. Plain DOM, nothing leaves the page. */
+(function () {
+  let tip = null,
+    cur = null,
+    watch = null;
+  const esc = v => String(v == null ? '' : v).replace(/[&<>"']/g, c => ({
+    '&': '&amp;',
+    '<': '&lt;',
+    '>': '&gt;',
+    '"': '&quot;',
+    "'": '&#39;'
+  })[c]);
+  const fill = () => {
+    if (!tip || !cur) return;
+    tip.innerHTML = '<b>' + esc(cur.getAttribute('data-tip-v')) + '</b><span>' + esc(cur.getAttribute('data-tip-w')) + '</span>' + (cur.getAttribute('data-tip-c') ? '<span class="c">' + esc(cur.getAttribute('data-tip-c')) + '</span>' : '');
+    const r = cur.getBoundingClientRect(),
+      w = tip.offsetWidth,
+      h = tip.offsetHeight;
+    let x = r.left + r.width / 2 - w / 2,
+      y = r.top - h - 8;
+    if (y < 8) y = r.bottom + 8;
+    x = Math.max(8, Math.min(x, window.innerWidth - w - 8));
+    tip.style.left = Math.round(x) + 'px';
+    tip.style.top = Math.round(y) + 'px';
+  };
+  const hide = () => {
+    if (tip) tip.hidden = true;
+    if (watch) watch.disconnect();
+    if (cur) {
+      cur.classList.remove('is-read');
+      if (cur.parentElement) cur.parentElement.classList.remove('has-read');
+    }
+    cur = null;
+  };
+  const show = el => {
+    if (cur === el) return fill();
+    hide();
+    cur = el;
+    if (!tip) {
+      tip = document.createElement('div');
+      tip.className = 'ap-tip';
+      tip.setAttribute('role', 'tooltip');
+      tip.setAttribute('aria-hidden', 'true');
+      document.body.appendChild(tip);
+    }
+    tip.hidden = false;
+    const g = el.parentElement;
+    if (g && g.hasAttribute('data-tip-group')) {
+      g.classList.add('has-read');
+      el.classList.add('is-read');
+    }
+    fill();
+    // the timer ring changes every second: keep the label current while it is shown
+    watch = new MutationObserver(fill);
+    watch.observe(el, {
+      attributes: true,
+      attributeFilter: ['data-tip-v', 'data-tip-w', 'data-tip-c']
+    });
+  };
+  const markOf = t => t && t.closest ? t.closest('[data-tip-v]') : null;
+  document.addEventListener('pointerover', e => {
+    if (e.pointerType === 'touch') return;
+    const m = markOf(e.target);
+    if (m) show(m);
+  });
+  document.addEventListener('pointerout', e => {
+    if (e.pointerType === 'touch' || !cur) return;
+    if (!cur.contains(e.relatedTarget) && document.activeElement !== cur) hide();
+  });
+  document.addEventListener('pointerdown', e => {
+    const m = markOf(e.target);
+    if (m && e.pointerType === 'touch') show(m);else if (!m) hide();
+  });
+  document.addEventListener('focusin', e => {
+    const m = markOf(e.target);
+    if (m && m === e.target) show(m);else if (cur) hide();
+  });
+  document.addEventListener('focusout', e => {
+    if (cur && e.target === cur) hide();
+  });
+  document.addEventListener('keydown', e => {
+    if (!cur) return;
+    if (e.key === 'Escape') {
+      hide();
+      return;
+    }
+    const g = cur.parentElement;
+    if (!g || !g.hasAttribute('data-tip-group') || document.activeElement !== cur) return;
+    const marks = Array.from(g.querySelectorAll(':scope > [data-tip-v]'));
+    const i = marks.indexOf(cur);
+    const n = e.key === 'ArrowRight' ? i + 1 : e.key === 'ArrowLeft' ? i - 1 : e.key === 'Home' ? 0 : e.key === 'End' ? marks.length - 1 : null;
+    if (n === null || n < 0 || n >= marks.length) return;
+    e.preventDefault();
+    marks.forEach((m, k) => m.tabIndex = k === n ? 0 : -1);
+    marks[n].focus();
+  });
+  window.addEventListener('scroll', hide, true);
+  window.addEventListener('resize', hide);
+})();
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(/*#__PURE__*/React.createElement(App, null));
+
     
+        
     </script>
 </body>
 </html>

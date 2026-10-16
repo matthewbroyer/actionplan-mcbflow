@@ -1,6 +1,19 @@
 # Action Plan: Release Notes
 
-Newest first. The same notes appear in the app under **About & Legal → Release notes** (footer link).
+Newest first. The same notes appear in the app under **What’s new** (page footer, or Settings › About).
+
+## 1.7 · 2026-10-16
+- New **Settings** page: in the sidebar on computers and the bottom bar on phones. Theme, account and sync, help and legal pages, Backup & data, Install and About are in one place. It replaces the More page; nothing was removed.
+- **Account button** in the top bar: "Sign in", or your initial with a small sync dot once you're signed in. New **Keep me signed in on this device** option (turn it off on a shared computer).
+- **Profile picture and screen name**: under Edit profile in the account dialog (or Settings › Account & sync), pick a screen name and one of 20 profile pictures. It's saved on your account, so every mcbflow.com app shows the same one in the top bar.
+- The start page is now called **Home** (house icon) and greets you: "Good morning", or "Good morning, <your name>" when you're signed in. Its content ("Your day is open", quick add, Must do / Should do / If time) is unchanged. Settings has a proper gear icon. Links ending in `#today` (or `#home`, `#projects`, `#matrix`, `#calendar`, `#focus`, `#settings`) open that page.
+- The **welcome screen** has the same look as the other mcbflow.com apps, with the same three steps: what this is, pick a look, and your first task. It has Sign in at the top and "Moving from another device?" with Sign in to sync and Import a backup on the last step.
+- Clearer **Data menu**: every item says what it's for. New **Export All (ZIP)** puts the full backup and spreadsheets of your tasks and projects in one file, and **Import Backup** also takes that ZIP. File names now start with `actionplan-`.
+- **Quieter backup reminders** while you're signed in and syncing: the top bar shows "Synced" and the Data menu says "Synced to your account" instead of a warning.
+- **Even top bar**: every button, the light/dark switch and the account button are the same height.
+- New name style **"Action Plan ∙ mcbflow.com"** (just "Action Plan" on phones), and a page footer with What's new, Privacy and Terms on every page.
+- Today's progress bar, the project bars and the focus timer ring show a small label when you hover, tap or tab to them.
+- The app has no photos or attachments, so nothing changed there.
 
 ## 1.6 · 2026-10-15
 - New: optional sync across devices. Data → Sync signs in with a free mcbflow.com account; tasks, projects and your streak then match on every device you sign in on. Theme and focus timer stay per device.
@@ -8,7 +21,7 @@ Newest first. The same notes appear in the app under **About & Legal → Release
 - Clear all data warns when you're signed in, since it also clears synced tasks.
 
 ## 1.5 · 2026-10-14
-- Moved to actionplan.mcbflow.com. Data saved at mbactionplan.online doesn't carry over: export a backup there and import it here.
+- Moved to actionplan.mcbflow.com. Data saved at the old address doesn't carry over: export a backup there and import it here.
 - Storage names simplified.
 
 ## 1.4 · 2026-10-14
@@ -61,7 +74,7 @@ Newest first. The same notes appear in the app under **About & Legal → Release
 **Look**
 - **Centered icon.** The app icon is now centered, including the home-screen icon on iPhone and the icon on Android (they were drawn slightly off-center before). It also has a soft gradient instead of flat color. The preview image for shared links matches.
 - The tagline **Simple, focused daily productivity.** is back under the name at the top, on every screen size.
-- The footer now reads "mbactionplan.online - a free, local-only productivity app." The version number is still in About & Legal.
+- The footer now reads "<app address> - a free, local-only productivity app." The version number is still in About & Legal.
 
 ## Version 16 · October 8, 2026
 
@@ -107,7 +120,7 @@ Newest first. The same notes appear in the app under **About & Legal → Release
 - Still no accounts, no server, no network requests after the page loads. The Privacy Policy now lists the new fields and the daily finished count.
 
 ## Version 14 · September 28, 2026
-- Action Plan is now mbactionplan.online.
+- Action Plan got a new name and address.
 - New app icon: a checked box with a small yellow dot, shown in the browser tab, header, loading screen, and welcome guide. It follows your chosen accent color.
 - Your tasks, projects, settings, and existing backups are unchanged and still import normally.
 
