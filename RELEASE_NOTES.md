@@ -2,6 +2,24 @@
 
 Newest first. The same notes appear in the app under **What’s new** (page footer, or Settings › About).
 
+## 1.9 · 2026-10-17
+- New **Help** page (sidebar, or More on phones): getting started in a few steps, then short answers grouped by topic.
+- **Search** works the same in every mcbflow.com app: the Search button, `/` or Ctrl+K finds tasks, projects and pages and opens the one you pick. "Filter all views" still narrows every page to matching tasks.
+- The **More** menu on phones is the same in every app: Settings, Tasks Matrix, Calendar, Help and What's new.
+- **What's new** opens in one window from the page footer, Settings › About, Help and More.
+- **Settings** has the same order as the other apps, with "Changes save as you make them." at the top and the welcome guide under Action Plan settings. The Install section uses the same words in every app.
+- Messages at the bottom of the screen look the same in every app. Deleting a project no longer asks first; **Undo** is in the message.
+- Backup files are named the same way in every app, like `actionplan-backup-2026-10-17.json`. The CSV is now `actionplan-tasks-2026-10-17.csv`. Older backups still import.
+- Empty pages (no tasks, no projects) say what goes there, with one button to add the first one.
+- The welcome banner shows the date and one detail, like how much time you have planned.
+
+## 1.8 · 2026-10-17
+- **Phone bottom bar**: Home · Projects · **Add task** (the big + in the middle) · Focus · More. More holds Settings, Tasks Matrix and Calendar. The floating + button is gone on phones, since Add task is now in the bar. Computers and tablets are unchanged.
+- **Clear all data** now asks you to type DELETE, the same in every mcbflow.com app. It still offers to save a backup first, and still deletes your synced copy too when you're signed in.
+- Account pop-up spacing fixed.
+- Welcome banner art is no longer cut off on phones. On a finished day, **Share** now sits just under the banner.
+- Very long task and project names wrap instead of pushing the page sideways on phones.
+
 ## 1.7 · 2026-10-16
 - New **Settings** page: in the sidebar on computers and the bottom bar on phones. Theme, account and sync, help and legal pages, Backup & data, Install and About are in one place. It replaces the More page; nothing was removed.
 - **Account button** in the top bar: "Sign in", or your initial with a small sync dot once you're signed in. New **Keep me signed in on this device** option (turn it off on a shared computer).

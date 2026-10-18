@@ -8,9 +8,9 @@
  * slow). Uploading new files is enough for visitors to get them. Still bump CACHE on every release (MB Suite
  * rule): installed copies then drop the old saved files, including old icons.
  */
-const CACHE = 'actionplan-app-v1.7';
+const CACHE = 'actionplan-app-v1.9-ui101';
 const SHELL = ['./', 'index.html', 'manifest.json', 'favicon.svg', 'favicon.ico', 'icon-192.png', 'icon-512.png',
-  'icon-maskable-512.png', 'apple-touch-icon.png', 'mb-sync.js', 'mb-files.js', 'vendor/supabase.js'];
+  'icon-maskable-512.png', 'apple-touch-icon.png', 'mb-sync.js', 'mb-files.js', 'mb-ui.js', 'vendor/supabase.js'];
 const SLOW_MS = 4000; // with a saved copy on hand, stop waiting on a bad connection after this long
 
 // One cache key per page, ignoring ?query and #hash, so the cache can't fill up with look-alike copies.

@@ -2,7 +2,7 @@
 <html lang="en" class="h-full" data-app-short="Action Plan" data-app-domain="actionplan.mcbflow.com">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self' 'sha256-XVNEYjC0qaGXWHSKs0WMk9rJ87uQ/KmwYbFNnT28+qY=' 'sha256-f4quobXVkWgqQx0X/+gknD1D4ruzFf4mduNqC1ln4dY=' 'sha256-pKZeZeXiSUv/DiHJfbAZWd3XA1dU/wUQsrvKowE9JRI=' 'sha256-7+Hj6lc7nqQZCnR+2RH3nv+J7YXfinZUyU7zoiOYMfw=' 'sha256-WDA5Z0zolebYHGdCiyvZdQVMXIz33yBEgaQ4W38RUDg=' 'sha256-XbLIi45RPKBG9FTEOV402AAYH3ddG2CLZJx4DC8usKs=' 'sha256-jL/vMuZ0urDNJKCsGg0cRmgrjoTrMnv/OlcIAOoBjRo=' 'sha256-7qD3fG4B8LxSaowikQb5Efga+uMGZw5yIw5itYve9bY=' 'sha256-MiBqFQ73/Qv7Cc/jpZ5vfU6N3lFJyAkYRN6p55hW710=' 'sha256-ql6aRkj1jQa+JqH55EyT/Dky9V2K6b2vOL3G2Y5OsL4='; style-src 'unsafe-inline'; img-src 'self' data: blob:; font-src 'none'; connect-src https://rxvcjdwmvxhwbdwncfhj.supabase.co; media-src 'none'; object-src 'none'; frame-src 'none'; worker-src 'self'; manifest-src 'self'; base-uri 'none'; form-action 'none'">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self' 'sha256-XVNEYjC0qaGXWHSKs0WMk9rJ87uQ/KmwYbFNnT28+qY=' 'sha256-f4quobXVkWgqQx0X/+gknD1D4ruzFf4mduNqC1ln4dY=' 'sha256-pKZeZeXiSUv/DiHJfbAZWd3XA1dU/wUQsrvKowE9JRI=' 'sha256-7+Hj6lc7nqQZCnR+2RH3nv+J7YXfinZUyU7zoiOYMfw=' 'sha256-WDA5Z0zolebYHGdCiyvZdQVMXIz33yBEgaQ4W38RUDg=' 'sha256-GYjia8hF3XT0+lvnZnyP8bBrJzLm4gUc3n2A+OPbCsI=' 'sha256-p8nsUxHWTNNMLtEvI7G4dg/sO8OfTv+6SRZdcT+SLXg=' 'sha256-ZkaRGBp5i+tedjYt3p2ga9McI5O5kYTxpYeqcF8BCeU=' 'sha256-Lye35WWpyra9vF+tNFy1L1EKzbqQBTNLVE0XysZgHzU=' 'sha256-ExxteJa0NInkwyiIZJIWP4J0O2q/L5vO2sK+o5fXgP0=' 'sha256-0Hp1bbbD2SJ0o9i8WJ6YwjgjB0Hf6UYpX9S5c6Nn1rI=' 'sha256-mAzLeM0l1g5vchCPHPw3ykOJZbt/qdl5VIF3a7qIJLU=' 'sha256-bLWXkQ2N/MJhHf+9Yj99FWX03dorZkKjVYxk3YcVmdU=' 'sha256-XbLIi45RPKBG9FTEOV402AAYH3ddG2CLZJx4DC8usKs=' 'sha256-jL/vMuZ0urDNJKCsGg0cRmgrjoTrMnv/OlcIAOoBjRo=' 'sha256-7qD3fG4B8LxSaowikQb5Efga+uMGZw5yIw5itYve9bY=' 'sha256-MiBqFQ73/Qv7Cc/jpZ5vfU6N3lFJyAkYRN6p55hW710=' 'sha256-ql6aRkj1jQa+JqH55EyT/Dky9V2K6b2vOL3G2Y5OsL4='; style-src 'unsafe-inline'; img-src 'self' data: blob:; font-src 'none'; connect-src https://rxvcjdwmvxhwbdwncfhj.supabase.co; media-src 'none'; object-src 'none'; frame-src 'none'; worker-src 'self'; manifest-src 'self'; base-uri 'none'; form-action 'none'">
     <meta name="referrer" content="no-referrer">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 <meta name="theme-color" content="#4F46A5">
@@ -340,9 +340,6 @@
 
 
         /* ---- touch & small screens: 44px targets ---- */
-        /* toasts: same dark-on-light chip as the rest of the app family */
-        .toast{background:var(--ink)!important; color:var(--bg)!important; border-color:transparent!important; border-radius:var(--r)!important; box-shadow:var(--shadow-pop)!important}
-        .toast .btn{min-height:30px}
         .totop{width:40px!important; height:40px; border-radius:var(--r); box-shadow:var(--shadow-pop)}
 
         @media (pointer:coarse), (max-width:700px){
@@ -833,18 +830,27 @@ dialog.mb-share::backdrop{background:var(--scrim)}
 .side-nav .lucide{width:18px;height:18px}
 .bnav .lucide{width:20px;height:20px}
 .ap-tools{flex:none;padding:12px max(var(--gutter),env(safe-area-inset-right)) 12px max(var(--gutter),env(safe-area-inset-left));background:var(--surface);border-bottom:1px solid var(--border);display:flex;flex-direction:column;gap:12px}
-/* toasts sit beside the sidebar instead of over it */
-@media (min-width:1024px){#root .toast{left:calc(var(--side-w) + 24px)!important}}
-/* More view */
-.more-links{display:flex;flex-direction:column}
-.more-links button{display:flex;align-items:center;gap:10px;width:100%;min-height:44px;padding:0 4px;border-top:1px solid var(--border);font-size:14px;color:var(--ink);text-align:left;transition:color var(--ease)}
-.more-links button:first-child{border-top:0}
-.more-links button:hover{color:var(--accent)}
-.more-links button .lucide{color:var(--ink-2)}
-.more-links button>span:last-child{margin-left:auto;color:var(--muted)}
-/* install card: the app's Icon component wraps its svg in a span */
-.mb-install>span .lucide{width:22px;height:22px;color:var(--accent)}
-.mb-install.is-done>span .lucide{color:var(--good-ink)}
+/* ---- v1.9 · Settings intro, Install line, Help page, empty screens (2026-10-17b) ---- */
+.ap-intro{margin:0;font-size:14px;color:var(--ink-2)}
+.ap-inst-line{margin:0;font-size:14px;line-height:1.45;color:var(--ink)}
+.mb-info .uic{width:15px;height:15px}
+.ap-steps{margin:0;padding-left:22px;list-style:decimal;display:flex;flex-direction:column;gap:8px;font-size:14px;line-height:1.5;color:var(--ink-2)}
+.ap-steps li::marker{color:var(--accent);font-weight:650}
+.ap-faq{padding:0 16px}
+.ap-faq details+details{border-top:1px solid var(--border)}
+.ap-faq summary{display:flex;align-items:center;gap:12px;min-height:48px;padding:10px 0;cursor:pointer;list-style:none;font-size:14px;font-weight:600;color:var(--ink)}
+.ap-faq summary::-webkit-details-marker{display:none}
+.ap-faq summary>span{flex:1;min-width:0}
+.ap-faq summary .uic{flex:none;color:var(--muted);transition:transform .15s ease}
+.ap-faq details[open] summary .uic{transform:rotate(90deg)}
+.ap-faq summary:hover{color:var(--accent)}
+.ap-faq summary:focus-visible{outline:2px solid var(--accent);outline-offset:2px;border-radius:var(--r-sm)}
+.ap-faq .a{padding:0 0 14px;font-size:14px;line-height:1.55;color:var(--ink-2)}
+.ap-faq .a p{margin:0}
+.ap-faq .a p+p{margin-top:6px}
+.ap-help-links{display:flex;flex-wrap:wrap;gap:8px;margin:0;padding:12px 0 14px;border-top:1px solid var(--border)}
+.ap-empty{min-width:0}
+.mbu-rel ul{list-style:disc}   /* Tailwind's reset removes list bullets; What's new (mb-ui.js) keeps them */
 /* ---- about card (bottom of Settings/More, below the Install card · SUITE-STANDARDS §1 · kit v3.1) ---- */
 .mb-about{display:flex;align-items:flex-start;gap:12px;padding:12px 14px;margin-top:12px;border:1px solid var(--border);border-left:3px solid var(--accent);
   border-radius:var(--r);background:var(--surface)}
@@ -862,7 +868,7 @@ dialog.mb-share::backdrop{background:var(--scrim)}
 #splash .sp-ns{max-width:420px;margin:6px auto 0;padding:0 16px;text-align:center;color:var(--ink-2)}
 /* share button next to a milestone */
 .ap-share-row{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;padding:0 12px 12px}
-.cu-banner .ap-share{margin-top:10px}
+.ap-share-below{display:flex;align-items:center}   /* the day-done Share button sits right under the welcome banner (v1.8; it was inside it) */
 /* ---- v1.4 · standard top bar adapter (mb-suite-topbar.css loads after this and does the rest) ---- */
 #root .page-bar{background:var(--surface);box-shadow:none}
 .page-bar .actions .tb .lucide{width:18px;height:18px}
@@ -870,10 +876,8 @@ dialog.mb-share::backdrop{background:var(--scrim)}
 .page-bar .actions .tb>span:has(>.tb-chev){margin-left:-2px}
 .page-bar .actions .ap-hist{gap:var(--tb-gap)}
 .page-bar .actions .bk-chip{height:var(--tb-h);min-height:var(--tb-h)}
-.page-bar .actions .ap-search-inline input{height:var(--tb-h)}
-@media (min-width:768px){.page-bar .actions .tb.ap-phone-only{display:none}}
 @media (min-width:1024px){.page-bar .actions .tb.ap-menu{display:none}}
-@media (max-width:639px){.page-bar .actions .tb.ap-add{display:none}}   /* phones use the floating + button */
+@media (max-width:767px){.page-bar .actions .tb.ap-add{display:none}}   /* phones use the Add button in the bottom bar */
 @media (max-width:767px){.page-bar .actions .tb>span:has(>.tb-chev){display:none}}
 /* ---- v1.4 · view toolbar (Today): one row of equal-height controls, progress underneath ---- */
 .ap-tbar{display:flex;flex-direction:column;gap:8px}
@@ -889,17 +893,21 @@ dialog.mb-share::backdrop{background:var(--scrim)}
 .ap-dm-wrap>.mb-dm{position:absolute;right:0;top:calc(100% + 6px)}
 .mb-dm .ap-dm-loc b{font-weight:600;color:var(--ink-2)}
 .ap-set-data{padding:8px 16px}
-.ap-set-links{margin:0 -4px;border-top:1px solid var(--border)}
-.ap-set-links button{min-height:48px}
 /* welcome: theme cards put icon + label on one line; the legal pages open above the welcome screen */
 .mbw-look .ap-look-l{display:flex;align-items:center;gap:8px}
 .mbw ~ .overlay{z-index:1001}
 .mbw-alt .uic,.mbw-foot .uic{width:16px;height:16px}
 /* sidebar wordmark: "Action Plan ∙ mcbflow.com" fits the 240px sidebar without clipping */
 @media (min-width:1024px){.mb-side > a.brand .bt b{font-size:13.5px;letter-spacing:-.01em}}
-/* phones: Settings is the sixth bottom-bar tab */
-@media (max-width:767px){.bnav button span{font-size:10.5px;white-space:nowrap}}
-@media (max-width:400px){.page-bar .actions .tb.ap-phone-only{display:none}}   /* narrow phones: search moves into the ≡ menu so "Action Plan" is never cut off */
+/* ---- v1.8 · phone bottom bar: Home · Projects · [Add task] · Focus · More (the More sheet is mb-ui.js's MBUI.sheet since v1.9) ---- */
+@media (max-width:767px){
+  .bnav{grid-auto-flow:row;grid-template-columns:repeat(5,minmax(0,1fr))}
+  .bnav button span{font-size:10.5px;white-space:nowrap;max-width:100%;overflow:hidden;text-overflow:ellipsis}
+  .fab.ap-fab{display:none}   /* the bottom bar's Add button replaces the floating + */
+}
+/* v1.8 · very long names (even without spaces) wrap inside their card instead of running off the screen */
+.ap-wrap,.td-next-title,.td-next-title button{overflow-wrap:anywhere;min-width:0;max-width:100%}
+@media (max-width:400px){.page-bar .actions .tb.ap-search-btn{display:none}}   /* narrow phones: search moves into the ≡ menu so "Action Plan" is never cut off */
 @media (min-width:401px){.ap-tools .ap-menu-search{display:none}}
 /* progress bars and the timer ring: hover / tap / focus labels */
 .ap-tip{position:fixed;z-index:1200;pointer-events:none;max-width:240px;padding:7px 10px;border-radius:var(--r-sm);background:var(--ink);color:var(--bg);font:12.5px/1.35 var(--font);box-shadow:var(--shadow-pop)}
@@ -913,13 +921,22 @@ dialog.mb-share::backdrop{background:var(--scrim)}
 .segs.has-read>i:not(.is-read){opacity:.35}
 .ap-hint{color:var(--muted);text-align:center}
 </style>
-<style id="mb-suite-topbar">
-/* =====================================================================
-   mb-suite-topbar.css v3.3.0  ·  2026-10-16  ·  SHARED FILE: copy into every app UNCHANGED, load LAST
+<style id="mb-suite-topbar">/* =====================================================================
+   mb-suite-topbar.css v3.5.0  ·  2026-10-17  ·  SHARED FILE: copy into every app UNCHANGED, load LAST
    (after every other stylesheet / <style> block). Apps whose CSP has no style-src 'self' inline it as the
    last <style> block, byte-for-byte. If you edit it, raise the version on this line and in
    "SHARED FILES/SHARED-FILES-VERSIONS.md", then copy it into every app.
 
+   v3.5.0 (2026-10-17, later) adds:
+     · keyboard-shortcut hints (<kbd>) hidden on touch-only devices (the Data menu showed Ctrl+S on phones)
+     · Settings page column: left-aligned, max 780px, in every app (.mb-set)
+   v3.4.0 (2026-10-17) adds:
+     · welcome banner (.cu-banner) one height everywhere: 128px desktop, 148px phones; greeting 1 line, title and
+       subtitle up to 2 lines each; the art fades in from the left instead of ending in a hard edge, and on phones it
+       spans the banner (showing the whole picture) and fades out under the text
+     · .bnav .bn-add  center "Add" button in the phone bottom bar (icon only, aria-label "Add …")
+     · .mb-pair buttons center their icon + label
+     · Settings row labels (.mb-set-l) wrap long names instead of widening the page
    v3.3.0 (2026-10-16) adds, on top of the v3.2.2 top bar:
      · every bar control is one height: the theme switch fills the bar height (36px desktop, 42px phones;
        it was a 28px pill next to 36/42px buttons), the account button is a normal .tb
@@ -1340,13 +1357,39 @@ textarea.resize,textarea.resize-x{resize:vertical}
 .mb-info svg{width:15px;height:15px;flex:none;color:var(--muted,#6b7280)}
 /* Two actions side by side on a phone share the row 50/50 (no lopsided pairs). */
 .mb-pair{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:8px}
-.mb-pair > *{width:100%;min-width:0}
+.mb-pair > *{width:100%;min-width:0;justify-content:center;text-align:center}
 /* Nothing in the welcome screen runs off the edge on narrow phones. */
 .mbw-alt .mbw-btn,.mbw-foot .mbw-btn{max-width:100%}
 .mbw-alt .mbw-btn{white-space:normal;text-align:left;line-height:1.25;min-height:40px}
 @media (max-width:420px){ .mbw-alt .mbw-btn{flex:1 1 100%;justify-content:flex-start} }
 .mbw-body{overflow-wrap:anywhere}
 
+/* ---------- v3.4.0 · welcome banner: one height, soft art edge, phone composition ---------- */
+.cu-banner:not(.slim){box-sizing:border-box;height:128px;min-height:0;overflow:hidden;display:flex;align-items:center}
+.cu-banner:not(.slim) .cu-txt{min-width:0}
+.cu-banner .mb-greet{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.cu-banner .cu-t,.cu-banner .cu-s{display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:2;line-clamp:2;overflow:hidden}
+.cu-banner .cu-art:not(.at-bottom):not(.at-top):not(.inline){-webkit-mask-image:linear-gradient(90deg,transparent 0,#000 45%);mask-image:linear-gradient(90deg,transparent 0,#000 45%)}
+@media (max-width:600px){
+  .cu-banner:not(.slim){height:148px;padding:16px}
+  .cu-banner:not(.slim) .cu-txt{max-width:58%}
+  .cu-banner .cu-art:not(.at-bottom):not(.at-top):not(.inline){left:0;right:0;width:100%;max-width:none;
+    -webkit-mask-image:linear-gradient(90deg,transparent 0,transparent 38%,rgba(0,0,0,.5) 58%,#000 80%);mask-image:linear-gradient(90deg,transparent 0,transparent 38%,rgba(0,0,0,.5) 58%,#000 80%)}
+}
+
+/* ---------- v3.4.0 · center Add button in the phone bottom bar ---------- */
+.bnav .bn-add{align-self:center;justify-self:center;display:inline-flex!important;align-items:center;justify-content:center;width:52px;height:44px;min-height:44px!important;padding:0!important;gap:0!important;
+  border:0;border-radius:var(--r,6px)!important;background:var(--g-pri,var(--accent))!important;color:var(--accent-ink,#fff)!important;box-shadow:0 2px 8px rgba(16,24,40,.18);cursor:pointer}
+.bnav .bn-add svg{width:24px!important;height:24px!important}
+.bnav .bn-add:hover{filter:brightness(1.05)}
+.bnav .bn-add:active{filter:brightness(.94)}
+.bnav .bn-add:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.bnav .bn-add > span:not(.sr-only){display:none}
+.mb-set-l,.mb-set-l b,.mb-set-l small{min-width:0;overflow-wrap:anywhere}   /* 3.4.0: long names in Settings rows wrap */
+
+/* ---------- v3.5.0 ---------- */
+@media (hover:none) and (pointer:coarse){ .page-bar kbd,.mb-dm kbd,.mb-dm-it kbd,.tb kbd{display:none!important} }
+.mb-set{max-width:780px;margin-left:0;margin-right:auto}
 </style>
 </head>
 <body class="h-full antialiased">
@@ -1842,6 +1885,7 @@ function(a,b,c){if(!Vd(b))throw Error(m(200));return Wd(null,a,b,!1,c)};Q.unmoun
 })();</script>
     <script src="mb-sync.js"></script>
     <script src="mb-files.js"></script>
+    <script src="mb-ui.js"></script>
     <script>
 function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
 const {
@@ -2997,7 +3041,7 @@ const normalizeTask = t => ({
 const FS_SUPPORTED = typeof window !== 'undefined' && typeof window.showSaveFilePicker === 'function' && typeof window.showOpenFilePicker === 'function';
 const BACKUP_NAMES = {
   json: 'actionplan-backup.json',
-  csv: 'actionplan-backup.csv'
+  csv: 'actionplan-tasks.csv'
 };
 const BACKUP_TYPES = {
   json: {
@@ -3412,13 +3456,21 @@ function ProjectModal({
 // no cookies, no analytics, no ads, no network requests after the page loads.
 // If any of that changes, update this text first.
 const LEGAL_UPDATED = 'October 16, 2026';
-const APP_VERSION = '1.7';
+const APP_VERSION = '1.9';
 // Shown under the name in the brand block, in About & Legal and in the About card ("Official Web App · v1.5").
 // Version numbers restarted at 1.x with the suite label; releases up to October 13, 2026 were numbered 18.x.
-const BRAND_VERSION = '1.7';
-const RELEASE_DATE = 'Oct 16, 2026';
+const BRAND_VERSION = '1.9';
+const RELEASE_DATE = 'Oct 17, 2026';
 // Newest first. Keep this in step with RELEASE_NOTES.md.
 const RELEASE_NOTES = [{
+  v: '1.9',
+  date: 'October 17, 2026',
+  items: ['New Help page (sidebar, or More on phones): getting started in a few steps, then short answers grouped by topic.', 'Search works the same in every mcbflow.com app: the Search button, / or Ctrl+K finds tasks, projects and pages and opens the one you pick. "Filter all views" still narrows every page to matching tasks.', 'The More menu on phones is the same in every app: Settings, Tasks Matrix, Calendar, Help and What\u2019s new.', 'What\u2019s new opens in one window from the page footer, Settings \u203A About, Help and More.', 'Settings has the same order as the other apps, with "Changes save as you make them." at the top and the welcome guide under Action Plan settings. The Install section uses the same words in every app.', 'Messages at the bottom of the screen look the same in every app. Deleting a project no longer asks first; Undo is in the message.', 'Backup files are named the same way in every app, like actionplan-backup-2026-10-17.json. The CSV is now actionplan-tasks-2026-10-17.csv. Older backups still import.', 'Empty pages (no tasks, no projects) say what goes there, with one button to add the first one.', 'The welcome banner shows the date and one detail, like how much time you have planned.']
+}, {
+  v: '1.8',
+  date: 'October 17, 2026',
+  items: ['Phone bottom bar: Home, Projects, a big Add task button in the middle, Focus and More. More holds Settings, Tasks Matrix and Calendar. The floating + button is gone on phones, since Add task is now in the bar.', 'Clear all data now asks you to type DELETE, the same in every mcbflow.com app. It still offers to save a backup first, and still deletes your synced copy too when you are signed in.', 'Account pop-up spacing fixed.', 'Welcome banner art is no longer cut off on phones. On a finished day, Share now sits just under the banner.', 'Very long task and project names wrap instead of pushing the page sideways on phones.']
+}, {
   v: '1.7',
   date: 'October 16, 2026',
   items: ['New Settings page (sidebar, or the bottom bar on phones): theme, account and sync, help, Backup & data, Install and About in one place. It replaces the More page; nothing was removed.', 'Account button in the top bar: "Sign in", or your profile picture with a sync dot once you are signed in. Pick a screen name and one of 20 profile pictures under Edit profile; every mcbflow.com app shows the same one. New "Keep me signed in on this device" option; turn it off on a shared computer.', 'The start page is now called Home (house icon) and greets you: "Good morning", with your screen name when you are signed in. Its content is unchanged. Settings has a proper gear icon, and links ending in #today still open Home.', 'The welcome screen has the same look as the other mcbflow.com apps, with the same three steps: what this is, pick a look, and your first task.', 'Clearer Data menu: every item says what it is for, and the new Export All (ZIP) puts the backup and spreadsheets in one file. Import Backup also takes that ZIP.', 'Quieter backup reminders while you are signed in and syncing: the top bar and Data menu show "Synced" instead of a warning.', 'Even top bar: every button, the light/dark switch and the account button are the same height.', 'New name style: "Action Plan \u2022 mcbflow.com". A new page footer with What\u2019s new, Privacy and Terms. Today\u2019s progress bar and project bars show a label when you hover, tap or tab to them.']
@@ -3533,10 +3585,6 @@ function LegalModal({
     id: 'credits',
     label: 'Credits',
     icon: 'info'
-  }, {
-    id: 'notes',
-    label: 'Release notes',
-    icon: 'file-text'
   }];
   const onTabKey = e => {
     const i = tabs.findIndex(t => t.id === activeTab);
@@ -3604,18 +3652,7 @@ function LegalModal({
     className: "flex-1 overflow-y-auto p-6 space-y-3 text-sm text-slate-700 dark:text-slate-300 leading-relaxed"
   }, activeTab === 'privacy' && /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement(H, null, "Privacy Policy"), /*#__PURE__*/React.createElement(Updated, null), /*#__PURE__*/React.createElement("p", null, /*#__PURE__*/React.createElement("strong", null, "In short:"), " actionplan.mcbflow.com runs entirely in your web browser. You don\u2019t need an account, and there are no cookies, analytics, advertising, or tracking. Unless you choose to sign in to sync, the developer cannot see what you enter."), /*#__PURE__*/React.createElement("p", null, /*#__PURE__*/React.createElement("strong", null, "Optional sync."), " If you sign in with a free mcbflow.com account (Data \u2192 Sync), your projects, tasks and daily finished counts are copied to your account so your other devices match. Your theme, focus timer, welcome-guide status and backup details stay on each device. The account database is run by Supabase (servers in the eastern United States); only your account can read your records. While signed in, this site also keeps your sign-in and a sync record (actionplan.sync) in local storage. Signing out stops syncing and keeps the data on this device. Export or delete synced data, or delete your account, on the mcbflow.com account page (mcbflow.com/account.html); the mcbflow.com privacy policy has the details."), /*#__PURE__*/React.createElement("p", null, /*#__PURE__*/React.createElement("strong", null, "What's stored, and where."), " Everything is saved in your browser's storage on this device: your projects and tasks (titles, notes, dates, priority, repeat setting, pin, time estimate, steps, where and energy labels, how many times a task was moved to a later day, focus minutes logged, and when a task was created and completed), plus a count of how many tasks you finished each day (for your streak), plus a few settings: light/dark theme, whether you've seen the welcome guide, and when you last saved a backup, plus the focus timer's state (which task, how much time is left, and when the current block ends) so it stays accurate if your screen locks or the page reloads. If you choose a save location for backups, the browser also remembers which backup file you picked (its name and your permission to write to it, not the folder path) so \"Save backup now\" can update it. Nothing else is stored."), /*#__PURE__*/React.createElement("p", null, /*#__PURE__*/React.createElement("strong", null, "What leaves your device."), " Unless you sign in to sync, your tasks and projects never leave your device unless you export or share a backup yourself. The app's code, styles, and icons are built into this site, so when you're not signed in it makes no further network requests after the page loads. As with any website, the service that hosts this page receives your IP address and basic browser information when your browser downloads it, and may keep standard server logs. The app adds nothing to those requests."), /*#__PURE__*/React.createElement("p", null, /*#__PURE__*/React.createElement("strong", null, "Device features."), " \"Keep screen on\" uses your browser's Screen Wake Lock, and the focus timer plays its sound through your browser's audio. Neither sends any data anywhere."), /*#__PURE__*/React.createElement("p", null, /*#__PURE__*/React.createElement("strong", null, "Installing and offline use."), " In browsers that support it, the app keeps a copy of its own files (this page, its icons and its install details) in your browser's cache so it can open without a connection and be installed on your home screen or desktop. That copy contains none of your tasks or settings. When you are online, your browser checks this site for a newer version each time you open the app. Clearing your browser's site data removes the copy."), /*#__PURE__*/React.createElement("p", null, /*#__PURE__*/React.createElement("strong", null, "Backups, exporting and sharing."), " The Data menu saves a JSON or CSV backup file. In browsers that support it, you choose the folder and file name and the app writes only to that file; elsewhere the file is downloaded or, on phones and tablets, handed to your device's share sheet. The file goes only where you choose. Importing reads a backup inside your browser; it is never uploaded. Share (on Home) draws a progress image on your device from your finished count and streak, plus task names only if you tick Show task names. It is saved or handed to your device's share sheet only when you choose, and the app never sees where it goes."), /*#__PURE__*/React.createElement("p", null, /*#__PURE__*/React.createElement("strong", null, "Deleting your data."), " Data \u2192 Clear all data permanently deletes every task, project, and setting this app saved in this browser, including the remembered backup location. Backup files you saved yourself aren't touched; delete those in your file manager. Clearing your browser's site data also removes the app's data. There is no copy anywhere else, so save a backup first if you want one."), /*#__PURE__*/React.createElement("p", null, /*#__PURE__*/React.createElement("strong", null, "Sensitive information."), " Please don't enter passwords, Social Security numbers, credit card or bank numbers, health information, or other highly sensitive data. Local storage is not encrypted, and anyone using this device and browser profile can read it."), /*#__PURE__*/React.createElement("p", null, /*#__PURE__*/React.createElement("strong", null, "Children."), " actionplan.mcbflow.com is a general-audience tool and isn't directed at children under 13. It doesn't send any personal information to the developer, from anyone of any age."), /*#__PURE__*/React.createElement("p", null, /*#__PURE__*/React.createElement("strong", null, "Changes."), " If this app ever adds accounts, sync, analytics, or any server-side storage, this policy will be updated first to describe the new behavior, with a new date above.")), activeTab === 'terms' && /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement(H, null, "Terms of Use"), /*#__PURE__*/React.createElement(Updated, null), /*#__PURE__*/React.createElement("p", null, "By using actionplan.mcbflow.com, you agree to the following:"), /*#__PURE__*/React.createElement("p", null, /*#__PURE__*/React.createElement("strong", null, "What this is."), " actionplan.mcbflow.com is a free personal productivity tool (task list, priority matrix, calendar, and focus timer) made by an individual developer for ordinary personal or small-business organizing."), /*#__PURE__*/React.createElement("p", null, /*#__PURE__*/React.createElement("strong", null, "Your data, your responsibility."), " What you enter stays in your browser and is yours. You're responsible for its content and for keeping backups with Export. Clearing site data, switching browsers or devices, or a browser problem can erase it, and the developer has no copy to restore."), /*#__PURE__*/React.createElement("p", null, /*#__PURE__*/React.createElement("strong", null, "Acceptable use."), " Don't use the app for anything unlawful, and don't attempt to tamper with the site or use it to harm others."), /*#__PURE__*/React.createElement("p", null, /*#__PURE__*/React.createElement("strong", null, "No warranty."), " The app is provided \"as is\" and \"as available,\" without warranties of any kind, express or implied, including fitness for a particular purpose. It isn't guaranteed to be error-free or always available, and it isn't a substitute for systems you need to rely on for critical deadlines or records."), /*#__PURE__*/React.createElement("p", null, /*#__PURE__*/React.createElement("strong", null, "Limitation of liability."), " To the extent the law allows, the developer isn't liable for any loss or damage arising from use of the app, including lost data, missed deadlines, or lost time. Some places don't allow these limits, so they may not fully apply to you."), /*#__PURE__*/React.createElement("p", null, /*#__PURE__*/React.createElement("strong", null, "Intellectual property."), " The app's own code, design, and name belong to its developer. You're welcome to use the app for your own personal or business tasks. Open-source components it includes are used under their own licenses (see Credits)."), /*#__PURE__*/React.createElement("p", null, /*#__PURE__*/React.createElement("strong", null, "Changes and availability."), " The app may be updated, changed, or taken down at any time without notice. It's free, with no service-level guarantee."), /*#__PURE__*/React.createElement("p", null, /*#__PURE__*/React.createElement("strong", null, "Contact."), " Questions about these terms can be sent to the developer through the site where you found this app.")), activeTab === 'disclaimer' && /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement(H, null, "Disclaimer"), /*#__PURE__*/React.createElement(Updated, null), /*#__PURE__*/React.createElement("p", null, /*#__PURE__*/React.createElement("strong", null, "Not professional advice."), " actionplan.mcbflow.com is a general organizing tool. It doesn't provide medical, legal, financial, tax, or other professional advice."), /*#__PURE__*/React.createElement("p", null, /*#__PURE__*/React.createElement("strong", null, "No reminders or alerts."), " Due dates and times are shown in the app only. actionplan.mcbflow.com doesn't send notifications, emails, or alarms. The timer sound plays only while the page is open. Don't rely on it as your only reminder for anything important."), /*#__PURE__*/React.createElement("p", null, /*#__PURE__*/React.createElement("strong", null, "Not secure storage."), " \"Local-only\" isn't the same as \"backed up\" or \"encrypted.\" Anyone with access to this device and browser profile can see the same data you can."), /*#__PURE__*/React.createElement("p", null, /*#__PURE__*/React.createElement("strong", null, "How the numbers work.")), /*#__PURE__*/React.createElement("ul", {
     className: "list-disc pl-5 space-y-1"
-  }, /*#__PURE__*/React.createElement("li", null, /*#__PURE__*/React.createElement("strong", null, "Completion rate"), " = completed tasks \xF7 all tasks shown (for the current project filter and search)."), /*#__PURE__*/React.createElement("li", null, /*#__PURE__*/React.createElement("strong", null, "Today's progress"), " = tasks you completed today \xF7 (tasks completed today + open tasks due today or overdue)."), /*#__PURE__*/React.createElement("li", null, /*#__PURE__*/React.createElement("strong", null, "Focus time"), " adds 1 minute to the selected task for every full minute the timer runs during a focus block. Breaks aren't counted. Browsers may slow timers in background tabs, so keep the tab visible for accurate timing."), /*#__PURE__*/React.createElement("li", null, /*#__PURE__*/React.createElement("strong", null, "Repeating tasks:"), " completing one moves its due date forward from its current due date (or from today if it has none, or if you chose \"Count from when I finish\"). Monthly, quarterly, 6-month, and yearly repeats keep the same day of the month, using the month's last day when that date doesn't exist (for example, Jan 31 \u2192 Feb 28)."), /*#__PURE__*/React.createElement("li", null, /*#__PURE__*/React.createElement("strong", null, "Suggestions:"), " \"What should I do now?\" and \"Explain my tasks\" use simple rules on your device (due dates, priority, estimates, and the filters you pick). No AI service is involved and nothing is sent anywhere.")), /*#__PURE__*/React.createElement("p", null, "These are conveniences for personal planning and aren't certified for billing, payroll, compliance, or other official purposes.")), activeTab === 'notes' && /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement(H, null, "Release notes"), RELEASE_NOTES.map(r => /*#__PURE__*/React.createElement("section", {
-    key: r.v,
-    className: "border-t border-slate-200 dark:border-slate-750 pt-3 first-of-type:border-t-0 first-of-type:pt-0"
-  }, /*#__PURE__*/React.createElement("h4", {
-    className: "font-semibold text-slate-900 dark:text-slate-100"
-  }, "Version ", r.v, " ", /*#__PURE__*/React.createElement("span", {
-    className: "font-normal text-xs text-slate-500 dark:text-slate-400"
-  }, "\xB7 ", r.date)), /*#__PURE__*/React.createElement("ul", {
-    className: "list-disc pl-5 mt-1 space-y-1"
-  }, r.items.map((it, i) => /*#__PURE__*/React.createElement("li", {
-    key: i
-  }, it)))))), activeTab === 'credits' && /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement(H, null, "Open-source credits"), /*#__PURE__*/React.createElement("p", null, "actionplan.mcbflow.com's own code and design are by its developer. It includes these open-source components, used under their licenses. Everything is bundled into this page; nothing is loaded from their servers."), CREDITS.map(c => /*#__PURE__*/React.createElement("details", {
+  }, /*#__PURE__*/React.createElement("li", null, /*#__PURE__*/React.createElement("strong", null, "Completion rate"), " = completed tasks \xF7 all tasks shown (for the current project filter and search)."), /*#__PURE__*/React.createElement("li", null, /*#__PURE__*/React.createElement("strong", null, "Today's progress"), " = tasks you completed today \xF7 (tasks completed today + open tasks due today or overdue)."), /*#__PURE__*/React.createElement("li", null, /*#__PURE__*/React.createElement("strong", null, "Focus time"), " adds 1 minute to the selected task for every full minute the timer runs during a focus block. Breaks aren't counted. Browsers may slow timers in background tabs, so keep the tab visible for accurate timing."), /*#__PURE__*/React.createElement("li", null, /*#__PURE__*/React.createElement("strong", null, "Repeating tasks:"), " completing one moves its due date forward from its current due date (or from today if it has none, or if you chose \"Count from when I finish\"). Monthly, quarterly, 6-month, and yearly repeats keep the same day of the month, using the month's last day when that date doesn't exist (for example, Jan 31 \u2192 Feb 28)."), /*#__PURE__*/React.createElement("li", null, /*#__PURE__*/React.createElement("strong", null, "Suggestions:"), " \"What should I do now?\" and \"Explain my tasks\" use simple rules on your device (due dates, priority, estimates, and the filters you pick). No AI service is involved and nothing is sent anywhere.")), /*#__PURE__*/React.createElement("p", null, "These are conveniences for personal planning and aren't certified for billing, payroll, compliance, or other official purposes.")), activeTab === 'credits' && /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement(H, null, "Open-source credits"), /*#__PURE__*/React.createElement("p", null, "actionplan.mcbflow.com's own code and design are by its developer. It includes these open-source components, used under their licenses. Everything is bundled into this page; nothing is loaded from their servers."), CREDITS.map(c => /*#__PURE__*/React.createElement("details", {
     key: c.name,
     className: "border border-slate-200 dark:border-slate-750 rounded px-3 py-2"
   }, /*#__PURE__*/React.createElement("summary", {
@@ -3660,8 +3697,15 @@ const UIC_PATHS = {
   sunrise: '<path d="M12 2v6M8 6l4-4 4 4M4.9 10.9l1.4 1.4M17.7 12.3l1.4-1.4M2 18h2M20 18h2M22 22H2M16 18a4 4 0 0 0-8 0"/>',
   matrix: '<rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/>',
   calendar: '<rect x="3" y="4" width="18" height="17" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/>',
-  timer: '<path d="M10 2h4M12 14l3-3"/><circle cx="12" cy="14" r="8"/>'
+  timer: '<path d="M10 2h4M12 14l3-3"/><circle cx="12" cy="14" r="8"/>',
+  more: '<g fill="currentColor" stroke="none"><circle cx="5.5" cy="12" r="1.7"/><circle cx="12" cy="12" r="1.7"/><circle cx="18.5" cy="12" r="1.7"/></g>',
+  help: '<circle cx="12" cy="12" r="9"/><path d="M9.3 9.3a2.8 2.8 0 1 1 3.9 2.6c-.7.3-1.2 1-1.2 1.8v.6"/><path d="M12 17.3h.01"/>',
+  news: '<path d="M12 3.5l1.9 5.1 5.1 1.9-5.1 1.9-1.9 5.1-1.9-5.1L5 10.5l5.1-1.9z"/><path d="M18.5 15.5v5M16 18h5"/>',
+  chev: '<path d="M9 6l6 6-6 6"/>',
+  search: '<circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/>'
 };
+// The same icon as an HTML string, for the shared mb-ui.js pieces (More sheet).
+const uicHTML = n => `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">${UIC_PATHS[n] || ''}</svg>`;
 function Uic({
   n,
   size = 18,
@@ -4967,6 +5011,7 @@ function TodayView({
   onReview,
   onExplain,
   onImport,
+  onAddTask,
   setActiveTab
 }) {
   const todayStr = getLocalDateStr();
@@ -5010,6 +5055,8 @@ function TodayView({
   }];
   const laterCount = model.upcoming.length + model.inbox.length + model.later.length;
   const hasAnyActive = tasks.some((t) => t.status !== "Completed");
+  // Banner subtitle (2026-10-17b §9): the date, then one short detail.
+  const bannerSub = (window.MBUI ? window.MBUI.dateLine() : dateLabel) + " \u00B7 " + (model.plannedMins > 0 ? "About " + fmtMins(model.plannedMins) + " planned" : total > 0 ? `${doneToday} of ${total} done` : laterCount > 0 ? `${laterCount} coming up` : tasks.length ? "Nothing due today" : "No tasks yet");
   // Share (MB Suite v3 §6): a square image drawn on this device from real counts only. Task names are off
   // unless the person turns them on; notes, projects and dates of tasks never go on the card.
   const dayDone = total > 0 && left === 0 && doneToday > 0;
@@ -5025,19 +5072,19 @@ function TodayView({
       sub: dateLabel,
       stats: [{ label: "Done today", value: String(doneToday) }, { label: "Streak", value: `${streak} day${streak === 1 ? "" : "s"}` }, { label: "Last 7 days", value: String(week) }],
       art: artTpl && artTpl.content ? artTpl.content.firstElementChild : null,
-      fileName: "actionplan-progress.png",
+      fileName: MBUI.fileName("actionplan", "progress", "png"),
       date: (/* @__PURE__ */ new Date()).toLocaleDateString(void 0, { month: "short", year: "numeric" }),
       options: names.length ? [{ id: "names", label: "Show task names", value: false }] : [],
       build: (o) => o.names && names.length ? { sub: "Done: " + names.slice(0, 3).join(", ") + (names.length > 3 ? ` and ${names.length - 3} more` : "") } : { sub: dateLabel }
     });
   };
-  return /* @__PURE__ */ React.createElement("div", { className: "space-y-4 animate-fade-in-up" }, /* @__PURE__ */ React.createElement("section", { className: "cu-banner" }, /* @__PURE__ */ React.createElement("svg", { viewBox: "0 0 640 136", preserveAspectRatio: "xMaxYMid slice", className: "cu-art", "aria-hidden": "true", focusable: "false", dangerouslySetInnerHTML: { __html: "<circle class=\"b\" cx=\"588\" cy=\"50\" r=\"30\"/><path class=\"s\" d=\"M260 140 C365 100 575 100 680 140Z\"/><path class=\"d\" transform=\"translate(540 107.4)\" d=\"M-39 2.2 C-39 -15.8 21.5 -16.5 39 -1.5 C39.8 14.2 -21.5 16.5 -39 2.2Z\"/><path class=\"m\" transform=\"translate(540 83.1)\" d=\"M-30 1.9 C-30 -13.7 16.5 -14.3 30 -1.3 C30.6 12.3 -16.5 14.3 -30 1.9Z\"/><path class=\"n\" transform=\"translate(540 62.4)\" d=\"M-23 1.6 C-23 -11.6 12.7 -12.1 23 -1.1 C23.5 10.4 -12.7 12.1 -23 1.6Z\"/><path class=\"d\" transform=\"translate(540 47.1)\" d=\"M-15 1.2 C-15 -8.4 8.2 -8.8 15 -0.8 C15.3 7.6 -8.2 8.8 -15 1.2Z\"/><path class=\"m\" transform=\"translate(452 114)\" d=\"M-25 1.6 C-25 -11.6 13.8 -12.1 25 -1.1 C25.5 10.4 -13.8 12.1 -25 1.6Z\"/><path class=\"d\" transform=\"translate(452 97)\" d=\"M-18 1.3 C-18 -9.5 9.9 -9.9 18 -0.9 C18.4 8.5 -9.9 9.9 -18 1.3Z\"/><path class=\"s\" transform=\"translate(452 84.5)\" d=\"M-11 1 C-11 -6.8 6.1 -7.2 11 -0.7 C11.2 6.2 -6.1 7.2 -11 1Z\"/><path class=\"m\" transform=\"translate(590 132) rotate(-62) scale(0.6)\" d=\"M0 0 C 20 -34 66 -40 96 -6 C 70 28 22 34 0 0Z\"/><path class=\"d\" transform=\"translate(602 132) rotate(-118) scale(0.5)\" d=\"M0 0 C 20 -34 66 -40 96 -6 C 70 28 22 34 0 0Z\"/><path class=\"s\" transform=\"translate(380 126)\" d=\"M-13 0.9 C-13 -6.3 7.2 -6.6 13 -0.6 C13.3 5.7 -7.2 6.6 -13 0.9Z\"/><circle class=\"r\" cx=\"400\" cy=\"44\" r=\"6\"/><circle class=\"b\" cx=\"372\" cy=\"70\" r=\"4\"/>" } }), /* @__PURE__ */ React.createElement("div", { className: "cu-txt" }, /* @__PURE__ */ React.createElement(Greeting, null), /* @__PURE__ */ React.createElement("h2", { className: "cu-t" }, headline), /* @__PURE__ */ React.createElement("p", { className: "cu-s tabular" }, dateLabel, model.plannedMins > 0 ? " \u00B7 About " + fmtMins(model.plannedMins) + " planned" + (model.unestimated ? ", " + model.unestimated + " without an estimate" : "") : ""), dayDone && canShare && /* @__PURE__ */ React.createElement("button", { type: "button", className: "btn sm mb-share-btn ap-share", onClick: shareProgress }, /* @__PURE__ */ React.createElement(Icon, { name: "share-2", className: "w-4 h-4" }), "Share"))), /* @__PURE__ */ React.createElement("div", { className: "ap-tbar" }, /* @__PURE__ */ React.createElement("div", { className: "ap-tbar-row" }, projects.length > 1 && /* @__PURE__ */ React.createElement("div", { className: "ap-tbar-grow" }, /* @__PURE__ */ React.createElement("label", { htmlFor: "today-project-filter", className: "sr-only" }, "Project"), /* @__PURE__ */ React.createElement("select", { id: "today-project-filter", value: selectedProjectId, onChange: (e) => setSelectedProjectId(e.target.value), className: "px-3 td-select ap-tbar-select" }, /* @__PURE__ */ React.createElement("option", { value: "all" }, "All projects"), projects.map((p) => /* @__PURE__ */ React.createElement("option", { key: p.id, value: p.id }, p.name)))), /* @__PURE__ */ React.createElement("button", { type: "button", className: `btn sm ap-tbar-btn ${hour >= 16 && left > 0 ? "primary" : ""}`, onClick: onReview }, /* @__PURE__ */ React.createElement(Icon, { name: "calendar-check", className: "w-4 h-4" }), /* @__PURE__ */ React.createElement("span", null, "Wrap up", /* @__PURE__ */ React.createElement("span", { className: "hidden sm:inline" }, " day"))), /* @__PURE__ */ React.createElement("button", { type: "button", className: "btn sm ap-tbar-btn", onClick: onExplain }, /* @__PURE__ */ React.createElement(Icon, { name: "info", className: "w-4 h-4" }), /* @__PURE__ */ React.createElement("span", null, "Explain", /* @__PURE__ */ React.createElement("span", { className: "hidden sm:inline" }, " my tasks")))), total > 0 && /* @__PURE__ */ React.createElement("div", { className: "ap-tbar-prog" }, total <= 14 ? /* @__PURE__ */ React.createElement("div", { className: "segs", role: "progressbar", "aria-label": "Today's progress", "aria-valuenow": doneToday, "aria-valuemin": "0", "aria-valuemax": total, "aria-valuetext": `${doneToday} of ${total} done`, "data-tip-group": "" }, Array.from({
+  return /* @__PURE__ */ React.createElement("div", { className: "space-y-4 animate-fade-in-up" }, /* @__PURE__ */ React.createElement("section", { className: "cu-banner" }, /* @__PURE__ */ React.createElement("svg", { viewBox: "0 0 640 136", preserveAspectRatio: "xMaxYMid slice", className: "cu-art", "aria-hidden": "true", focusable: "false", dangerouslySetInnerHTML: { __html: "<circle class=\"b\" cx=\"588\" cy=\"50\" r=\"30\"/><path class=\"s\" d=\"M260 140 C365 100 575 100 680 140Z\"/><path class=\"d\" transform=\"translate(540 107.4)\" d=\"M-39 2.2 C-39 -15.8 21.5 -16.5 39 -1.5 C39.8 14.2 -21.5 16.5 -39 2.2Z\"/><path class=\"m\" transform=\"translate(540 83.1)\" d=\"M-30 1.9 C-30 -13.7 16.5 -14.3 30 -1.3 C30.6 12.3 -16.5 14.3 -30 1.9Z\"/><path class=\"n\" transform=\"translate(540 62.4)\" d=\"M-23 1.6 C-23 -11.6 12.7 -12.1 23 -1.1 C23.5 10.4 -12.7 12.1 -23 1.6Z\"/><path class=\"d\" transform=\"translate(540 47.1)\" d=\"M-15 1.2 C-15 -8.4 8.2 -8.8 15 -0.8 C15.3 7.6 -8.2 8.8 -15 1.2Z\"/><path class=\"m\" transform=\"translate(452 114)\" d=\"M-25 1.6 C-25 -11.6 13.8 -12.1 25 -1.1 C25.5 10.4 -13.8 12.1 -25 1.6Z\"/><path class=\"d\" transform=\"translate(452 97)\" d=\"M-18 1.3 C-18 -9.5 9.9 -9.9 18 -0.9 C18.4 8.5 -9.9 9.9 -18 1.3Z\"/><path class=\"s\" transform=\"translate(452 84.5)\" d=\"M-11 1 C-11 -6.8 6.1 -7.2 11 -0.7 C11.2 6.2 -6.1 7.2 -11 1Z\"/><path class=\"m\" transform=\"translate(590 132) rotate(-62) scale(0.6)\" d=\"M0 0 C 20 -34 66 -40 96 -6 C 70 28 22 34 0 0Z\"/><path class=\"d\" transform=\"translate(602 132) rotate(-118) scale(0.5)\" d=\"M0 0 C 20 -34 66 -40 96 -6 C 70 28 22 34 0 0Z\"/><path class=\"s\" transform=\"translate(380 126)\" d=\"M-13 0.9 C-13 -6.3 7.2 -6.6 13 -0.6 C13.3 5.7 -7.2 6.6 -13 0.9Z\"/><circle class=\"r\" cx=\"400\" cy=\"44\" r=\"6\"/><circle class=\"b\" cx=\"372\" cy=\"70\" r=\"4\"/>" } }), /* @__PURE__ */ React.createElement("div", { className: "cu-txt" }, /* @__PURE__ */ React.createElement(Greeting, null), /* @__PURE__ */ React.createElement("h2", { className: "cu-t" }, headline), /* @__PURE__ */ React.createElement("p", { className: "cu-s tabular" }, bannerSub))), dayDone && canShare && /* @__PURE__ */ React.createElement("div", { className: "ap-share-below" }, /* @__PURE__ */ React.createElement("button", { type: "button", className: "btn sm mb-share-btn ap-share", onClick: shareProgress }, /* @__PURE__ */ React.createElement(Icon, { name: "share-2", className: "w-4 h-4" }), "Share")), /* @__PURE__ */ React.createElement("div", { className: "ap-tbar" }, /* @__PURE__ */ React.createElement("div", { className: "ap-tbar-row" }, projects.length > 1 && /* @__PURE__ */ React.createElement("div", { className: "ap-tbar-grow" }, /* @__PURE__ */ React.createElement("label", { htmlFor: "today-project-filter", className: "sr-only" }, "Project"), /* @__PURE__ */ React.createElement("select", { id: "today-project-filter", value: selectedProjectId, onChange: (e) => setSelectedProjectId(e.target.value), className: "px-3 td-select ap-tbar-select" }, /* @__PURE__ */ React.createElement("option", { value: "all" }, "All projects"), projects.map((p) => /* @__PURE__ */ React.createElement("option", { key: p.id, value: p.id }, p.name)))), /* @__PURE__ */ React.createElement("button", { type: "button", className: `btn sm ap-tbar-btn ${hour >= 16 && left > 0 ? "primary" : ""}`, onClick: onReview }, /* @__PURE__ */ React.createElement(Icon, { name: "calendar-check", className: "w-4 h-4" }), /* @__PURE__ */ React.createElement("span", null, "Wrap up", /* @__PURE__ */ React.createElement("span", { className: "hidden sm:inline" }, " day"))), /* @__PURE__ */ React.createElement("button", { type: "button", className: "btn sm ap-tbar-btn", onClick: onExplain }, /* @__PURE__ */ React.createElement(Icon, { name: "info", className: "w-4 h-4" }), /* @__PURE__ */ React.createElement("span", null, "Explain", /* @__PURE__ */ React.createElement("span", { className: "hidden sm:inline" }, " my tasks")))), total > 0 && /* @__PURE__ */ React.createElement("div", { className: "ap-tbar-prog" }, total <= 14 ? /* @__PURE__ */ React.createElement("div", { className: "segs", role: "progressbar", "aria-label": "Today's progress", "aria-valuenow": doneToday, "aria-valuemin": "0", "aria-valuemax": total, "aria-valuetext": `${doneToday} of ${total} done`, "data-tip-group": "" }, Array.from({
     length: total
   }).map((_, i) => /* @__PURE__ */ React.createElement("i", { key: i, className: i < doneToday ? "on" : "", role: "img", tabIndex: i === 0 ? 0 : -1, "aria-label": `Task ${i + 1} of ${total} for today: ${i < doneToday ? "done" : "still to do"}`, "data-tip-v": i < doneToday ? "Done" : "Still to do", "data-tip-w": `Task ${i + 1} of ${total} for today`, "data-tip-c": `${doneToday} of ${total} done \u00B7 ${pct}%` }))) : /* @__PURE__ */ React.createElement("div", { className: "meter", role: "progressbar", "aria-label": "Today's progress", "aria-valuenow": pct, "aria-valuemin": "0", "aria-valuemax": "100", "aria-valuetext": `${pct}%: ${doneToday} of ${total} done`, tabIndex: 0, "data-tip-v": `${pct}% done`, "data-tip-w": "Today's tasks", "data-tip-c": `${doneToday} of ${total} done \u00B7 ${total - doneToday} to go` }, /* @__PURE__ */ React.createElement("i", { style: {
     width: `${pct}%`
   } })), /* @__PURE__ */ React.createElement("div", { className: "flex justify-between gap-2 mt-1 text-xs text-slate-600 dark:text-slate-400 tabular" }, /* @__PURE__ */ React.createElement("span", null, doneToday, " of ", total, " done"), /* @__PURE__ */ React.createElement("span", { className: "ap-hint", "aria-hidden": "true" }, total <= 14 ? "Hover or tap a bar" : "Hover or tap the bar"), /* @__PURE__ */ React.createElement("span", null, streak > 1 ? `${streak}-day streak` : "")))), /* @__PURE__ */ React.createElement("div", { className: "grid grid-cols-1 lg:grid-cols-5 gap-4 items-start" }, /* @__PURE__ */ React.createElement("div", { className: "lg:col-span-3 space-y-4 min-w-0" }, /* @__PURE__ */ React.createElement(QuickAdd, { projects, inputRef: quickAddRef, onAdd: onQuickAdd, onOpenFull }), hasAnyActive && /* @__PURE__ */ React.createElement(NextActionCard, { tasks, onStart, onDone: onToggle, onOpen: onOpenTask }), model.overdue.length > 0 && /* @__PURE__ */ React.createElement(TriagePanel, { list: model.overdue, projects, onPostpone, onToggle, onOpen: onOpenTask, onWhy }), ["must", "should", "iftime"].map((k) => model[k].length > 0 && /* @__PURE__ */ React.createElement("section", { key: k, className: "panel", "aria-labelledby": `tier-${k}` }, /* @__PURE__ */ React.createElement("div", { className: "td-tier-h" }, /* @__PURE__ */ React.createElement("i", { className: "td-dot", style: {
     backgroundColor: TIER_META[k].color
-  }, "aria-hidden": "true" }), /* @__PURE__ */ React.createElement("h3", { id: `tier-${k}` }, TIER_META[k].label), /* @__PURE__ */ React.createElement("span", { className: "badge tabular" }, model[k].length), /* @__PURE__ */ React.createElement("span", { className: "hint td-push hidden sm:inline" }, k === "must" && model.must.length > 5 ? "That is a lot of must-dos. Try keeping it to about 3." : TIER_META[k].hint), model[k].some((t) => t.estimate) && /* @__PURE__ */ React.createElement("span", { className: "hint tabular" }, fmtMins(model[k].reduce((n, t) => n + (t.estimate || 0), 0)))), /* @__PURE__ */ React.createElement("ul", null, model[k].map((t) => /* @__PURE__ */ React.createElement(TodayRow, { key: t.id, task: t, project: pOf(t), onToggle, onOpen: onOpenTask, onStart, onPostpone, onWhy }))))), model.todayAll.length === 0 && model.overdue.length === 0 && /* @__PURE__ */ React.createElement("div", { className: "panel" }, /* @__PURE__ */ React.createElement("div", { className: "empty" }, doneToday > 0 ? /* @__PURE__ */ React.createElement(React.Fragment, null, /* @__PURE__ */ React.createElement(Icon, { name: "party-popper", className: "w-7 h-7 mx-auto mb-2 text-emerald-600 dark:text-emerald-400" }), /* @__PURE__ */ React.createElement("b", null, "Everything for today is done."), "You finished ", doneToday, " task", doneToday === 1 ? "" : "s", ". Enjoy the rest of it.") : /* @__PURE__ */ React.createElement(React.Fragment, null, /* @__PURE__ */ React.createElement(Icon, { name: "calendar-check", className: "w-6 h-6 text-slate-400 mb-2 mx-auto" }), /* @__PURE__ */ React.createElement("b", null, "Nothing planned for today"), "Type a task above, or pull something in from Upcoming or your Inbox."), laterCount > 0 && /* @__PURE__ */ React.createElement("div", { className: "mt-3" }, /* @__PURE__ */ React.createElement("button", { type: "button", className: "btn sm", onClick: () => setOpenLater(model.inbox.length ? "inbox" : "upcoming") }, "See what is coming up")))), !tasks.length && /* @__PURE__ */ React.createElement("div", { className: "panel" }, /* @__PURE__ */ React.createElement("div", { className: "empty" }, /* @__PURE__ */ React.createElement("b", null, "Bring your tasks with you"), "Already using another app? Paste a list or import a file from Todoist, Google Tasks, TickTick or a CSV.", /* @__PURE__ */ React.createElement("div", { className: "mt-3" }, /* @__PURE__ */ React.createElement("button", { type: "button", className: "btn sm", onClick: onImport }, /* @__PURE__ */ React.createElement(Icon, { name: "upload", className: "w-4 h-4" }), " Import from another app")))), doneTodayList.length > 0 && /* @__PURE__ */ React.createElement("div", null, /* @__PURE__ */ React.createElement("button", { type: "button", className: "td-toggle", "aria-expanded": showDone, onClick: () => setShowDone((v) => !v) }, /* @__PURE__ */ React.createElement(Icon, { name: "chevron-down", className: "w-4 h-4 chev" }), " Done today (", doneTodayList.length, ")"), showDone && /* @__PURE__ */ React.createElement("ul", { className: "panel mt-2" }, doneTodayList.map((t) => /* @__PURE__ */ React.createElement("li", { key: t.id, className: "td-row" }, /* @__PURE__ */ React.createElement(CheckBox, { done: true, title: t.title, onToggle: () => onToggle(t.id) }), /* @__PURE__ */ React.createElement("span", { className: "td-title td-done-title truncate" }, t.title)))))), /* @__PURE__ */ React.createElement("div", { className: "lg:col-span-2 space-y-4 min-w-0" }, /* @__PURE__ */ React.createElement("section", { className: "panel", "aria-labelledby": "later-h" }, /* @__PURE__ */ React.createElement("div", { className: "panel-h" }, /* @__PURE__ */ React.createElement("h3", { id: "later-h" }, /* @__PURE__ */ React.createElement(Icon, { name: "calendar", className: "w-4 h-4 text-sky-600 dark:text-sky-400" }), " Coming up"), /* @__PURE__ */ React.createElement("span", { className: "hint tabular" }, laterCount ? `+${laterCount} later` : "")), laterCount === 0 ? /* @__PURE__ */ React.createElement("div", { className: "empty" }, /* @__PURE__ */ React.createElement("b", null, "Nothing parked"), "Tasks with a later date or no date land here, out of your way until you need them.") : /* @__PURE__ */ React.createElement("div", null, laterGroups.map((g) => g.list.length > 0 && /* @__PURE__ */ React.createElement("div", { key: g.id, className: "td-group" }, /* @__PURE__ */ React.createElement("button", { type: "button", className: "td-toggle td-pad", "aria-expanded": openLater === g.id, onClick: () => setOpenLater((o) => o === g.id ? "" : g.id) }, /* @__PURE__ */ React.createElement(Icon, { name: "chevron-down", className: "w-4 h-4 chev" }), " ", g.label, " ", /* @__PURE__ */ React.createElement("span", { className: "badge tabular td-push" }, g.list.length)), openLater === g.id && /* @__PURE__ */ React.createElement("ul", null, g.list.slice(0, 30).map((t) => /* @__PURE__ */ React.createElement(MiniRow, { key: t.id, task: t, project: pOf(t), showDate: g.date, onToggle, onOpen: onOpenTask, onPull })), g.list.length > 30 && /* @__PURE__ */ React.createElement("li", { className: "hint td-pad py-2" }, "And ", g.list.length - 30, " more. Use the Matrix or Calendar to see them all.")))))), /* @__PURE__ */ React.createElement("section", { className: "panel" }, /* @__PURE__ */ React.createElement("button", { type: "button", className: "td-toggle td-pad", "aria-expanded": showStats, onClick: () => setShowStats((v) => !v) }, /* @__PURE__ */ React.createElement(Icon, { name: "chevron-down", className: "w-4 h-4 chev" }), " Your numbers"), showStats && /* @__PURE__ */ React.createElement("div", { className: "grid grid-cols-2 gap-3 p-3" }, /* @__PURE__ */ React.createElement("div", { className: "tile" }, /* @__PURE__ */ React.createElement("div", { className: "lbl" }, "Streak"), /* @__PURE__ */ React.createElement("div", { className: "val" }, streak), /* @__PURE__ */ React.createElement("div", { className: "note" }, streak === 1 ? "day" : "days", " in a row")), /* @__PURE__ */ React.createElement("div", { className: "tile" }, /* @__PURE__ */ React.createElement("div", { className: "lbl" }, "Last 7 days"), /* @__PURE__ */ React.createElement("div", { className: "val" }, week), /* @__PURE__ */ React.createElement("div", { className: "note" }, "tasks finished")), /* @__PURE__ */ React.createElement("div", { className: "tile" }, /* @__PURE__ */ React.createElement("div", { className: "lbl" }, "Focus time"), /* @__PURE__ */ React.createElement("div", { className: "val" }, fmtMins(totalFocus)), /* @__PURE__ */ React.createElement("div", { className: "note" }, "logged on tasks")), /* @__PURE__ */ React.createElement("div", { className: "tile" }, /* @__PURE__ */ React.createElement("div", { className: "lbl" }, "Completion"), /* @__PURE__ */ React.createElement("div", { className: "val" }, rate, "%"), /* @__PURE__ */ React.createElement("div", { className: "note" }, completedAll, " of ", tasks.length))), showStats && canShare && /* @__PURE__ */ React.createElement("div", { className: "ap-share-row" }, /* @__PURE__ */ React.createElement("p", { className: "hint" }, "Share your streak and finished count as an image. Task names stay off it unless you turn them on."), /* @__PURE__ */ React.createElement("button", { type: "button", className: "btn sm mb-share-btn", onClick: shareProgress }, /* @__PURE__ */ React.createElement(Icon, { name: "share-2", className: "w-4 h-4" }), "Share"))), /* @__PURE__ */ React.createElement("p", { className: "hint px-1" }, "Tiers follow your matrix: Do First and pinned tasks are Must do, Schedule and Delegate are Should do, Eliminate is If time. ", /* @__PURE__ */ React.createElement("button", { type: "button", className: "link text-xs", onClick: () => setActiveTab("tasks") }, "Open the matrix")))));
+  }, "aria-hidden": "true" }), /* @__PURE__ */ React.createElement("h3", { id: `tier-${k}` }, TIER_META[k].label), /* @__PURE__ */ React.createElement("span", { className: "badge tabular" }, model[k].length), /* @__PURE__ */ React.createElement("span", { className: "hint td-push hidden sm:inline" }, k === "must" && model.must.length > 5 ? "That is a lot of must-dos. Try keeping it to about 3." : TIER_META[k].hint), model[k].some((t) => t.estimate) && /* @__PURE__ */ React.createElement("span", { className: "hint tabular" }, fmtMins(model[k].reduce((n, t) => n + (t.estimate || 0), 0)))), /* @__PURE__ */ React.createElement("ul", null, model[k].map((t) => /* @__PURE__ */ React.createElement(TodayRow, { key: t.id, task: t, project: pOf(t), onToggle, onOpen: onOpenTask, onStart, onPostpone, onWhy }))))), !tasks.length && /* @__PURE__ */ React.createElement("div", { className: "panel" }, /* @__PURE__ */ React.createElement(MbEmpty, { title: "No tasks yet", text: "Add the one thing you want done today. It goes on this list, and the rest of the page fills in from there.", label: "Add task", onAction: onAddTask })), tasks.length > 0 && model.todayAll.length === 0 && model.overdue.length === 0 && /* @__PURE__ */ React.createElement("div", { className: "panel" }, /* @__PURE__ */ React.createElement("div", { className: "empty" }, doneToday > 0 ? /* @__PURE__ */ React.createElement(React.Fragment, null, /* @__PURE__ */ React.createElement(Icon, { name: "party-popper", className: "w-7 h-7 mx-auto mb-2 text-emerald-600 dark:text-emerald-400" }), /* @__PURE__ */ React.createElement("b", null, "Everything for today is done."), "You finished ", doneToday, " task", doneToday === 1 ? "" : "s", ". Enjoy the rest of it.") : /* @__PURE__ */ React.createElement(React.Fragment, null, /* @__PURE__ */ React.createElement(Icon, { name: "calendar-check", className: "w-6 h-6 text-slate-400 mb-2 mx-auto" }), /* @__PURE__ */ React.createElement("b", null, "Nothing planned for today"), "Type a task above, or pull something in from Upcoming or your Inbox."), laterCount > 0 && /* @__PURE__ */ React.createElement("div", { className: "mt-3" }, /* @__PURE__ */ React.createElement("button", { type: "button", className: "btn sm", onClick: () => setOpenLater(model.inbox.length ? "inbox" : "upcoming") }, "See what is coming up")))), !tasks.length && /* @__PURE__ */ React.createElement("div", { className: "panel" }, /* @__PURE__ */ React.createElement("div", { className: "empty" }, /* @__PURE__ */ React.createElement("b", null, "Bring your tasks with you"), "Already using another app? Paste a list or import a file from Todoist, Google Tasks, TickTick or a CSV.", /* @__PURE__ */ React.createElement("div", { className: "mt-3" }, /* @__PURE__ */ React.createElement("button", { type: "button", className: "btn sm", onClick: onImport }, /* @__PURE__ */ React.createElement(Icon, { name: "upload", className: "w-4 h-4" }), " Import from another app")))), doneTodayList.length > 0 && /* @__PURE__ */ React.createElement("div", null, /* @__PURE__ */ React.createElement("button", { type: "button", className: "td-toggle", "aria-expanded": showDone, onClick: () => setShowDone((v) => !v) }, /* @__PURE__ */ React.createElement(Icon, { name: "chevron-down", className: "w-4 h-4 chev" }), " Done today (", doneTodayList.length, ")"), showDone && /* @__PURE__ */ React.createElement("ul", { className: "panel mt-2" }, doneTodayList.map((t) => /* @__PURE__ */ React.createElement("li", { key: t.id, className: "td-row" }, /* @__PURE__ */ React.createElement(CheckBox, { done: true, title: t.title, onToggle: () => onToggle(t.id) }), /* @__PURE__ */ React.createElement("span", { className: "td-title td-done-title truncate" }, t.title)))))), /* @__PURE__ */ React.createElement("div", { className: "lg:col-span-2 space-y-4 min-w-0" }, /* @__PURE__ */ React.createElement("section", { className: "panel", "aria-labelledby": "later-h" }, /* @__PURE__ */ React.createElement("div", { className: "panel-h" }, /* @__PURE__ */ React.createElement("h3", { id: "later-h" }, /* @__PURE__ */ React.createElement(Icon, { name: "calendar", className: "w-4 h-4 text-sky-600 dark:text-sky-400" }), " Coming up"), /* @__PURE__ */ React.createElement("span", { className: "hint tabular" }, laterCount ? `+${laterCount} later` : "")), laterCount === 0 ? /* @__PURE__ */ React.createElement("div", { className: "empty" }, /* @__PURE__ */ React.createElement("b", null, "Nothing parked"), "Tasks with a later date or no date land here, out of your way until you need them.") : /* @__PURE__ */ React.createElement("div", null, laterGroups.map((g) => g.list.length > 0 && /* @__PURE__ */ React.createElement("div", { key: g.id, className: "td-group" }, /* @__PURE__ */ React.createElement("button", { type: "button", className: "td-toggle td-pad", "aria-expanded": openLater === g.id, onClick: () => setOpenLater((o) => o === g.id ? "" : g.id) }, /* @__PURE__ */ React.createElement(Icon, { name: "chevron-down", className: "w-4 h-4 chev" }), " ", g.label, " ", /* @__PURE__ */ React.createElement("span", { className: "badge tabular td-push" }, g.list.length)), openLater === g.id && /* @__PURE__ */ React.createElement("ul", null, g.list.slice(0, 30).map((t) => /* @__PURE__ */ React.createElement(MiniRow, { key: t.id, task: t, project: pOf(t), showDate: g.date, onToggle, onOpen: onOpenTask, onPull })), g.list.length > 30 && /* @__PURE__ */ React.createElement("li", { className: "hint td-pad py-2" }, "And ", g.list.length - 30, " more. Use the Matrix or Calendar to see them all.")))))), /* @__PURE__ */ React.createElement("section", { className: "panel" }, /* @__PURE__ */ React.createElement("button", { type: "button", className: "td-toggle td-pad", "aria-expanded": showStats, onClick: () => setShowStats((v) => !v) }, /* @__PURE__ */ React.createElement(Icon, { name: "chevron-down", className: "w-4 h-4 chev" }), " Your numbers"), showStats && /* @__PURE__ */ React.createElement("div", { className: "grid grid-cols-2 gap-3 p-3" }, /* @__PURE__ */ React.createElement("div", { className: "tile" }, /* @__PURE__ */ React.createElement("div", { className: "lbl" }, "Streak"), /* @__PURE__ */ React.createElement("div", { className: "val" }, streak), /* @__PURE__ */ React.createElement("div", { className: "note" }, streak === 1 ? "day" : "days", " in a row")), /* @__PURE__ */ React.createElement("div", { className: "tile" }, /* @__PURE__ */ React.createElement("div", { className: "lbl" }, "Last 7 days"), /* @__PURE__ */ React.createElement("div", { className: "val" }, week), /* @__PURE__ */ React.createElement("div", { className: "note" }, "tasks finished")), /* @__PURE__ */ React.createElement("div", { className: "tile" }, /* @__PURE__ */ React.createElement("div", { className: "lbl" }, "Focus time"), /* @__PURE__ */ React.createElement("div", { className: "val" }, fmtMins(totalFocus)), /* @__PURE__ */ React.createElement("div", { className: "note" }, "logged on tasks")), /* @__PURE__ */ React.createElement("div", { className: "tile" }, /* @__PURE__ */ React.createElement("div", { className: "lbl" }, "Completion"), /* @__PURE__ */ React.createElement("div", { className: "val" }, rate, "%"), /* @__PURE__ */ React.createElement("div", { className: "note" }, completedAll, " of ", tasks.length))), showStats && canShare && /* @__PURE__ */ React.createElement("div", { className: "ap-share-row" }, /* @__PURE__ */ React.createElement("p", { className: "hint" }, "Share your streak and finished count as an image. Task names stay off it unless you turn them on."), /* @__PURE__ */ React.createElement("button", { type: "button", className: "btn sm mb-share-btn", onClick: shareProgress }, /* @__PURE__ */ React.createElement(Icon, { name: "share-2", className: "w-4 h-4" }), "Share"))), /* @__PURE__ */ React.createElement("p", { className: "hint px-1" }, "Tiers follow your matrix: Do First and pinned tasks are Must do, Schedule and Delegate are Should do, Eliminate is If time. ", /* @__PURE__ */ React.createElement("button", { type: "button", className: "link text-xs", onClick: () => setActiveTab("tasks") }, "Open the matrix")))));
 }
 function FocusMode({
   task,
@@ -5423,32 +5470,59 @@ function Wordmark() {
     "aria-hidden": "true"
   }, "\u2219"), "mcbflow.com"));
 }
-// Install card (MB Suite v3 §7.2), drawn from the install state captured at startup (deferredInstall).
-// Returns null where installing isn't possible, so it never shows a button that does nothing.
-function InstallCard({
+// Settings › Install (2026-10-17b §10): the same words in every mcbflow.com app. A real Install button only where the
+// browser offers one; otherwise one line on how to do it; "Installed" inside the installed app.
+function InstallSection({
   onInstall
 }) {
-  if (isStandalone()) return /*#__PURE__*/React.createElement("div", {
-    className: "mb-install is-done",
+  const done = isStandalone();
+  const can = !done && !!deferredInstall;
+  const how = done || can ? null : isIOSDevice() ? 'iPhone/iPad: tap Share, then Add to Home Screen.' : "Use your browser's menu: Install app / Add to Home screen.";
+  return /*#__PURE__*/React.createElement("div", {
+    className: "mb-set-card"
+  }, /*#__PURE__*/React.createElement("div", {
+    className: "mb-set-row"
+  }, /*#__PURE__*/React.createElement("div", {
+    className: "mb-set-l"
+  }, /*#__PURE__*/React.createElement("p", {
+    className: "ap-inst-line"
+  }, "Add Action Plan to your home screen or dock. It opens in its own window and works offline."), how && /*#__PURE__*/React.createElement("small", null, how)), (done || can) && /*#__PURE__*/React.createElement("div", {
+    className: "mb-set-c"
+  }, done ? /*#__PURE__*/React.createElement("span", {
+    className: "mb-info",
     role: "status"
-  }, /*#__PURE__*/React.createElement(Icon, {
-    name: "check-circle-2"
-  }), /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("b", null, "Installed on this device"), /*#__PURE__*/React.createElement("p", null, "You are using the app version of Action Plan.")));
-  if (deferredInstall) return /*#__PURE__*/React.createElement("div", {
-    className: "mb-install"
-  }, /*#__PURE__*/React.createElement(Icon, {
-    name: "download"
-  }), /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("b", null, "Install Action Plan"), /*#__PURE__*/React.createElement("p", null, "Opens in its own window with its own icon. Works offline after the first visit.")), /*#__PURE__*/React.createElement("button", {
+  }, /*#__PURE__*/React.createElement(Uic, {
+    n: "shield",
+    size: 15
+  }), "Installed") : /*#__PURE__*/React.createElement("button", {
     type: "button",
     className: "btn primary",
     onClick: onInstall
-  }, "Install"));
-  if (isIOSDevice()) return /*#__PURE__*/React.createElement("div", {
-    className: "mb-install"
-  }, /*#__PURE__*/React.createElement(Icon, {
-    name: "download"
-  }), /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("b", null, "Add Action Plan to your Home Screen"), /*#__PURE__*/React.createElement("p", null, "On iPhone or iPad: tap ", /*#__PURE__*/React.createElement("b", null, "Share"), ", then ", /*#__PURE__*/React.createElement("b", null, "Add to Home Screen"), ". It opens full screen with its own icon.")));
-  return null;
+  }, "Install"))));
+}
+// Empty screen (2026-10-17b §11): the shared MBUI.empty block (art, title, one line, one button). React renders an empty
+// box and never touches its children; mb-ui.js draws inside it (again on every render, so the button calls the latest fn).
+function MbEmpty({
+  title,
+  text,
+  label,
+  onAction
+}) {
+  const ref = useRef(null);
+  useEffect(() => {
+    if (window.MBUI && ref.current) window.MBUI.empty(ref.current, {
+      title,
+      text,
+      action: label && onAction ? {
+        label,
+        fn: onAction
+      } : null
+    });
+  });
+  return /*#__PURE__*/React.createElement("div", {
+    ref: ref,
+    className: "ap-empty"
+  });
 }
 // Greeting line on Home ("Good morning, Matthew" when signed in with a screen name; "Good morning" otherwise). mb-sync.js writes it.
 function Greeting() {
@@ -5501,7 +5575,8 @@ function SyncCard() {
 }
 // Page footer (MB Suite v3.3 §7): the last thing on every view except Settings.
 function AppFooter({
-  onLegal
+  onLegal,
+  onWhatsNew
 }) {
   return /*#__PURE__*/React.createElement("footer", {
     className: "mb-foot"
@@ -5512,7 +5587,7 @@ function AppFooter({
     "aria-label": "About Action Plan"
   }, /*#__PURE__*/React.createElement("button", {
     type: "button",
-    onClick: () => onLegal('notes')
+    onClick: onWhatsNew
   }, "What’s new"), /*#__PURE__*/React.createElement("button", {
     type: "button",
     onClick: () => onLegal('privacy')
@@ -5525,20 +5600,18 @@ function AppFooter({
     className: "mb-foot-copy"
   }, "\xA9 2026 Matthew Broyer"));
 }
-// Settings (MB Suite v3.3 §6), replacing the old More page: Appearance → Account & sync → Help & legal →
-// Backup & data → Install → About. Everything More had is here (theme, backup, welcome guide, release notes,
-// legal pages, Install card, About card).
+// Settings (2026-10-17b §10): Appearance → Account & sync → Action Plan settings → Backup & data → Install → About.
+// Left-aligned column; every change saves at once. Release notes → What's new; legal pages and Help are linked from About.
 function SettingsView({
   theme,
   setTheme,
   dataList,
   onInstall,
   onLegal,
-  onWelcome
+  onWelcome,
+  onWhatsNew,
+  onHelp
 }) {
-  const card = InstallCard({
-    onInstall
-  });
   const sec = (id, title, ...kids) => /*#__PURE__*/React.createElement("section", {
     className: "mb-set-sec",
     "aria-labelledby": id
@@ -5546,10 +5619,11 @@ function SettingsView({
     className: "mb-set-h",
     id: id
   }, title), ...kids);
-  const links = [['Release notes', 'file-text', () => onLegal('notes')], ['Privacy Policy', 'shield-check', () => onLegal('privacy')], ['Terms of Use', 'file-text', () => onLegal('terms')], ['Disclaimer', 'scale', () => onLegal('disclaimer')], ['Credits', 'info', () => onLegal('credits')]];
   return /*#__PURE__*/React.createElement("div", {
     className: "mb-set animate-fade-in-up"
-  }, sec('set-look', 'Appearance', /*#__PURE__*/React.createElement("div", {
+  }, /*#__PURE__*/React.createElement("p", {
+    className: "ap-intro"
+  }, "Changes save as you make them."), sec('set-look', 'Appearance', /*#__PURE__*/React.createElement("div", {
     className: "mb-set-card"
   }, /*#__PURE__*/React.createElement("div", {
     className: "mb-set-row"
@@ -5570,7 +5644,7 @@ function SettingsView({
   }, /*#__PURE__*/React.createElement(Uic, {
     n: id === 'light' ? 'sun' : 'moon',
     size: 16
-  }), id === 'light' ? 'Light' : 'Dark'))))))), sec('set-sync', 'Account & sync', /*#__PURE__*/React.createElement(SyncCard, null)), sec('set-help', 'Help & legal', /*#__PURE__*/React.createElement("div", {
+  }), id === 'light' ? 'Light' : 'Dark'))))))), sec('set-sync', 'Account & sync', /*#__PURE__*/React.createElement(SyncCard, null)), sec('set-app', 'Action Plan settings', /*#__PURE__*/React.createElement("div", {
     className: "mb-set-card"
   }, /*#__PURE__*/React.createElement("div", {
     className: "mb-set-row"
@@ -5582,27 +5656,13 @@ function SettingsView({
     type: "button",
     className: "btn sm",
     onClick: onWelcome
-  }, "Show again"))), /*#__PURE__*/React.createElement("div", {
-    className: "more-links ap-set-links"
-  }, links.map(([label, icon, fn]) => /*#__PURE__*/React.createElement("button", {
-    key: label,
-    type: "button",
-    onClick: fn
-  }, /*#__PURE__*/React.createElement(Icon, {
-    name: icon,
-    className: "w-4 h-4"
-  }), label, /*#__PURE__*/React.createElement(Icon, {
-    name: "chevron-right",
-    className: "w-4 h-4 go"
-  })))))), sec('set-data', 'Backup & data', /*#__PURE__*/React.createElement("div", {
+  }, "Show again"))))), sec('set-data', 'Backup & data', /*#__PURE__*/React.createElement("div", {
     className: "mb-set-card ap-set-data"
-  }, dataList)), sec('set-install', 'Install', card || /*#__PURE__*/React.createElement("p", {
-    className: "hint",
-    style: {
-      margin: 0
-    }
-  }, "No install option here: this browser doesn't offer installing apps (for example Firefox on a computer, or a page opened from a file). Action Plan works the same in the browser.")), sec('set-about', 'About', /*#__PURE__*/React.createElement(AboutCard, {
-    onWhatsNew: () => onLegal('notes'),
+  }, dataList)), sec('set-install', 'Install', /*#__PURE__*/React.createElement(InstallSection, {
+    onInstall: onInstall
+  })), sec('set-about', 'About', /*#__PURE__*/React.createElement(AboutCard, {
+    onWhatsNew: onWhatsNew,
+    onHelp: onHelp,
     onPrivacy: () => onLegal('privacy'),
     onTerms: () => onLegal('terms')
   })));
@@ -5611,6 +5671,7 @@ function SettingsView({
 // name, version and release date, What's new, the hub link and the copyright line.
 function AboutCard({
   onWhatsNew,
+  onHelp,
   onPrivacy,
   onTerms
 }) {
@@ -5641,7 +5702,10 @@ function AboutCard({
   }, /*#__PURE__*/React.createElement("button", {
     type: "button",
     onClick: onWhatsNew
-  }, "What's new"), /*#__PURE__*/React.createElement("button", {
+  }, "What’s new"), /*#__PURE__*/React.createElement("button", {
+    type: "button",
+    onClick: onHelp
+  }, "Help"), /*#__PURE__*/React.createElement("button", {
     type: "button",
     onClick: onPrivacy
   }, "Privacy"), /*#__PURE__*/React.createElement("button", {
@@ -5652,6 +5716,60 @@ function AboutCard({
   }, "More free apps at mcbflow.com")), /*#__PURE__*/React.createElement("p", {
     className: "mb-about-copy"
   }, "\xA9 2026 Matthew Broyer. All rights reserved.")));
+}
+// Help (2026-10-17b §3): intro · Getting started · questions grouped by topic, ending with Install the app and Your data &
+// privacy. Everything here describes what the app really does (read from the code). Release notes live in What's new;
+// the legal text lives on the Privacy and Terms pages.
+const HELP_STEPS = ['Type a task in the box on Home and press Enter. Words like “tomorrow 3pm”, “30m”, “p1” or “every week” set the date, time, estimate, priority and repeat for you.', 'Work down today’s list: Must do first, then Should do, then If time. Tick a task when it’s done.', 'Not sure where to start? “What should I do now?” suggests one task, and Start runs a focus timer on it.', 'At the end of the day, Wrap up day moves anything unfinished forward in one pass.', 'Save a backup from the Data menu now and then, or sign in to sync your devices.'];
+const HELP_FAQ = [['Planning your day', [['What can I type in the quick-add box?', ['Plain words: a date (today, tomorrow, friday, next week, or “someday” for no date), a time (3pm, 14:30, noon), an estimate (15m, 1h), a priority (p1 to p4, or !), a repeat (daily, every week, every other month), a place (@home, @computer, @phone, @errands, @shopping, @away) and a project (# and its code or name).', 'A task without a date goes on today’s list. New tasks start as Schedule (Should do) unless you add a priority.']], ['What are Must do, Should do and If time?', ['They come from your matrix. Do First and pinned tasks are Must do, Schedule and Delegate are Should do, and Eliminate is If time. Change a task’s box in the task form or on the Tasks Matrix.']], ['How does “What should I do now?” pick a task?', ['It uses simple rules on your device: due dates, priority and time estimates, plus the time, energy and place you pick under “I only have a few minutes, or low energy…”. “Not this one” shows the next suggestion. No AI service is involved.']], ['What happens to tasks I didn’t finish?', ['Overdue tasks wait under Needs a decision at the top of Home: Do today, Tomorrow, Next week or Someday. After you move the same task three times, Action Plan asks what’s getting in the way and offers ways to unstick it, like breaking it into steps, picking a new date or parking it.', 'Wrap up day lists today’s unfinished tasks so you can finish, keep or move each one at once.']], ['What does Explain my tasks do?', ['It reads your list back in plain language: what’s due, what’s overdue and what’s waiting. It runs on your device; nothing is sent anywhere.']]]], ['Tasks & projects', [['How do repeating tasks work?', ['Ticking a repeating task moves it to its next date. It counts from the due date, or from the day you finish if you choose “Count from when I finish” under More options. Monthly and yearly repeats keep the same day of the month, using the last day when a month is shorter (Jan 31 → Feb 28).']], ['How do I break a big task into steps?', ['Open the task and add steps under More options, or use “Add starter steps”. In Focus mode, “Break it down for me” does the same. Ticked steps show as progress on the task.']], ['What are projects for?', ['They group related tasks, like work, home or a client. Pick a project in the filter on Home to see only its tasks, or open it on Projects to see its progress. Deleting a project deletes its tasks too; Undo in the message brings them back.']], ['Can I undo a change?', ['Yes. Most changes show Undo in the message at the bottom of the screen. Ctrl+Z undoes and Ctrl+Y redoes (⌘ on a Mac); on phones, the ≡ menu in the top bar has Undo and Redo.']]]], ['Focus timer', [['How does the Focus Timer work?', ['Pick a task and press Start. You work in blocks of 25 minutes (or any length from 1 to 120), with a 5-minute break after each block and a 15-minute break after the fourth. Every full minute of a focus block is added to the task’s focus time. It keeps the right time even if your screen locks.']], ['Will it remind me when time is up?', ['It plays a short sound when a block ends while the page is open. Action Plan doesn’t send notifications, emails or alarms, so don’t rely on it as your only reminder. Turn on “Keep screen on” to stop the screen from sleeping while it runs.']]]], ['Search & shortcuts', [['How do I find a task?', ['Press Search in the top bar, or / or Ctrl+K. It finds tasks, projects and pages; pick one to open it. “Filter all views” narrows every page to matching tasks until you press Clear.']], ['Keyboard shortcuts', ['N adds a task (on Home it jumps to the quick-add box) · / or Ctrl+K searches · Ctrl+Z undoes · Ctrl+Y or Ctrl+Shift+Z redoes · Ctrl+S saves a backup · Esc closes a window. On a Mac, use ⌘ instead of Ctrl.']]]], ['Moving your tasks', [['Can I bring my tasks from another app?', ['Yes: Data → Import from another app. Paste a list, or import a file from Todoist, Google Tasks, TickTick or any CSV.']], ['How do I restore a backup or move to another device?', ['Data → Import Backup, then pick a JSON, CSV or ZIP backup from Action Plan. It adds what’s missing and skips anything already here, so importing twice never doubles anything. Or sign in to sync on both devices.']], ['Can I print my list?', ['Data → Print or save as PDF makes a clean checklist of your open tasks. “Export as text list” saves the same list as a .txt file. Neither one is a backup.']]]], ['Install the app', [['Can I install Action Plan like an app?', ['Yes. Settings → Install shows an Install button when your browser offers it (Chrome, Edge, Android). On iPhone or iPad, tap Share, then Add to Home Screen. It opens in its own window.']], ['Does it work offline?', ['Yes, after the first visit. Your tasks are saved on this device, so you can add and finish tasks without a connection.']]]], ['Your data & privacy', [['Where are my tasks stored?', ['In this browser, on this device. No account is needed, and nothing is sent anywhere unless you sign in to sync. Clearing your browser’s site data deletes it, so save a backup now and then.']], ['What does signing in do?', ['It’s free and optional. Your tasks, projects and streak are copied to your mcbflow.com account so your other devices match. Your theme and focus timer stay on each device.']], ['How do I delete everything?', ['Settings → Backup & data → Clear all data. It offers to save a backup first, and when you’re signed in it deletes the synced copy too.']]]]];
+function HelpView({
+  onLegal
+}) {
+  return /*#__PURE__*/React.createElement("div", {
+    className: "mb-set ap-help animate-fade-in-up"
+  }, /*#__PURE__*/React.createElement("p", {
+    className: "ap-intro"
+  }, "How Action Plan works, in short answers."), /*#__PURE__*/React.createElement("section", {
+    className: "mb-set-sec",
+    "aria-labelledby": "help-start"
+  }, /*#__PURE__*/React.createElement("h2", {
+    className: "mb-set-h",
+    id: "help-start"
+  }, "Getting started"), /*#__PURE__*/React.createElement("div", {
+    className: "mb-set-card pad"
+  }, /*#__PURE__*/React.createElement("ol", {
+    className: "ap-steps"
+  }, HELP_STEPS.map((t, i) => /*#__PURE__*/React.createElement("li", {
+    key: i
+  }, t))))), HELP_FAQ.map(([group, qs], gi) => /*#__PURE__*/React.createElement("section", {
+    key: group,
+    className: "mb-set-sec",
+    "aria-labelledby": `help-g${gi}`
+  }, /*#__PURE__*/React.createElement("h2", {
+    className: "mb-set-h",
+    id: `help-g${gi}`
+  }, group), /*#__PURE__*/React.createElement("div", {
+    className: "mb-set-card ap-faq"
+  }, qs.map(([q, a]) => /*#__PURE__*/React.createElement("details", {
+    key: q
+  }, /*#__PURE__*/React.createElement("summary", null, /*#__PURE__*/React.createElement("span", null, q), /*#__PURE__*/React.createElement(Uic, {
+    n: "chev",
+    size: 16
+  })), /*#__PURE__*/React.createElement("div", {
+    className: "a"
+  }, a.map((p, i) => /*#__PURE__*/React.createElement("p", {
+    key: i
+  }, p))))), group === 'Your data & privacy' && /*#__PURE__*/React.createElement("p", {
+    className: "ap-help-links"
+  }, /*#__PURE__*/React.createElement("button", {
+    type: "button",
+    className: "btn sm",
+    onClick: () => onLegal('privacy')
+  }, "Privacy policy"), /*#__PURE__*/React.createElement("button", {
+    type: "button",
+    className: "btn sm",
+    onClick: () => onLegal('terms')
+  }, "Terms of use"))))));
 }
 const HASH_TABS = {
   home: 'dashboard',
@@ -5665,7 +5783,9 @@ const HASH_TABS = {
   timer: 'pomodoro',
   pomodoro: 'pomodoro',
   settings: 'settings',
-  more: 'settings'
+  more: 'settings',
+  help: 'help',
+  faq: 'help'
 };
 const tabFromHash = () => {
   try {
@@ -5686,13 +5806,11 @@ function App() {
     window.addEventListener('hashchange', onHash);
     return () => window.removeEventListener('hashchange', onHash);
   }, []);
-  const [toast, setToast] = useState(null);
   const [highlightedTaskId, setHighlightedTaskId] = useState(null);
   const [selectedProjectId, setSelectedProjectId] = useState('all');
   const [selectedProjectDetail, setSelectedProjectDetail] = useState(null);
   const [searchQuery, setSearchQuery] = useState('');
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const [phoneSearchOpen, setPhoneSearchOpen] = useState(false);
   const [cookieAccepted, setCookieAccepted] = useState(() => store.get('actionplan.cookieAccepted') === 'true');
   const [legalModalOpen, setLegalModalOpen] = useState(false);
   const [legalTab, setLegalTab] = useState('privacy');
@@ -5707,7 +5825,6 @@ function App() {
   const [lastBackup, setLastBackup] = useState(() => parseInt(store.get('actionplan.lastBackup'), 10) || 0);
   const [dataMenuOpen, setDataMenuOpen] = useState(false);
   const dataMenuRef = useRef(null);
-  const toastTimer = useRef(null);
   const [scrollProgress, setScrollProgress] = useState(0);
   const [showTopBtn, setShowTopBtn] = useState(false);
   const mainRef = useRef(null);
@@ -5797,8 +5914,6 @@ function App() {
   const [projectModalOpen, setProjectModalOpen] = useState(false);
   const [currentProject, setCurrentProject] = useState(null);
   const [shareModalOpen, setShareModalOpen] = useState(false);
-  const [clearModalOpen, setClearModalOpen] = useState(false);
-  const [clearConfirmText, setClearConfirmText] = useState('');
   const fileInputRef = useRef(null);
   const quickAddRef = useRef(null);
   const tasksRef = useRef(tasks);
@@ -5886,15 +6001,16 @@ function App() {
     store.set('actionplan.projects', JSON.stringify(projects));
   }, [projects]);
 
-  // action = optional { label, onClick } shown as a button (e.g. Undo); those toasts stay longer.
+  // Every transient message goes through the shared MBUI.toast (one look in every app). type is kept for the callers;
+  // action = optional { label, onClick } shown as a button (e.g. Undo).
   const showToast = useCallback((message, type = 'success', action = null) => {
-    setToast({
-      message,
-      type,
-      action
-    });
-    clearTimeout(toastTimer.current);
-    toastTimer.current = setTimeout(() => setToast(null), action ? 6000 : 3500);
+    if (!window.MBUI) return;
+    window.MBUI.toast(String(message), action ? {
+      action: {
+        label: action.label,
+        fn: action.onClick
+      }
+    } : {});
   }, []);
 
   // Storage failures (full, or blocked by privacy settings) show a persistent warning instead of
@@ -5994,11 +6110,6 @@ function App() {
     const handleKeyDown = e => {
       const tag = (e.target.tagName || '').toLowerCase();
       if (tag === 'input' || tag === 'textarea' || tag === 'select') return;
-      if (e.key === '/' && !e.ctrlKey && !e.metaKey && !e.altKey) {
-        const si = document.getElementById('ap-search-input');
-        if (si && si.offsetParent) { e.preventDefault(); si.focus(); }
-        return;
-      }
       if ((e.ctrlKey || e.metaKey) && e.key === 'z') {
         e.preventDefault();
         if (e.shiftKey) handleRedo();else handleUndo();
@@ -6013,18 +6124,14 @@ function App() {
 
   // Escape closes whichever of the simple inline modals (not handled by useEscapeClose) is open.
   useEffect(() => {
-    if (!shareModalOpen && !clearModalOpen) return;
+    if (!shareModalOpen) return;
     const handleEscape = e => {
       if (e.key !== 'Escape') return;
-      if (shareModalOpen) setShareModalOpen(false);
-      if (clearModalOpen) {
-        setClearModalOpen(false);
-        setClearConfirmText('');
-      }
+      setShareModalOpen(false);
     };
     window.addEventListener('keydown', handleEscape);
     return () => window.removeEventListener('keydown', handleEscape);
-  }, [shareModalOpen, clearModalOpen]);
+  }, [shareModalOpen]);
 
   // Single-key shortcuts: N = new task, Ctrl/Cmd+S = export a backup.
   useEffect(() => {
@@ -6037,7 +6144,7 @@ function App() {
       const tag = (e.target.tagName || '').toLowerCase();
       if (tag === 'input' || tag === 'textarea' || tag === 'select' || e.target.isContentEditable) return;
       if (e.ctrlKey || e.metaKey || e.altKey) return;
-      const anyModal = taskModalOpen || projectModalOpen || shareModalOpen || clearModalOpen || legalModalOpen || onboardOpen || focusTaskId || reviewOpen || explainOpen || whyTaskId || importOpen;
+      const anyModal = taskModalOpen || projectModalOpen || shareModalOpen || legalModalOpen || onboardOpen || focusTaskId || reviewOpen || explainOpen || whyTaskId || importOpen;
       if (!anyModal && (e.key === 'n' || e.key === 'N')) {
         e.preventDefault();
         // On Today, N jumps straight to quick add; elsewhere it opens the full form.
@@ -6557,7 +6664,7 @@ function App() {
       why: 'waiting',
       postponed: 0,
       isPinned: false
-    }), 'Parked in your Inbox as waiting.', undoAction);else if (action === 'delete') updateTasksWithHistory(tasksRef.current.filter(x => x.id !== t.id), `Deleted "${t.title}".`, undoAction);else if (action === 'five') {
+    }), 'Parked in your Inbox as waiting.', undoAction);else if (action === 'delete') updateTasksWithHistory(tasksRef.current.filter(x => x.id !== t.id), 'Task deleted', undoAction);else if (action === 'five') {
       patchTaskQuiet(t.id, () => ({
         why: 'avoid'
       }));
@@ -6571,8 +6678,9 @@ function App() {
   };
   const exportTextList = () => {
     setDataMenuOpen(false);
-    downloadText(buildTextExport(projects, tasksRef.current), `actionplan-tasks-${getLocalDateStr()}.txt`, 'text/plain;charset=utf-8');
-    showToast('Saved a text checklist (this is not a backup).', 'success');
+    const name = MBUI.fileName('actionplan', 'tasks', 'txt');
+    downloadText(buildTextExport(projects, tasksRef.current), name, 'text/plain;charset=utf-8');
+    showToast(`Text list downloaded \u00B7 ${name}`, 'success');
   };
   const printList = () => {
     setDataMenuOpen(false);
@@ -6603,14 +6711,12 @@ function App() {
   };
   const handleDeleteProject = projectId => {
     if (!projectId) return;
-    const name = projects.find(p => p.id === projectId)?.name || 'Project';
     const taskCount = tasks.filter(t => t.projectId === projectId).length;
-    // Only ask when tasks go with it; either way an Undo is offered right after.
-    if (taskCount > 0 && !window.confirm(`Delete "${name}" and its ${taskCount} task${taskCount === 1 ? '' : 's'}? You can undo this right after.`)) return;
+    // No confirm dialog (2026-10-17b §6): it goes at once, and Undo in the message brings the project and its tasks back.
     const removed = projects.find(p => p.id === projectId);
     const removedIdx = projects.findIndex(p => p.id === projectId);
     setProjects(prev => prev.filter(p => p.id !== projectId));
-    updateTasksWithHistory(tasks.filter(t => t.projectId !== projectId), taskCount > 0 ? `"${name}" and its tasks deleted.` : `"${name}" deleted.`, {
+    updateTasksWithHistory(tasks.filter(t => t.projectId !== projectId), taskCount > 0 ? `Project and ${taskCount} task${taskCount === 1 ? '' : 's'} deleted` : 'Project deleted', {
       label: 'Undo',
       onClick: () => {
         setProjects(prev => {
@@ -6663,7 +6769,8 @@ function App() {
   }, null, 2);
   const backupText = kind => kind === 'json' ? buildBackupJSON() : generateCSVData();
   const backupMime = kind => kind === 'json' ? 'application/json' : 'text/csv;charset=utf-8';
-  const datedName = kind => `actionplan-backup-${getLocalDateStr()}.${kind}`;
+  // File names (2026-10-17b §7): actionplan-backup-YYYY-MM-DD.json, actionplan-tasks-YYYY-MM-DD.csv. Import ignores names.
+  const datedName = kind => MBUI.fileName('actionplan', kind === 'json' ? 'backup' : 'tasks', kind);
 
   // Remembered save locations (file handles live in IndexedDB).
   const [fileHandles, setFileHandles] = useState({
@@ -6705,7 +6812,7 @@ function App() {
     }
     downloadText(text, name, backupMime(kind));
     markBackedUp();
-    showToast(`Backup downloaded as ${name}. This browser can't choose a save location, so check your Downloads folder.`, 'success');
+    showToast(`Backup downloaded \u00B7 ${name}`, 'success');
   };
 
   // Export to a file: asks where to save the first time (or when changing location), then reuses it.
@@ -6730,7 +6837,7 @@ function App() {
       }
       await writeHandle(handle, backupText(kind));
       markBackedUp();
-      showToast(`Saved ${handle.name} in the folder you chose.`, 'success');
+      showToast(`Backup saved \u00B7 ${handle.name}`, 'success');
       return true;
     } catch (err) {
       if (err.name === 'AbortError') return false; // picker closed
@@ -6755,7 +6862,7 @@ function App() {
     if (ok && fileHandles.csv) {
       try {
         await writeHandle(fileHandles.csv, backupText('csv'));
-        showToast(`Saved ${(fileHandles.json || {}).name || BACKUP_NAMES.json} and ${fileHandles.csv.name}.`, 'success');
+        showToast(`Backup saved \u00B7 ${(fileHandles.json || {}).name || BACKUP_NAMES.json} and ${fileHandles.csv.name}`, 'success');
       } catch (e) {
         showToast(`Saved the JSON backup, but couldn't update ${fileHandles.csv.name}. Use Export All (CSV) to pick it again.`, 'error');
       }
@@ -6794,7 +6901,7 @@ function App() {
       showToast("Couldn't make the ZIP file. Nothing was saved. Try Export All (JSON) instead.", 'error');
       return;
     }
-    const name = `actionplan-backup-${getLocalDateStr()}.zip`;
+    const name = MBUI.fileName('actionplan', 'backup', 'zip');
     if (FS_SUPPORTED) {
       try {
         const h = await window.showSaveFilePicker({
@@ -6809,7 +6916,7 @@ function App() {
         });
         await writeHandle(h, blob);
         markBackedUp();
-        showToast(`Saved ${h.name} in the folder you chose.`, 'success');
+        showToast(`Backup saved \u00B7 ${h.name}`, 'success');
       } catch (err) {
         if (err.name !== 'AbortError') showToast("Couldn't save the ZIP file. Nothing was changed. Try again or pick another location.", 'error');
       }
@@ -6838,7 +6945,7 @@ function App() {
     }
     window.MBFiles.download(blob, name);
     markBackedUp();
-    showToast(`Backup downloaded as ${name}. Check your Downloads folder.`, 'success');
+    showToast(`Backup downloaded \u00B7 ${name}`, 'success');
   };
   const handleImportClick = async () => {
     setDataMenuOpen(false);
@@ -7055,8 +7162,8 @@ function App() {
     };
     reader.readAsText(file);
   };
+  // Called only after the shared "Clear all data?" dialog (MBFiles.confirmClear: type DELETE) was confirmed.
   const handleClearAllData = () => {
-    if (clearConfirmText.trim().toUpperCase() !== 'CLEAR') return;
     // Removes every key this app has written and drops the in-memory undo history, so deletion is real.
     APP_STORAGE_KEYS.forEach(k => store.remove(k));
     setProjects([]);
@@ -7087,8 +7194,6 @@ function App() {
       carry: 0
     };
     setSelectedProjectDetail(null);
-    setClearConfirmText('');
-    setClearModalOpen(false);
     showToast('All tasks, projects and app settings were deleted from this browser.', 'success');
   };
   // The start view (Today's list, quick add, next action) is the Home tab (MB Suite v3.3 §14); its id stays 'dashboard'.
@@ -7119,6 +7224,58 @@ function App() {
     short: 'Focus',
     uic: 'timer'
   }];
+  // Phone bottom bar (max 5 items): two tabs, the Add button, one tab, More. The rest sit in the More sheet (Settings first).
+  const PHONE_BAR = ['dashboard', 'projects', 'add', 'pomodoro'];
+  // More (2026-10-17b §1): Settings, the other views in sidebar order, Help, What's new. One shared sheet (MBUI.sheet).
+  const PHONE_MORE = [{
+    id: 'settings',
+    label: 'Settings',
+    uic: 'gear'
+  }, {
+    id: 'tasks',
+    label: 'Tasks Matrix',
+    uic: 'matrix'
+  }, {
+    id: 'calendar',
+    label: 'Calendar',
+    uic: 'calendar'
+  }, {
+    id: 'help',
+    label: 'Help',
+    uic: 'help'
+  }];
+  const openWhatsNew = opener => {
+    if (window.MBUI) window.MBUI.whatsNew({
+      app: 'Action Plan',
+      releases: RELEASE_NOTES.map(r => ({
+        version: r.v,
+        date: r.date,
+        items: r.items
+      })),
+      opener: opener && opener.nodeType ? opener : undefined
+    });
+  };
+  const openMore = opener => {
+    if (!window.MBUI) return;
+    window.MBUI.sheet({
+      title: 'More',
+      opener,
+      items: [...PHONE_MORE.map(t => ({
+        label: t.label,
+        icon: uicHTML(t.uic),
+        current: activeTab === t.id,
+        onClick: () => {
+          setActiveTab(t.id);
+          setIsMobileMenuOpen(false);
+        }
+      })), {
+        label: 'What\u2019s new',
+        sub: 'Version ' + BRAND_VERSION,
+        icon: uicHTML('news'),
+        onClick: () => openWhatsNew(opener)
+      }]
+    });
+  };
   const focusTask = focusTaskId ? tasks.find(t => t.id === focusTaskId) : null;
 
   // Browser tab title: "Action Plan | <page>". Follows the screen you are on, and the legal pages when open.
@@ -7126,10 +7283,9 @@ function App() {
     privacy: 'Privacy Policy',
     terms: 'Terms of Use',
     disclaimer: 'Disclaimer',
-    credits: 'Credits',
-    notes: 'Release Notes'
+    credits: 'Credits'
   };
-  const pageName = onboardOpen ? 'Welcome' : legalModalOpen ? LEGAL_TITLES[legalTab] || 'About' : focusTask ? 'Focus Mode' : activeTab === 'settings' ? 'Settings' : NAV_TABS.find(t => t.id === activeTab)?.label || 'Home';
+  const pageName = onboardOpen ? 'Welcome' : legalModalOpen ? LEGAL_TITLES[legalTab] || 'About' : focusTask ? 'Focus Mode' : activeTab === 'settings' ? 'Settings' : activeTab === 'help' ? 'Help' : NAV_TABS.find(t => t.id === activeTab)?.label || 'Home';
   useEffect(() => {
     document.title = 'Action Plan | ' + pageName;
   }, [pageName]);
@@ -7165,7 +7321,88 @@ function App() {
     setIsMobileMenuOpen(false);
     if (mainRef.current) mainRef.current.scrollTop = 0;
   };
-  const viewTitle = activeTab === 'settings' ? 'Settings' : NAV_TABS.find(t => t.id === activeTab)?.label || 'Home';
+  const viewTitle = activeTab === 'settings' ? 'Settings' : activeTab === 'help' ? 'Help' : NAV_TABS.find(t => t.id === activeTab)?.label || 'Home';
+
+  // Search (2026-10-17b §4): the shared overlay (MBUI.search; "/" and Ctrl/Cmd+K open it). Tasks first, then projects,
+  // then pages. The last row keeps the old top-bar filter: it narrows every view to matching tasks (Clear removes it).
+  const searchRef = useRef(null);
+  searchRef.current = {
+    projects,
+    tasks,
+    openTask: id => {
+      const t = tasksRef.current.find(x => x.id === id);
+      if (!t) return;
+      setCurrentTask(t);
+      setTaskModalOpen(true);
+    },
+    openProject: id => {
+      const p = projects.find(x => x.id === id);
+      setActiveTab('projects');
+      setSelectedProjectDetail(p || null);
+    },
+    go: id => {
+      setActiveTab(id);
+      setIsMobileMenuOpen(false);
+    },
+    whatsNew: () => openWhatsNew(),
+    filter: q => setSearchQuery(q)
+  };
+  // Run a picked result after the search window has closed and handed focus back, so a task window that opens keeps it.
+  const later = fn => () => setTimeout(fn, 0);
+  useEffect(() => {
+    if (!window.MBUI) return;
+    const PAGES = [['dashboard', 'Home', 'today quick add wrap up explain streak numbers'], ['projects', 'Projects', 'areas groups'], ['tasks', 'Tasks Matrix', 'eisenhower urgent important priority quadrant'], ['calendar', 'Calendar', 'month dates due'], ['pomodoro', 'Focus Timer', 'pomodoro timer break keep screen on'], ['settings', 'Settings', 'theme dark light sync account backup export import install clear data'], ['help', 'Help', 'faq questions how shortcuts']];
+    window.MBUI.search.setup({
+      placeholder: 'Search tasks and projects\u2026',
+      run: q => {
+        const S = searchRef.current;
+        const toks = q.toLowerCase().split(/\s+/).filter(Boolean);
+        const hit = str => toks.every(t => str.toLowerCase().includes(t));
+        const pName = id => (S.projects.find(p => p.id === id) || {}).name || '';
+        const out = [];
+        const ts = S.tasks.filter(t => hit([t.title, t.description, pName(t.projectId), t.context ? '@' + t.context : ''].join(' ')));
+        ts.sort((a, b) => (a.status === 'Completed') - (b.status === 'Completed') || (a.dueDate || '9999').localeCompare(b.dueDate || '9999'));
+        ts.slice(0, 20).forEach(t => out.push({
+          title: t.title,
+          sub: [pName(t.projectId), t.status === 'Completed' ? 'Done' : t.dueDate ? describeDate(t.dueDate) : 'No date', (QUAD_BY_ID[t.quadrant] || {}).title].filter(Boolean).join(' \u00B7 '),
+          tag: 'Task',
+          onSelect: later(() => S.openTask(t.id))
+        }));
+        S.projects.filter(p => hit([p.name, p.description, p.code].join(' '))).slice(0, 8).forEach(p => {
+          const open = S.tasks.filter(t => t.projectId === p.id && t.status !== 'Completed').length;
+          out.push({
+            title: p.name,
+            sub: `${open} open task${open === 1 ? '' : 's'}`,
+            tag: 'Project',
+            onSelect: later(() => S.openProject(p.id))
+          });
+        });
+        PAGES.filter(([, l, k]) => hit(l + ' ' + k)).forEach(([id, l]) => out.push({
+          title: l,
+          sub: 'Go to ' + l,
+          tag: 'Page',
+          onSelect: later(() => S.go(id))
+        }));
+        if (hit('what\u2019s new whats new release notes version changes')) out.push({
+          title: 'What\u2019s new',
+          sub: 'Release notes',
+          tag: 'Page',
+          onSelect: later(() => S.whatsNew())
+        });
+        if (ts.length) out.push({
+          title: `Filter all views by \u201C${q.trim()}\u201D`,
+          sub: 'Show only matching tasks on every page',
+          tag: 'Filter',
+          onSelect: later(() => S.filter(q.trim()))
+        });
+        return out;
+      }
+    });
+  }, []);
+  const openSearch = e => {
+    setIsMobileMenuOpen(false);
+    if (window.MBUI) window.MBUI.search.open('', e && e.currentTarget);
+  };
   const whyTask = whyTaskId ? tasks.find(t => t.id === whyTaskId) : null;
   const canUndo = historyIndex > 0;
   const canRedo = historyIndex < history.length - 1;
@@ -7210,9 +7447,23 @@ function App() {
     onChangeLocation: () => exportBackup('json', {
       pickNew: true
     }),
-    onClear: () => {
+    onClear: async () => {
       setDataMenuOpen(false);
-      setClearModalOpen(true);
+      // Signed in, the cleared (empty) lists sync to the account, so the synced copy goes too.
+      const signedIn = !!(window.MBS_SYNC && window.MBS_SYNC.status().signedIn);
+      const ok = await MBFiles.confirmClear({
+        what: 'your tasks, projects, streak and settings',
+        synced: signedIn ? 'You\u2019re signed in, so the synced copy on your account is deleted too.' : '',
+        note: '',
+        // "Backup saved ✓" only when a backup really was saved (not when the picker or share sheet was cancelled)
+        onBackup: async () => {
+          const t = store.get('actionplan.lastBackup');
+          await saveBackupNow();
+          return store.get('actionplan.lastBackup') !== t;
+        }
+      });
+      if (!ok) return;
+      handleClearAllData();
     }
   };
   const savedName = fileHandles.json?.name;
@@ -7289,27 +7540,7 @@ function App() {
       width: `${scrollProgress}%`
     },
     "aria-hidden": "true"
-  }), toast && /*#__PURE__*/React.createElement("div", {
-    role: toast.type === 'error' ? 'alert' : 'status',
-    "aria-live": toast.type === 'error' ? 'assertive' : 'polite',
-    className: `toast fixed z-50 left-3 right-3 bottom-[136px] sm:left-auto sm:right-4 sm:bottom-20 lg:bottom-6 lg:left-6 lg:right-auto sm:max-w-sm pl-3 pr-3 py-2.5 rounded-lg shadow-xl border border-l-[3px] text-sm font-medium flex items-center gap-2.5 animate-toast-in bg-white dark:bg-slate-850 text-slate-800 dark:text-slate-100 border-slate-200 dark:border-slate-750 ${toast.type === 'error' ? '!border-l-rose-600 dark:!border-l-rose-400' : toast.type === 'info' ? '!border-l-sky-500' : '!border-l-emerald-600 dark:!border-l-emerald-400'}`
-  }, /*#__PURE__*/React.createElement(Icon, {
-    name: toast.type === 'error' ? 'alert-circle' : toast.type === 'info' ? 'info' : 'check-circle-2',
-    className: `w-4 h-4 ${toast.type === 'error' ? 'text-rose-600 dark:text-rose-400' : toast.type === 'info' ? 'text-sky-600 dark:text-sky-400' : 'text-emerald-600 dark:text-emerald-400'}`
-  }), /*#__PURE__*/React.createElement("span", {
-    className: "flex-1"
-  }, toast.message), toast.action && /*#__PURE__*/React.createElement("button", {
-    type: "button",
-    className: "btn sm -my-1 -mr-1",
-    onClick: () => {
-      const a = toast.action;
-      setToast(null);
-      a.onClick();
-    }
-  }, /*#__PURE__*/React.createElement(Icon, {
-    name: "undo-2",
-    className: "w-3.5 h-3.5"
-  }), " ", toast.action.label)), /*#__PURE__*/React.createElement("a", {
+  }), /*#__PURE__*/React.createElement("a", {
     href: "#main-content",
     className: "sr-only focus:not-sr-only focus:fixed focus:top-2 focus:left-2 focus:z-[70] btn primary sm"
   }, "Skip to main content"), /*#__PURE__*/React.createElement("aside", {
@@ -7334,14 +7565,20 @@ function App() {
     className: "lbl-short"
   }, tab.short)))), /*#__PURE__*/React.createElement("nav", {
     className: "side-nav side-end",
-    "aria-label": "Settings"
+    "aria-label": "Settings and Help"
   }, /*#__PURE__*/React.createElement("button", {
     type: "button",
     onClick: () => setActiveTab('settings'),
     "aria-current": activeTab === 'settings' ? 'page' : undefined
   }, /*#__PURE__*/React.createElement(Uic, {
     n: "gear"
-  }), /*#__PURE__*/React.createElement("span", null, "Settings")))), /*#__PURE__*/React.createElement("div", {
+  }), /*#__PURE__*/React.createElement("span", null, "Settings")), /*#__PURE__*/React.createElement("button", {
+    type: "button",
+    onClick: () => setActiveTab('help'),
+    "aria-current": activeTab === 'help' ? 'page' : undefined
+  }, /*#__PURE__*/React.createElement(Uic, {
+    n: "help"
+  }), /*#__PURE__*/React.createElement("span", null, "Help")))), /*#__PURE__*/React.createElement("div", {
     className: "mb-main"
   }, /*#__PURE__*/React.createElement("header", {
     className: "page-bar"
@@ -7355,32 +7592,16 @@ function App() {
     className: "actions"
   }, /*#__PURE__*/React.createElement("button", {
     type: "button",
-    className: "tb tb-search ap-phone-only",
-    onClick: () => {
-      setIsMobileMenuOpen(false);
-      setPhoneSearchOpen(o => !o);
-    },
-    "aria-label": "Search tasks",
-    "aria-expanded": phoneSearchOpen,
-    "aria-controls": "ap-phone-search",
-    title: "Search tasks"
-  }, /*#__PURE__*/React.createElement(Icon, {
-    name: "search",
-    className: "w-4 h-4"
-  })), /*#__PURE__*/React.createElement("div", {
-    className: "ap-search-inline tb tb-search hide-phone"
-  }, /*#__PURE__*/React.createElement(Icon, {
-    name: "search",
-    className: "w-4 h-4"
-  }), /*#__PURE__*/React.createElement("input", {
-    id: "ap-search-input",
-    type: "search",
-    "aria-label": "Search tasks",
-    "aria-keyshortcuts": "/",
-    placeholder: "Search\u2026",
-    value: searchQuery,
-    onChange: e => setSearchQuery(e.target.value)
-  }), /*#__PURE__*/React.createElement("kbd", null, "/")), /*#__PURE__*/React.createElement("input", {
+    className: "tb tb-search ap-search-btn",
+    onClick: openSearch,
+    "aria-label": "Search tasks and projects",
+    "aria-keyshortcuts": "/ Control+K",
+    title: "Search (/ or Ctrl+K)"
+  }, /*#__PURE__*/React.createElement(Uic, {
+    n: "search"
+  }), /*#__PURE__*/React.createElement("span", {
+    className: "tb-lbl"
+  }, "Search\u2026"), /*#__PURE__*/React.createElement("kbd", null, "/")), /*#__PURE__*/React.createElement("input", {
     ref: fileInputRef,
     type: "file",
     accept: ".json,application/json,.csv,text/csv,.zip,application/zip",
@@ -7461,10 +7682,7 @@ function App() {
     className: "tb-lbl"
   }, "Add Task")), /*#__PURE__*/React.createElement("button", {
     type: "button",
-    onClick: () => {
-      setPhoneSearchOpen(false);
-      setIsMobileMenuOpen(!isMobileMenuOpen);
-    },
+    onClick: () => setIsMobileMenuOpen(!isMobileMenuOpen),
     "aria-label": isMobileMenuOpen ? 'Close tools menu' : 'Open tools menu: undo, redo, search, settings',
     "aria-expanded": isMobileMenuOpen,
     className: "tb ap-menu",
@@ -7472,26 +7690,7 @@ function App() {
   }, /*#__PURE__*/React.createElement(Icon, {
     name: isMobileMenuOpen ? "x" : "menu",
     className: "w-4 h-4"
-  })))), phoneSearchOpen && /*#__PURE__*/React.createElement("div", {
-    id: "ap-phone-search",
-    className: "ap-tools ap-phone-search md:hidden animate-fade-in"
-  }, /*#__PURE__*/React.createElement("div", {
-    className: "relative"
-  }, /*#__PURE__*/React.createElement(Icon, {
-    name: "search",
-    className: "w-4 h-4 absolute left-2.5 top-1/2 -translate-y-1/2 text-slate-400 pointer-events-none"
-  }), /*#__PURE__*/React.createElement("input", {
-    type: "search",
-    "aria-label": "Search tasks",
-    placeholder: "Search tasks\u2026",
-    value: searchQuery,
-    autoFocus: true,
-    onChange: e => setSearchQuery(e.target.value),
-    onKeyDown: e => {
-      if (e.key === 'Escape') setPhoneSearchOpen(false);
-    },
-    className: "w-full pl-8 pr-3"
-  }))), isMobileMenuOpen && /*#__PURE__*/React.createElement("div", {
+  })))), isMobileMenuOpen && /*#__PURE__*/React.createElement("div", {
     className: "ap-tools lg:hidden animate-fade-in"
   }, /*#__PURE__*/React.createElement("div", {
     className: "grid grid-cols-2 gap-2"
@@ -7512,10 +7711,7 @@ function App() {
   }), " Redo")), /*#__PURE__*/React.createElement("button", {
     type: "button",
     className: "btn w-full ap-menu-search",
-    onClick: () => {
-      setIsMobileMenuOpen(false);
-      setPhoneSearchOpen(true);
-    }
+    onClick: openSearch
   }, /*#__PURE__*/React.createElement(Icon, {
     name: "search",
     className: "w-4 h-4"
@@ -7529,7 +7725,7 @@ function App() {
   }, /*#__PURE__*/React.createElement(Uic, {
     n: "gear",
     size: 16
-  }), " Settings: theme, sync, backup and help"), (hasData || lastBackup > 0) && !quietBackups && /*#__PURE__*/React.createElement("button", {
+  }), " Settings: theme, sync and backup"), (hasData || lastBackup > 0) && !quietBackups && /*#__PURE__*/React.createElement("button", {
     type: "button",
     onClick: () => {
       setIsMobileMenuOpen(false);
@@ -7597,6 +7793,7 @@ function App() {
     onReview: () => setReviewOpen(true),
     onExplain: () => setExplainOpen(true),
     onImport: () => setImportOpen(true),
+    onAddTask: () => openNewTask(),
     setActiveTab: setActiveTab
   }), activeTab === 'projects' && /*#__PURE__*/React.createElement(ProjectsView, {
     projects: projects,
@@ -7633,7 +7830,7 @@ function App() {
     onDeleteTask: id => {
       // No confirm dialog: delete immediately and offer Undo (Ctrl+Z also works).
       const t = tasks.find(x => x.id === id);
-      updateTasksWithHistory(tasks.filter(x => x.id !== id), t ? `Deleted "${t.title}".` : 'Task deleted.', undoAction);
+      updateTasksWithHistory(tasks.filter(x => x.id !== id), 'Task deleted', undoAction);
     },
     onAddTask: quadrant => openNewTask({
       quadrant
@@ -7683,38 +7880,62 @@ function App() {
     }),
     onInstall: doInstall,
     onLegal: openLegal,
-    onWelcome: () => setOnboardOpen(true)
-  }), activeTab !== 'settings' && /*#__PURE__*/React.createElement(AppFooter, {
+    onWelcome: () => setOnboardOpen(true),
+    onWhatsNew: e => openWhatsNew(e && e.currentTarget),
+    onHelp: () => setActiveTab('help')
+  }), activeTab === 'help' && /*#__PURE__*/React.createElement(HelpView, {
     onLegal: openLegal
+  }), activeTab !== 'settings' && /*#__PURE__*/React.createElement(AppFooter, {
+    onLegal: openLegal,
+    onWhatsNew: e => openWhatsNew(e && e.currentTarget)
   })))), /*#__PURE__*/React.createElement("nav", {
     className: "bnav",
     "aria-label": "Sections"
-  }, NAV_TABS.map(tab => /*#__PURE__*/React.createElement("button", {
-    key: tab.id,
+  }, PHONE_BAR.map(id => id === 'add' ? /*#__PURE__*/React.createElement("button", {
+    key: "add",
+    type: "button",
+    className: "bn-add",
+    onClick: () => openNewTask(),
+    "aria-label": "Add task",
+    title: "Add task"
+  }, /*#__PURE__*/React.createElement("svg", {
+    viewBox: "0 0 24 24",
+    width: "24",
+    height: "24",
+    fill: "none",
+    stroke: "currentColor",
+    strokeWidth: "2",
+    strokeLinecap: "round",
+    strokeLinejoin: "round",
+    "aria-hidden": "true",
+    focusable: "false"
+  }, /*#__PURE__*/React.createElement("path", {
+    d: "M12 5v14M5 12h14"
+  }))) : /*#__PURE__*/React.createElement("button", {
+    key: id,
     type: "button",
     onClick: () => {
-      setActiveTab(tab.id);
+      setActiveTab(id);
       setIsMobileMenuOpen(false);
     },
-    "aria-current": activeTab === tab.id ? 'page' : undefined
+    "aria-current": activeTab === id ? 'page' : undefined
   }, /*#__PURE__*/React.createElement(Uic, {
-    n: tab.uic,
+    n: NAV_TABS.find(t => t.id === id).uic,
     size: 20
-  }), /*#__PURE__*/React.createElement("span", null, tab.short))), /*#__PURE__*/React.createElement("button", {
+  }), /*#__PURE__*/React.createElement("span", null, NAV_TABS.find(t => t.id === id).short))), /*#__PURE__*/React.createElement("button", {
     type: "button",
-    onClick: () => {
-      setActiveTab('settings');
-      setIsMobileMenuOpen(false);
-    },
-    "aria-current": activeTab === 'settings' ? 'page' : undefined
+    onClick: e => openMore(e.currentTarget),
+    "aria-haspopup": "dialog",
+    "aria-label": "More: Settings, Tasks Matrix, Calendar, Help, What\u2019s new",
+    "aria-current": PHONE_MORE.some(t => t.id === activeTab) ? 'page' : undefined
   }, /*#__PURE__*/React.createElement(Uic, {
-    n: "gear",
+    n: "more",
     size: 20
-  }), /*#__PURE__*/React.createElement("span", null, "Settings"))), /*#__PURE__*/React.createElement("button", {
+  }), /*#__PURE__*/React.createElement("span", null, "More"))), /*#__PURE__*/React.createElement("button", {
     type: "button",
     onClick: () => openNewTask(),
     "aria-label": "Add task",
-    className: "fab sm:hidden"
+    className: "fab ap-fab sm:hidden"
   }, /*#__PURE__*/React.createElement(Icon, {
     name: "plus",
     className: "w-6 h-6"
@@ -7797,7 +8018,7 @@ function App() {
             ...savedTask,
             postponed: (t.postponed || 0) + (movedLater ? 1 : 0)
           });
-        }), 'Task updated.');
+        }), 'Task saved');
       } else {
         const newTask = normalizeTask({
           ...savedTask,
@@ -7822,7 +8043,7 @@ function App() {
     onSave: savedP => {
       if (currentProject) {
         setProjects(prev => prev.map(p => p.id === savedP.id ? savedP : p));
-        showToast('Project updated successfully.');
+        showToast('Project saved');
       } else {
         setProjects(prev => [...prev, {
           ...savedP,
@@ -7865,91 +8086,13 @@ function App() {
       downloadText(backupText(kind), datedName(kind), backupMime(kind));
       markBackedUp();
       setShareModalOpen(false);
-      showToast(`Backup downloaded as ${datedName(kind)}.`, 'success');
+      showToast(`Backup downloaded \u00B7 ${datedName(kind)}`, 'success');
     },
     className: "btn primary w-full"
   }, /*#__PURE__*/React.createElement(Icon, {
     name: "download",
     className: "w-4 h-4"
-  }), "Download ", shareModalOpen === 'csv' ? 'CSV' : 'JSON', " backup"))), clearModalOpen && /*#__PURE__*/React.createElement("div", {
-    className: "overlay animate-fade-in",
-    onClick: () => {
-      setClearModalOpen(false);
-      setClearConfirmText('');
-    }
-  }, /*#__PURE__*/React.createElement("div", {
-    role: "dialog",
-    "aria-modal": "true",
-    "aria-labelledby": "clear-modal-title",
-    onClick: e => e.stopPropagation(),
-    className: "dialog sm:max-w-md border-t-[3px] !border-t-rose-600 dark:!border-t-rose-400 p-5 space-y-4 animate-fade-in-up"
-  }, /*#__PURE__*/React.createElement("div", {
-    className: "flex items-center justify-between pb-3 border-b border-slate-200 dark:border-slate-800"
-  }, /*#__PURE__*/React.createElement("div", {
-    className: "flex items-center gap-2 text-rose-600 dark:text-rose-400"
-  }, /*#__PURE__*/React.createElement(Icon, {
-    name: "alert-triangle",
-    className: "w-5 h-5"
-  }), /*#__PURE__*/React.createElement("h3", {
-    id: "clear-modal-title",
-    className: "text-base font-semibold text-slate-900 dark:text-slate-100"
-  }, "Clear all saved data")), /*#__PURE__*/React.createElement("button", {
-    onClick: () => {
-      setClearModalOpen(false);
-      setClearConfirmText('');
-    },
-    "aria-label": "Close",
-    className: "btn ghost icon sm"
-  }, /*#__PURE__*/React.createElement(Icon, {
-    name: "x",
-    className: "w-4 h-4"
-  }))), /*#__PURE__*/React.createElement("p", {
-    className: "text-sm text-slate-700 dark:text-slate-300"
-  }, "Remove all saved projects and tasks? This deletes everything stored in this browser and can't be undone."), /*#__PURE__*/React.createElement("div", {
-    className: `flex items-center justify-between gap-3 rounded border px-3 py-2 ${backupWarn ? 'border-amber-400/60 bg-amber-500/10' : 'border-slate-200 dark:border-slate-750 bg-slate-50 dark:bg-slate-850'}`
-  }, /*#__PURE__*/React.createElement("span", {
-    className: "text-xs text-slate-700 dark:text-slate-300"
-  }, hasData && !lastBackup ? 'No backup yet. Export one first to keep a copy.' : `${bk.text}. Export again to include recent changes.`), /*#__PURE__*/React.createElement("button", {
-    type: "button",
-    onClick: saveBackupNow,
-    className: "btn sm shrink-0"
-  }, /*#__PURE__*/React.createElement(Icon, {
-    name: "download",
-    className: "w-4 h-4"
-  }), " Save backup now")), window.MBS_SYNC && window.MBS_SYNC.status().signedIn && /*#__PURE__*/React.createElement("p", {
-    className: "text-sm text-rose-700 dark:text-rose-300"
-  }, /*#__PURE__*/React.createElement("strong", null, "You\u2019re signed in to sync,"), " so this also deletes your tasks, projects and streak from your account and your other devices. To clear only this browser, sign out first (Data \u2192 Sync)."), /*#__PURE__*/React.createElement("div", {
-    className: "space-y-1.5"
-  }, /*#__PURE__*/React.createElement("label", {
-    htmlFor: "clear-confirm-input",
-    className: "fld-label"
-  }, "Type ", /*#__PURE__*/React.createElement("span", {
-    className: "text-rose-600 dark:text-rose-400 font-mono"
-  }, "CLEAR"), " to confirm"), /*#__PURE__*/React.createElement("input", {
-    id: "clear-confirm-input",
-    type: "text",
-    value: clearConfirmText,
-    onChange: e => setClearConfirmText(e.target.value),
-    placeholder: "Type CLEAR",
-    className: "w-full px-3 font-mono uppercase",
-    autoComplete: "off",
-    autoFocus: true
-  })), /*#__PURE__*/React.createElement("div", {
-    className: "flex justify-end gap-2 pt-1"
-  }, /*#__PURE__*/React.createElement("button", {
-    onClick: () => {
-      setClearModalOpen(false);
-      setClearConfirmText('');
-    },
-    className: "btn"
-  }, "Cancel"), /*#__PURE__*/React.createElement("button", {
-    disabled: clearConfirmText.trim().toUpperCase() !== 'CLEAR',
-    onClick: handleClearAllData,
-    className: "btn danger solid"
-  }, /*#__PURE__*/React.createElement(Icon, {
-    name: "trash-2",
-    className: "w-4 h-4"
-  }), "Delete all data")))), onboardOpen && /*#__PURE__*/React.createElement(Onboarding, {
+  }), "Download ", shareModalOpen === 'csv' ? 'CSV' : 'JSON', " backup"))), onboardOpen && /*#__PURE__*/React.createElement(Onboarding, {
     theme: theme,
     setTheme: setTheme,
     onImport: () => {
@@ -8012,9 +8155,9 @@ function ProjectsView({
     }, selectedProjectDetail.status), /*#__PURE__*/React.createElement("span", {
       className: "badge tabular"
     }, projectTasks.filter(t => t.status !== 'Completed').length, " active \xB7 ", projectTasks.length, " total")), /*#__PURE__*/React.createElement("h2", {
-      className: "text-xl sm:text-[22px] font-extrabold tracking-tight text-slate-900 dark:text-slate-100"
+      className: "text-xl sm:text-[22px] font-extrabold tracking-tight text-slate-900 dark:text-slate-100 ap-wrap"
     }, selectedProjectDetail.name), selectedProjectDetail.description && /*#__PURE__*/React.createElement("p", {
-      className: "text-sm text-slate-600 dark:text-slate-400 mt-1"
+      className: "text-sm text-slate-600 dark:text-slate-400 mt-1 ap-wrap"
     }, selectedProjectDetail.description)), /*#__PURE__*/React.createElement("div", {
       className: "flex items-center gap-2"
     }, /*#__PURE__*/React.createElement("button", {
@@ -8034,16 +8177,13 @@ function ProjectsView({
     }, "Tasks in this project"), /*#__PURE__*/React.createElement("div", {
       className: "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3"
     }, projectTasks.length === 0 ? /*#__PURE__*/React.createElement("div", {
-      className: "col-span-full empty border border-dashed border-slate-300 dark:border-slate-700 rounded-lg bg-slate-50 dark:bg-slate-900"
-    }, /*#__PURE__*/React.createElement("b", null, "No tasks in this project yet"), "Tasks you add here are grouped under this project across every view.", /*#__PURE__*/React.createElement("div", {
-      className: "mt-3"
-    }, /*#__PURE__*/React.createElement("button", {
-      onClick: () => onNewTaskForProject(selectedProjectDetail.id),
-      className: "btn primary sm"
-    }, /*#__PURE__*/React.createElement(Icon, {
-      name: "plus",
-      className: "w-4 h-4"
-    }), " Add Task"))) : projectTasks.map(t => /*#__PURE__*/React.createElement(TaskCard, {
+      className: "col-span-full panel"
+    }, /*#__PURE__*/React.createElement(MbEmpty, {
+      title: "No tasks in this project yet",
+      text: "Tasks you add here are grouped under this project in every view.",
+      label: "Add task",
+      onAction: () => onNewTaskForProject(selectedProjectDetail.id)
+    })) : projectTasks.map(t => /*#__PURE__*/React.createElement(TaskCard, {
       key: t.id,
       task: t,
       project: selectedProjectDetail,
@@ -8104,13 +8244,13 @@ function ProjectsView({
       className: "text-[15px] font-semibold text-slate-900 dark:text-slate-100 mb-1"
     }, /*#__PURE__*/React.createElement("button", {
       type: "button",
-      className: "text-left hover:text-sky-700 dark:hover:text-sky-400",
+      className: "text-left hover:text-sky-700 dark:hover:text-sky-400 ap-wrap",
       onClick: e => {
         e.stopPropagation();
         setSelectedProjectDetail(project);
       }
     }, project.name)), /*#__PURE__*/React.createElement("p", {
-      className: "text-[13px] text-slate-600 dark:text-slate-400 line-clamp-2 mb-4 flex-1"
+      className: "text-[13px] text-slate-600 dark:text-slate-400 line-clamp-2 mb-4 flex-1 ap-wrap"
     }, project.description), /*#__PURE__*/React.createElement("div", {
       className: "space-y-2 mt-auto"
     }, /*#__PURE__*/React.createElement("div", {
@@ -8141,19 +8281,13 @@ function ProjectsView({
       }
     }))));
   }), projects.length === 0 && /*#__PURE__*/React.createElement("div", {
-    className: "col-span-full empty border border-dashed border-slate-300 dark:border-slate-700 rounded-lg bg-slate-50 dark:bg-slate-900"
-  }, /*#__PURE__*/React.createElement(Icon, {
-    name: "folder-kanban",
-    className: "w-6 h-6 text-slate-400 mb-2 mx-auto"
-  }), /*#__PURE__*/React.createElement("b", null, "No projects yet"), "Projects group related tasks (work, home, a client) so you can filter and track progress.", /*#__PURE__*/React.createElement("div", {
-    className: "mt-3"
-  }, /*#__PURE__*/React.createElement("button", {
-    onClick: onNewProject,
-    className: "btn primary sm"
-  }, /*#__PURE__*/React.createElement(Icon, {
-    name: "plus",
-    className: "w-4 h-4"
-  }), " New Project")))));
+    className: "col-span-full panel"
+  }, /*#__PURE__*/React.createElement(MbEmpty, {
+    title: "No projects yet",
+    text: "Projects group related tasks, like work, home or a client, so you can filter and track progress.",
+    label: "Add project",
+    onAction: onNewProject
+  }))));
 }
 function TasksMatrixView({
   projects,
